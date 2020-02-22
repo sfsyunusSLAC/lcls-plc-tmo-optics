@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
+  <GVL Name="GVL_M1K4_Constants" Id="{17631110-39aa-4b3d-a55d-c2ce2a77172f}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+VAR_GLOBAL CONSTANT
+	// Encoder reference values in counts = nm
+	nYUP_ENC_REF : ULINT := 15000270;
+	nYDWN_ENC_REF : ULINT := 15454300;
+	nXUP_ENC_REF : ULINT := 24000300;
+	nXDWN_ENC_REF : ULINT := 23999400;
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>

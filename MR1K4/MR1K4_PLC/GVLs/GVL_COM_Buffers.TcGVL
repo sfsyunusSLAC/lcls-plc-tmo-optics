@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
+  <GVL Name="GVL_COM_Buffers" Id="{412fbd2d-a496-4548-a6b8-8fc8e41a3c7a}">
+    <Declaration><![CDATA[VAR_GLOBAL
+	// M1K4
+	Serial_RXBuffer_M1K4 : ComBuffer;
+	Serial_TXBuffer_M1K4 : ComBuffer;
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>
