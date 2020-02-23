@@ -7,10 +7,6 @@ VAR
 	fbE621SerialDriver_M1K4 : FB_PI_E621_SerialDriver;
 	rtInitParams_M1K4	:	R_TRIG;
 	tonTimeoutRst_M1K4	: TON := (PT:=T#2S); //For timeout reset
-	
-	fbE621SerialDriver_M2L0 : FB_PI_E621_SerialDriver;
-	rtInitParams_M2L0	:	R_TRIG;
-	tonTimeoutRst_M2L0	: TON := (PT:=T#2S); //For timeout reset
 END_VAR
 ]]></Declaration>
     <Implementation>

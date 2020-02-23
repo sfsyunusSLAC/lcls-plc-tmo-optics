@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
+  <Task Name="SerialIO" Id="{9ab30a3a-1037-4672-b8f9-2c11d565de5d}">
+    <!--CycleTime in micro seconds.-->
+    <CycleTime>2000</CycleTime>
+    <Priority>1</Priority>
+    <PouCall>
+      <Name>P_Serial_Com</Name>
+    </PouCall>
+    <TaskFBGuid>{3ce2e1f1-162b-4731-aad7-266ad16c5b75}</TaskFBGuid>
+    <Fb_init>{e623f8dd-d62d-46fe-9826-f8a5308391ef}</Fb_init>
+    <Fb_exit>{00f3f1fe-48ed-478a-8176-68a0b0b51ed1}</Fb_exit>
+    <CycleUpdate>{38bfa369-cf01-4c9b-b3f4-a123fabbc6f7}</CycleUpdate>
+    <PostCycleUpdate>{713f0798-df0d-4dc4-91bb-c354b32dafbb}</PostCycleUpdate>
+  </Task>
+</TcPlcObject>

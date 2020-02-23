@@ -1,8 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
   <GVL Name="GVL_SerialIO" Id="{c473b3fd-251c-4dab-9486-f893066a90f0}">
-    <Declaration><![CDATA[{attribute 'qualified_only'}
-VAR_GLOBAL
+    <Declaration><![CDATA[VAR_GLOBAL
 	//Better have your inputs and outputs!
 	// M1K4
 	Serial_stComIn_M1K4   AT %I*	:	EL6inData22B (*KL6inData22B*);
