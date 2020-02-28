@@ -10,7 +10,7 @@ VAR
 	{attribute 'pytmc' := '
 		pv: MR1K4:KFE:MMS:YUP
 	'}
-	M1 : DUT_MotionStage := (fVelocity:=200, nEnableMode:=ENUM_StageEnableMode.ALWAYS); // M1K4 Yup
+	M1 : DUT_MotionStage := (fVelocity:=200.0, nEnableMode:=ENUM_StageEnableMode.ALWAYS); // M1K4 Yup
 	fbMotionStage_m1 : FB_MotionStage;
 
 	{attribute 'TcLinkTo' := '.bLimitForwardEnable:=TIIB[EL7041-1000_M1K4_Ydwn]^STM Status^Status^Digital input 1;
@@ -18,7 +18,7 @@ VAR
 	{attribute 'pytmc' := '
 		pv: MR1K4:KFE:MMS:YDWN
 	'}
-	M2 : DUT_MotionStage := (fVelocity:=200, nEnableMode:=ENUM_StageEnableMode.ALWAYS); // M1K4 Ydwn
+	M2 : DUT_MotionStage := (fVelocity:=200.0, nEnableMode:=ENUM_StageEnableMode.ALWAYS); // M1K4 Ydwn
 	fbMotionStage_m2 : FB_MotionStage;
 
 	{attribute 'TcLinkTo' := '.bLimitForwardEnable:=TIIB[EL7041-1000_M1K4_Xup]^STM Status^Status^Digital input 1;
@@ -26,7 +26,7 @@ VAR
 	{attribute 'pytmc' := '
 		pv: MR1K4:KFE:MMS:XUP
 	'}
-	M3 : DUT_MotionStage := (fVelocity:=1000, nEnableMode:=ENUM_StageEnableMode.ALWAYS); // M1K4 Xup
+	M3 : DUT_MotionStage := (fVelocity:=1000.0, nEnableMode:=ENUM_StageEnableMode.ALWAYS); // M1K4 Xup
 	fbMotionStage_m3 : FB_MotionStage;
 
 	{attribute 'TcLinkTo' := '.bLimitForwardEnable:=TIIB[EL7041-1000_M1K4_Xdwn]^STM Status^Status^Digital input 1;
@@ -34,7 +34,7 @@ VAR
 	{attribute 'pytmc' := '
 		pv: MR1K4:KFE:MMS:XDWN
 	'}
-	M4 : DUT_MotionStage := (fVelocity:=1000, nEnableMode:=ENUM_StageEnableMode.ALWAYS); // M1K4 Xdwn
+	M4 : DUT_MotionStage := (fVelocity:=1000.0, nEnableMode:=ENUM_StageEnableMode.ALWAYS); // M1K4 Xdwn
 	fbMotionStage_m4 : FB_MotionStage;
 
 	{attribute 'TcLinkTo' := '.bLimitForwardEnable:=TIIB[EL7041-1000_M1K4_PitchCoarse]^STM Status^Status^Digital input 1;
@@ -42,14 +42,14 @@ VAR
 	{attribute 'pytmc' := '
 		pv: MR1K4:KFE:MMS:PITCH
 	'}
-	M5 : DUT_MotionStage := (fVelocity := 150); // M1K4 Pitch Stepper
+	M5 : DUT_MotionStage := (fVelocity := 150.0); // M1K4 Pitch Stepper
 
 	{attribute 'TcLinkTo' := '.bLimitForwardEnable:=TIIB[EL7041-1000_M1K4_Bender]^STM Status^Status^Digital input 1;
                               .bLimitBackwardEnable:=TIIB[EL7041-1000_M1K4_Bender]^STM Status^Status^Digital input 2'}
 	{attribute 'pytmc' := '
 		pv: MR1K4:KFE:MMS:BENDER
 	'}
-	M6 : DUT_MotionStage; // M1K4 Bender
+	M6 : DUT_MotionStage := (fVelocity := 150.0); // M1K4 Bender
 	fbMotionStage_m6 : FB_MotionStage;
 
 	{attribute 'TcLinkTo' := '.fbRunHOMS.bSTOEnable1:=TIIB[EL1004_M1K4_STO]^Channel 1^Input;
@@ -143,8 +143,11 @@ fbPitchRMSErrorM1K4(stMotionStage:=M5,
 	                fMaxRMSError=>fMaxPitchRMSErrorM1K4,
 					fMinRMSError=>fMinPitchRMSErrorM1K4);
 
+fbBenderRMSErrorM1K4(stMotionStage:=M6,
+	                 fMaxRMSError=>fMaxBenderRMSErrorM1K4,
+					 fMinRMSError=>fMinBenderRMSErrorM1K4);
+
 // Pitch Control
-M5.fVelocity := 150.0;
 fbM1K4PitchControl(Pitch:=GVL_M1K4.M1K4_Pitch,
 				   Stepper:=M5,
 				   lrCurrentSetpoint:=M5.fPosition,
