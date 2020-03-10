@@ -72,7 +72,7 @@ VAR
 	fMinYRMSErrorM1K4 : LREAL;
 
 	{attribute 'pytmc' := '
-		pv: MR1K4:KFE:ENC:X
+		pv: MR1K4:ENC:X
 	'}
 	fbXRMSErrorM1K4 : FB_RMSWatch;
 	fMaxXRMSErrorM1K4 : LREAL;
