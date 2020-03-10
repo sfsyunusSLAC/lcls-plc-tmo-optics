@@ -1,3 +1,39 @@
+record(longin, "$(PREFIX)LCLSGeneral:LogPort_RBV") {
+  field(DESC, "The log host UDP port")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Logger.iLogPort?")
+}
+
+record(longout, "$(PREFIX)LCLSGeneral:LogPort") {
+  field(DESC, "The log host UDP port")
+  field(DTYP, "asynInt32")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Logger.iLogPort=")
+  info(autosaveFields_pass0, "VAL")
+}
+
+record(waveform, "$(PREFIX)LCLSGeneral:LogHost_RBV") {
+  field(DESC, "The log host IP address")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Logger.cLogHost?")
+  field(FTVL, "CHAR")
+  field(NELM, "15")
+}
+
+record(waveform, "$(PREFIX)LCLSGeneral:LogHost") {
+  field(DESC, "The log host IP address")
+  field(DTYP, "asynInt8ArrayOut")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Logger.cLogHost=")
+  field(FTVL, "CHAR")
+  field(NELM, "15")
+  info(autosaveFields_pass0, "VAL")
+}
+
 record(bi, "MR1K4:MMS:YUP:PLC:bLimitForwardEnable_RBV") {
   field(DESC, "FALSE if forward limit hit")
   field(SCAN, "I/O Intr")
@@ -2656,6 +2692,226 @@ record(waveform, "MR1K4:MMS:BENDER:PLC:sErrorMessage_RBV") {
   field(NELM, "80")
 }
 
+record(ai, "MR1K4:ENC:Y:MEAN_RBV") {
+  field(DESC, "ads:Main.fbYRMSErrorM1K4.fEncMean")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbYRMSErrorM1K4.fEncMean?")
+  field(PREC, "3")
+  info(autosaveFields_pass0, "PREC")
+}
+
+record(ai, "MR1K4:ENC:Y:STDEV_RBV") {
+  field(DESC, "ads:Main.fbYRMSErrorM1K4.fEncStDev")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbYRMSErrorM1K4.fEncStDev?")
+  field(PREC, "3")
+  info(autosaveFields_pass0, "PREC")
+}
+
+record(ai, "MR1K4:ENC:Y:RMS_RBV") {
+  field(DESC, "ads:Main.fbYRMSErrorM1K4.fCurrRMSError")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbYRMSErrorM1K4.fCurrRMSError?")
+  field(PREC, "3")
+  info(autosaveFields_pass0, "PREC")
+}
+
+record(waveform, "MR1K4:ENC:Y:ACTPOSARRAY_RBV") {
+  field(DESC, "ads:Main.fbYRMSErrorM1K4.aEncActPos")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbYRMSErrorM1K4.aEncActPos?")
+  field(FTVL, "DOUBLE")
+  field(NELM, "1000")
+}
+
+record(waveform, "MR1K4:ENC:Y:SETPOSARRAY_RBV") {
+  field(DESC, "ads:Main.fbYRMSErrorM1K4.aEncSetPos")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbYRMSErrorM1K4.aEncSetPos?")
+  field(FTVL, "DOUBLE")
+  field(NELM, "1000")
+}
+
+record(ai, "MR1K4:ENC:X:MEAN_RBV") {
+  field(DESC, "ads:Main.fbXRMSErrorM1K4.fEncMean")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbXRMSErrorM1K4.fEncMean?")
+  field(PREC, "3")
+  info(autosaveFields_pass0, "PREC")
+}
+
+record(ai, "MR1K4:ENC:X:STDEV_RBV") {
+  field(DESC, "ads:Main.fbXRMSErrorM1K4.fEncStDev")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbXRMSErrorM1K4.fEncStDev?")
+  field(PREC, "3")
+  info(autosaveFields_pass0, "PREC")
+}
+
+record(ai, "MR1K4:ENC:X:RMS_RBV") {
+  field(DESC, "ads:Main.fbXRMSErrorM1K4.fCurrRMSError")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbXRMSErrorM1K4.fCurrRMSError?")
+  field(PREC, "3")
+  info(autosaveFields_pass0, "PREC")
+}
+
+record(waveform, "MR1K4:ENC:X:ACTPOSARRAY_RBV") {
+  field(DESC, "ads:Main.fbXRMSErrorM1K4.aEncActPos")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbXRMSErrorM1K4.aEncActPos?")
+  field(FTVL, "DOUBLE")
+  field(NELM, "1000")
+}
+
+record(waveform, "MR1K4:ENC:X:SETPOSARRAY_RBV") {
+  field(DESC, "ads:Main.fbXRMSErrorM1K4.aEncSetPos")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbXRMSErrorM1K4.aEncSetPos?")
+  field(FTVL, "DOUBLE")
+  field(NELM, "1000")
+}
+
+record(ai, "MR1K4:ENC:PITCH:MEAN_RBV") {
+  field(DESC, "ads:Main.fbPitchRMSErrorM1K4.fEncMean")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbPitchRMSErrorM1K4.fEncMean?")
+  field(PREC, "3")
+  info(autosaveFields_pass0, "PREC")
+}
+
+record(ai, "MR1K4:ENC:PITCH:STDEV_RBV") {
+  field(DESC, "ads:Main.fbPitchRMSErrorM1K4.fEncStDev")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbPitchRMSErrorM1K4.fEncStDev?")
+  field(PREC, "3")
+  info(autosaveFields_pass0, "PREC")
+}
+
+record(ai, "MR1K4:ENC:PITCH:RMS_RBV") {
+  field(DESC, "ads:Main.fbPitchRMSE...1K4.fCurrRMSError")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbPitchRMSErrorM1K4.fCurrRMSError?")
+  field(PREC, "3")
+  info(autosaveFields_pass0, "PREC")
+}
+
+record(waveform, "MR1K4:ENC:PITCH:ACTPOSARRAY_RBV") {
+  field(DESC, "ads:Main.fbPitchRMSErrorM1K4.aEncActPos")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbPitchRMSErrorM1K4.aEncActPos?")
+  field(FTVL, "DOUBLE")
+  field(NELM, "1000")
+}
+
+record(waveform, "MR1K4:ENC:PITCH:SETPOSARRAY_RBV") {
+  field(DESC, "ads:Main.fbPitchRMSErrorM1K4.aEncSetPos")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbPitchRMSErrorM1K4.aEncSetPos?")
+  field(FTVL, "DOUBLE")
+  field(NELM, "1000")
+}
+
+record(ai, "MR1K4:ENC:BENDER:MEAN_RBV") {
+  field(DESC, "ads:Main.fbBenderRMSErrorM1K4.fEncMean")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbBenderRMSErrorM1K4.fEncMean?")
+  field(PREC, "3")
+  info(autosaveFields_pass0, "PREC")
+}
+
+record(ai, "MR1K4:ENC:BENDER:STDEV_RBV") {
+  field(DESC, "ads:Main.fbBenderRMSErrorM1K4.fEncStDev")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbBenderRMSErrorM1K4.fEncStDev?")
+  field(PREC, "3")
+  info(autosaveFields_pass0, "PREC")
+}
+
+record(ai, "MR1K4:ENC:BENDER:RMS_RBV") {
+  field(DESC, "ads:Main.fbBenderRMS...1K4.fCurrRMSError")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbBenderRMSErrorM1K4.fCurrRMSError?")
+  field(PREC, "3")
+  info(autosaveFields_pass0, "PREC")
+}
+
+record(waveform, "MR1K4:ENC:BENDER:ACTPOSARRAY_RBV") {
+  field(DESC, "ads:Main.fbBenderRMSErrorM1K4.aEncActPos")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbBenderRMSErrorM1K4.aEncActPos?")
+  field(FTVL, "DOUBLE")
+  field(NELM, "1000")
+}
+
+record(waveform, "MR1K4:ENC:BENDER:SETPOSARRAY_RBV") {
+  field(DESC, "ads:Main.fbBenderRMSErrorM1K4.aEncSetPos")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbBenderRMSErrorM1K4.aEncSetPos?")
+  field(FTVL, "DOUBLE")
+  field(NELM, "1000")
+}
+
 record(bi, "MR1K4:COUPLE_Y_RBV") {
   field(DESC, "ads:Main.M1K4.bExecuteCoupleY")
   field(SCAN, "I/O Intr")
@@ -2780,224 +3036,4 @@ record(ai, "MR1K4:GANTRY_X_RBV") {
   field(PREC, "3")
   field(EGU, "um")
   info(autosaveFields_pass0, "PREC")
-}
-
-record(ai, "MR1K4:ENC:Y:MEAN_RBV") {
-  field(DESC, "ads:Main.fbYRMSErrorM1K4.fEncMean")
-  field(SCAN, "I/O Intr")
-  field(PINI, "1")
-  field(TSE, "-2")
-  field(DTYP, "asynFloat64")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbYRMSErrorM1K4.fEncMean?")
-  field(PREC, "3")
-  info(autosaveFields_pass0, "PREC")
-}
-
-record(ai, "MR1K4:ENC:Y:STDEV_RBV") {
-  field(DESC, "ads:Main.fbYRMSErrorM1K4.fEncStDev")
-  field(SCAN, "I/O Intr")
-  field(PINI, "1")
-  field(TSE, "-2")
-  field(DTYP, "asynFloat64")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbYRMSErrorM1K4.fEncStDev?")
-  field(PREC, "3")
-  info(autosaveFields_pass0, "PREC")
-}
-
-record(ai, "MR1K4:ENC:Y:RMS_RBV") {
-  field(DESC, "ads:Main.fbYRMSErrorM1K4.fCurrRMSError")
-  field(SCAN, "I/O Intr")
-  field(PINI, "1")
-  field(TSE, "-2")
-  field(DTYP, "asynFloat64")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbYRMSErrorM1K4.fCurrRMSError?")
-  field(PREC, "3")
-  info(autosaveFields_pass0, "PREC")
-}
-
-record(waveform, "MR1K4:ENC:Y:ACTPOSARRAY_RBV") {
-  field(DESC, "ads:Main.fbYRMSErrorM1K4.aEncActPos")
-  field(SCAN, "I/O Intr")
-  field(PINI, "1")
-  field(TSE, "-2")
-  field(DTYP, "asynFloat64ArrayIn")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbYRMSErrorM1K4.aEncActPos?")
-  field(FTVL, "DOUBLE")
-  field(NELM, "1000")
-}
-
-record(waveform, "MR1K4:ENC:Y:SETPOSARRAY_RBV") {
-  field(DESC, "ads:Main.fbYRMSErrorM1K4.aEncSetPos")
-  field(SCAN, "I/O Intr")
-  field(PINI, "1")
-  field(TSE, "-2")
-  field(DTYP, "asynFloat64ArrayIn")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbYRMSErrorM1K4.aEncSetPos?")
-  field(FTVL, "DOUBLE")
-  field(NELM, "1000")
-}
-
-record(ai, "MR1K4:KFE:ENC:X:MEAN_RBV") {
-  field(DESC, "ads:Main.fbXRMSErrorM1K4.fEncMean")
-  field(SCAN, "I/O Intr")
-  field(PINI, "1")
-  field(TSE, "-2")
-  field(DTYP, "asynFloat64")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbXRMSErrorM1K4.fEncMean?")
-  field(PREC, "3")
-  info(autosaveFields_pass0, "PREC")
-}
-
-record(ai, "MR1K4:KFE:ENC:X:STDEV_RBV") {
-  field(DESC, "ads:Main.fbXRMSErrorM1K4.fEncStDev")
-  field(SCAN, "I/O Intr")
-  field(PINI, "1")
-  field(TSE, "-2")
-  field(DTYP, "asynFloat64")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbXRMSErrorM1K4.fEncStDev?")
-  field(PREC, "3")
-  info(autosaveFields_pass0, "PREC")
-}
-
-record(ai, "MR1K4:KFE:ENC:X:RMS_RBV") {
-  field(DESC, "ads:Main.fbXRMSErrorM1K4.fCurrRMSError")
-  field(SCAN, "I/O Intr")
-  field(PINI, "1")
-  field(TSE, "-2")
-  field(DTYP, "asynFloat64")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbXRMSErrorM1K4.fCurrRMSError?")
-  field(PREC, "3")
-  info(autosaveFields_pass0, "PREC")
-}
-
-record(waveform, "MR1K4:KFE:ENC:X:ACTPOSARRAY_RBV") {
-  field(DESC, "ads:Main.fbXRMSErrorM1K4.aEncActPos")
-  field(SCAN, "I/O Intr")
-  field(PINI, "1")
-  field(TSE, "-2")
-  field(DTYP, "asynFloat64ArrayIn")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbXRMSErrorM1K4.aEncActPos?")
-  field(FTVL, "DOUBLE")
-  field(NELM, "1000")
-}
-
-record(waveform, "MR1K4:KFE:ENC:X:SETPOSARRAY_RBV") {
-  field(DESC, "ads:Main.fbXRMSErrorM1K4.aEncSetPos")
-  field(SCAN, "I/O Intr")
-  field(PINI, "1")
-  field(TSE, "-2")
-  field(DTYP, "asynFloat64ArrayIn")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbXRMSErrorM1K4.aEncSetPos?")
-  field(FTVL, "DOUBLE")
-  field(NELM, "1000")
-}
-
-record(ai, "MR1K4:ENC:PITCH:MEAN_RBV") {
-  field(DESC, "ads:Main.fbPitchRMSErrorM1K4.fEncMean")
-  field(SCAN, "I/O Intr")
-  field(PINI, "1")
-  field(TSE, "-2")
-  field(DTYP, "asynFloat64")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbPitchRMSErrorM1K4.fEncMean?")
-  field(PREC, "3")
-  info(autosaveFields_pass0, "PREC")
-}
-
-record(ai, "MR1K4:ENC:PITCH:STDEV_RBV") {
-  field(DESC, "ads:Main.fbPitchRMSErrorM1K4.fEncStDev")
-  field(SCAN, "I/O Intr")
-  field(PINI, "1")
-  field(TSE, "-2")
-  field(DTYP, "asynFloat64")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbPitchRMSErrorM1K4.fEncStDev?")
-  field(PREC, "3")
-  info(autosaveFields_pass0, "PREC")
-}
-
-record(ai, "MR1K4:ENC:PITCH:RMS_RBV") {
-  field(DESC, "ads:Main.fbPitchRMSE...1K4.fCurrRMSError")
-  field(SCAN, "I/O Intr")
-  field(PINI, "1")
-  field(TSE, "-2")
-  field(DTYP, "asynFloat64")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbPitchRMSErrorM1K4.fCurrRMSError?")
-  field(PREC, "3")
-  info(autosaveFields_pass0, "PREC")
-}
-
-record(waveform, "MR1K4:ENC:PITCH:ACTPOSARRAY_RBV") {
-  field(DESC, "ads:Main.fbPitchRMSErrorM1K4.aEncActPos")
-  field(SCAN, "I/O Intr")
-  field(PINI, "1")
-  field(TSE, "-2")
-  field(DTYP, "asynFloat64ArrayIn")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbPitchRMSErrorM1K4.aEncActPos?")
-  field(FTVL, "DOUBLE")
-  field(NELM, "1000")
-}
-
-record(waveform, "MR1K4:ENC:PITCH:SETPOSARRAY_RBV") {
-  field(DESC, "ads:Main.fbPitchRMSErrorM1K4.aEncSetPos")
-  field(SCAN, "I/O Intr")
-  field(PINI, "1")
-  field(TSE, "-2")
-  field(DTYP, "asynFloat64ArrayIn")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbPitchRMSErrorM1K4.aEncSetPos?")
-  field(FTVL, "DOUBLE")
-  field(NELM, "1000")
-}
-
-record(ai, "MR1K4:ENC:BENDER:MEAN_RBV") {
-  field(DESC, "ads:Main.fbBenderRMSErrorM1K4.fEncMean")
-  field(SCAN, "I/O Intr")
-  field(PINI, "1")
-  field(TSE, "-2")
-  field(DTYP, "asynFloat64")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbBenderRMSErrorM1K4.fEncMean?")
-  field(PREC, "3")
-  info(autosaveFields_pass0, "PREC")
-}
-
-record(ai, "MR1K4:ENC:BENDER:STDEV_RBV") {
-  field(DESC, "ads:Main.fbBenderRMSErrorM1K4.fEncStDev")
-  field(SCAN, "I/O Intr")
-  field(PINI, "1")
-  field(TSE, "-2")
-  field(DTYP, "asynFloat64")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbBenderRMSErrorM1K4.fEncStDev?")
-  field(PREC, "3")
-  info(autosaveFields_pass0, "PREC")
-}
-
-record(ai, "MR1K4:ENC:BENDER:RMS_RBV") {
-  field(DESC, "ads:Main.fbBenderRMS...1K4.fCurrRMSError")
-  field(SCAN, "I/O Intr")
-  field(PINI, "1")
-  field(TSE, "-2")
-  field(DTYP, "asynFloat64")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbBenderRMSErrorM1K4.fCurrRMSError?")
-  field(PREC, "3")
-  info(autosaveFields_pass0, "PREC")
-}
-
-record(waveform, "MR1K4:ENC:BENDER:ACTPOSARRAY_RBV") {
-  field(DESC, "ads:Main.fbBenderRMSErrorM1K4.aEncActPos")
-  field(SCAN, "I/O Intr")
-  field(PINI, "1")
-  field(TSE, "-2")
-  field(DTYP, "asynFloat64ArrayIn")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbBenderRMSErrorM1K4.aEncActPos?")
-  field(FTVL, "DOUBLE")
-  field(NELM, "1000")
-}
-
-record(waveform, "MR1K4:ENC:BENDER:SETPOSARRAY_RBV") {
-  field(DESC, "ads:Main.fbBenderRMSErrorM1K4.aEncSetPos")
-  field(SCAN, "I/O Intr")
-  field(PINI, "1")
-  field(TSE, "-2")
-  field(DTYP, "asynFloat64ArrayIn")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbBenderRMSErrorM1K4.aEncSetPos?")
-  field(FTVL, "DOUBLE")
-  field(NELM, "1000")
 }
