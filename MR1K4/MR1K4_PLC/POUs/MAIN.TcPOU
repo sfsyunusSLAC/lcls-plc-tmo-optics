@@ -96,17 +96,18 @@ VAR
 	fbM1K4PitchControl : FB_PitchControl;
 	bM1K4PitchDone : BOOL;
 	bM1K4PitchBusy : BOOL;
+
+	// Bender Control
+	fbBenderM1K4 : FB_Bender;
 END_VAR
 ]]></Declaration>
     <Implementation>
       <ST><![CDATA[// M1K4
-M1K4.fbRunHOMS(bBenderIncluded:=True,
-               stYup:=M1,
+M1K4.fbRunHOMS(stYup:=M1,
                stYdwn:=M2,
                stXup:=M3,
                stXdwn:=M4,
                stPitch:=M5,
-               stBender:=M6,
 	           nYupEncRef:=GVL_M1K4_Constants.nYUP_ENC_REF,
                nYdwnEncRef:=GVL_M1K4_Constants.nYDWN_ENC_REF,
                nXupEncRef:=GVL_M1K4_Constants.nXUP_ENC_REF,
@@ -119,6 +120,9 @@ M1K4.fbRunHOMS(bBenderIncluded:=True,
                bGantryAlreadyCoupledX=>M1K4.bGantryAlreadyCoupledX,
                nCurrGantryY=>M1K4.nCurrGantryY,
                nCurrGantryX=>M1K4.nCurrGantryX);
+fbBenderM1K4(stBender:=M6,
+	         bSTOEnable1:=M1K4.fbRunHOMS.bSTOEnable1,
+			 bSTOEnable2:=M1K4.fbRunHOMS.bSTOEnable2);
 
 // Convert nCurrGantry to um (smaller number) to read out in epics
 M1K4.fCurrGantryY_um := LINT_TO_REAL(M1K4.nCurrGantryY) / 1000.0;
