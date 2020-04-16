@@ -1,12 +1,12 @@
-#!/reg/g/pcds/epics/ioc/common/ads-ioc/R0.2.1/bin/rhel7-x86_64/adsIoc
+#!/reg/g/pcds/epics/ioc/common/ads-ioc/R0.2.2/bin/rhel7-x86_64/adsIoc
 
 < envPaths
 
 epicsEnvSet("ADS_IOC_TOP", "$(TOP)" )
 
-epicsEnvSet("IOCNAME", "ioc-MR1K4-PLC" )
+epicsEnvSet("IOCNAME", "ioc-tmo-optics" )
 epicsEnvSet("ENGINEER", "sheppard" )
-epicsEnvSet("LOCATION", "PREFIX" )
+epicsEnvSet("LOCATION", "PLC:TMO:OPTICS" )
 epicsEnvSet("IOCSH_PS1", "$(IOCNAME)> " )
 
 # Run common startup commands for linux soft IOC's
@@ -55,7 +55,7 @@ cd "$(ADS_IOC_TOP)/db"
 
 
 epicsEnvSet("MOTOR_PORT",     "PLC_ADS")
-epicsEnvSet("PREFIX",         "PREFIX:")
+epicsEnvSet("PREFIX",         "PLC:TMO:OPTICS:")
 epicsEnvSet("NUMAXES",        "6")
 epicsEnvSet("MOVE_POLL_RATE", "200")
 epicsEnvSet("IDLE_POLL_RATE", "1000")
@@ -88,7 +88,7 @@ asynSetTraceInfoMask("$(ASYN_PORT)", -1, 5)
 #define AMPLIFIER_ON_FLAG_USING_CNEN   4
 
 epicsEnvSet("AXIS_NO",         "1")
-epicsEnvSet("MOTOR_PREFIX",    "MR1K4:MMS:")
+epicsEnvSet("MOTOR_PREFIX",    "MR1K4:SOMS:MMS:")
 epicsEnvSet("MOTOR_NAME",      "YUP")
 epicsEnvSet("DESC",            "Main.M1 / M1K4-Yup")
 epicsEnvSet("EGU",             "um")
@@ -103,7 +103,7 @@ dbLoadRecords("EthercatMCreadback.template", "PREFIX=$(MOTOR_PREFIX), MOTOR_NAME
 dbLoadRecords("EthercatMCdebug.template", "PREFIX=$(MOTOR_PREFIX), MOTOR_NAME=$(MOTOR_NAME), MOTOR_PORT=$(MOTOR_PORT), AXIS_NO=$(AXIS_NO), PREC=3")
 
 epicsEnvSet("AXIS_NO",         "2")
-epicsEnvSet("MOTOR_PREFIX",    "MR1K4:MMS:")
+epicsEnvSet("MOTOR_PREFIX",    "MR1K4:SOMS:MMS:")
 epicsEnvSet("MOTOR_NAME",      "YDWN")
 epicsEnvSet("DESC",            "Main.M2 / M1K4-Ydwn")
 epicsEnvSet("EGU",             "um")
@@ -118,7 +118,7 @@ dbLoadRecords("EthercatMCreadback.template", "PREFIX=$(MOTOR_PREFIX), MOTOR_NAME
 dbLoadRecords("EthercatMCdebug.template", "PREFIX=$(MOTOR_PREFIX), MOTOR_NAME=$(MOTOR_NAME), MOTOR_PORT=$(MOTOR_PORT), AXIS_NO=$(AXIS_NO), PREC=3")
 
 epicsEnvSet("AXIS_NO",         "3")
-epicsEnvSet("MOTOR_PREFIX",    "MR1K4:MMS:")
+epicsEnvSet("MOTOR_PREFIX",    "MR1K4:SOMS:MMS:")
 epicsEnvSet("MOTOR_NAME",      "XUP")
 epicsEnvSet("DESC",            "Main.M3 / M1K4-Xup")
 epicsEnvSet("EGU",             "um")
@@ -133,7 +133,7 @@ dbLoadRecords("EthercatMCreadback.template", "PREFIX=$(MOTOR_PREFIX), MOTOR_NAME
 dbLoadRecords("EthercatMCdebug.template", "PREFIX=$(MOTOR_PREFIX), MOTOR_NAME=$(MOTOR_NAME), MOTOR_PORT=$(MOTOR_PORT), AXIS_NO=$(AXIS_NO), PREC=3")
 
 epicsEnvSet("AXIS_NO",         "4")
-epicsEnvSet("MOTOR_PREFIX",    "MR1K4:MMS:")
+epicsEnvSet("MOTOR_PREFIX",    "MR1K4:SOMS:MMS:")
 epicsEnvSet("MOTOR_NAME",      "XDWN")
 epicsEnvSet("DESC",            "Main.M4 / M1K4-Xdwn")
 epicsEnvSet("EGU",             "um")
@@ -148,7 +148,7 @@ dbLoadRecords("EthercatMCreadback.template", "PREFIX=$(MOTOR_PREFIX), MOTOR_NAME
 dbLoadRecords("EthercatMCdebug.template", "PREFIX=$(MOTOR_PREFIX), MOTOR_NAME=$(MOTOR_NAME), MOTOR_PORT=$(MOTOR_PORT), AXIS_NO=$(AXIS_NO), PREC=3")
 
 epicsEnvSet("AXIS_NO",         "5")
-epicsEnvSet("MOTOR_PREFIX",    "MR1K4:MMS:")
+epicsEnvSet("MOTOR_PREFIX",    "MR1K4:SOMS:MMS:")
 epicsEnvSet("MOTOR_NAME",      "PITCH")
 epicsEnvSet("DESC",            "Main.M5 / M1K4-Pitch")
 epicsEnvSet("EGU",             "urad")
@@ -163,7 +163,7 @@ dbLoadRecords("EthercatMCreadback.template", "PREFIX=$(MOTOR_PREFIX), MOTOR_NAME
 dbLoadRecords("EthercatMCdebug.template", "PREFIX=$(MOTOR_PREFIX), MOTOR_NAME=$(MOTOR_NAME), MOTOR_PORT=$(MOTOR_PORT), AXIS_NO=$(AXIS_NO), PREC=3")
 
 epicsEnvSet("AXIS_NO",         "6")
-epicsEnvSet("MOTOR_PREFIX",    "MR1K4:MMS:")
+epicsEnvSet("MOTOR_PREFIX",    "MR1K4:SOMS:MMS:")
 epicsEnvSet("MOTOR_NAME",      "BENDER")
 epicsEnvSet("DESC",            "Main.M6 / M1K4-Bender")
 epicsEnvSet("EGU",             "um")
@@ -178,8 +178,8 @@ dbLoadRecords("EthercatMCreadback.template", "PREFIX=$(MOTOR_PREFIX), MOTOR_NAME
 dbLoadRecords("EthercatMCdebug.template", "PREFIX=$(MOTOR_PREFIX), MOTOR_NAME=$(MOTOR_NAME), MOTOR_PORT=$(MOTOR_PORT), AXIS_NO=$(AXIS_NO), PREC=3")
 
 
-dbLoadRecords("iocSoft.db", "IOC=PREFIX")
-dbLoadRecords("save_restoreStatus.db", "P=PREFIX:")
+dbLoadRecords("iocSoft.db", "IOC=PLC:TMO:OPTICS")
+dbLoadRecords("save_restoreStatus.db", "P=PLC:TMO:OPTICS:")
 
 cd "$(IOC_TOP)"
 
@@ -191,7 +191,7 @@ cd "$(IOC_TOP)"
 set_savefile_path( "$(IOC_DATA)/$(IOC)/autosave" )
 set_requestfile_path( "$(IOC_TOP)/autosave" )
 
-save_restoreSet_status_prefix( "PREFIX:" )
+save_restoreSet_status_prefix( "PLC:TMO:OPTICS:" )
 save_restoreSet_IncompleteSetsOk( 1 )
 save_restoreSet_DatedBackupFiles( 1 )
 set_pass0_restoreFile( "info_positions.sav" )
