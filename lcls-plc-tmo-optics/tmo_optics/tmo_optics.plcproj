@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{7fa5ad82-8b94-448c-8921-86a608467e2a}</ProjectGuid>
     <SubObjectsSortedByName>True</SubObjectsSortedByName>
-    <Name>MR1K4_PLC</Name>
+    <Name>tmo_optics</Name>
     <ProgramVersion>3.1.4022.7</ProgramVersion>
     <Application>{d7c1d1fd-2e7a-44cc-8fb4-ad582c20623f}</Application>
     <TypeSystem>{9a341094-b65a-444e-aee8-243caa05e790}</TypeSystem>
@@ -80,7 +80,7 @@
     </PlaceholderReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="MR1K4_PLC.tmc">
+    <None Include="tmo_optics.tmc">
       <SubType>Content</SubType>
     </None>
   </ItemGroup>
