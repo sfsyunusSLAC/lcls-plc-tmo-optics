@@ -1,0 +1,2486 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ScopeProject AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+  <Version>1.0.0.0</Version>
+  <SubMember>
+    <YTChart AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+      <DisplayOverwriteMode>false</DisplayOverwriteMode>
+      <AutoStart>true</AutoStart>
+      <AssignedCore>0</AssignedCore>
+      <MasterChart>00000000-0000-0000-0000-000000000000</MasterChart>
+      <DefaultDisplayWidth>100000000</DefaultDisplayWidth>
+      <SubMember>
+        <OverviewChart AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+          <OverviewVisible>false</OverviewVisible>
+          <Guid>b79f11c1-8362-450e-87c9-55366939f5ea</Guid>
+          <Title>OverviewChart_81</Title>
+          <Name>Overview Chart</Name>
+          <Comment />
+          <DisplayColor>-1118482</DisplayColor>
+          <SortPriority>100</SortPriority>
+          <IsFileBased>false</IsFileBased>
+          <Suffix>.svochart</Suffix>
+        </OverviewChart>
+        <ChartStyle AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+          <StackedAxes>true</StackedAxes>
+          <ShowName>false</ShowName>
+          <ToolTipEnabled>true</ToolTipEnabled>
+          <GradientBackground>1</GradientBackground>
+          <SubMember>
+            <ChartZoomStyle AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+              <ScaleOnZoom>true</ScaleOnZoom>
+              <YZoom>true</YZoom>
+              <Guid>b2decb4d-8dc6-4e65-ab8f-bd8457651fb9</Guid>
+              <Title>ChartZoomStyle_83</Title>
+              <Name>Chartzoom Style</Name>
+              <Comment />
+              <DisplayColor>Black</DisplayColor>
+              <SortPriority>100</SortPriority>
+              <IsFileBased>false</IsFileBased>
+              <Suffix>.svstyle</Suffix>
+            </ChartZoomStyle>
+            <ChartMenuStyle AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+              <VisibleToolStrip>true</VisibleToolStrip>
+              <ButtonSize>
+                <Width>16</Width>
+                <Height>16</Height>
+              </ButtonSize>
+              <ToolStripFontSize>8.25</ToolStripFontSize>
+              <EnabledButtons>AllYTMaster</EnabledButtons>
+              <VisibleTimeStrip>true</VisibleTimeStrip>
+              <UseLongTimeFormat>true</UseLongTimeFormat>
+              <EnabledTimeLabels>All</EnabledTimeLabels>
+              <TimeStripFontSize>8.25</TimeStripFontSize>
+              <Guid>1571ba5c-ae64-4e09-aa98-8a20acdd05af</Guid>
+              <Title>ChartMenuStyle_84</Title>
+              <Name>Chartmenu Style</Name>
+              <Comment />
+              <DisplayColor>Black</DisplayColor>
+              <SortPriority>100</SortPriority>
+              <IsFileBased>false</IsFileBased>
+              <Suffix>.svstyle</Suffix>
+            </ChartMenuStyle>
+          </SubMember>
+          <Guid>caa7b7f5-d009-46ec-b5f8-2e3380b74da5</Guid>
+          <Title>ChartStyle_82</Title>
+          <Name>Chart Style</Name>
+          <Comment />
+          <DisplayColor>Black</DisplayColor>
+          <SortPriority>100</SortPriority>
+          <IsFileBased>false</IsFileBased>
+          <Suffix>.svstyle</Suffix>
+        </ChartStyle>
+        <AxisGroup AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+          <Enabled>false</Enabled>
+          <SubMember>
+            <TimeAxis AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+              <Orientation>X</Orientation>
+              <ManualMin>-0.5</ManualMin>
+              <ManualMax>100000000</ManualMax>
+              <ScalingMode>MinMax</ScalingMode>
+              <Inverted>false</Inverted>
+              <Logarithmic>false</Logarithmic>
+              <SubMember>
+                <AxisStyle AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+                  <Grid>true</Grid>
+                  <SubGrid>false</SubGrid>
+                  <GridDivisions>10</GridDivisions>
+                  <SubGridDivisions>5</SubGridDivisions>
+                  <GridLineWidth>1</GridLineWidth>
+                  <GridColor>DarkSlateGray</GridColor>
+                  <Precision>6</Precision>
+                  <ShowName>false</ShowName>
+                  <LineWidth>1</LineWidth>
+                  <Visible>true</Visible>
+                  <Guid>dfcfbb88-3302-4320-a691-7c2521db50a5</Guid>
+                  <Title>AxisStyle_101</Title>
+                  <Name>Axis Style</Name>
+                  <Comment />
+                  <DisplayColor>DarkSlateGray</DisplayColor>
+                  <SortPriority>100</SortPriority>
+                  <IsFileBased>false</IsFileBased>
+                  <Suffix>.svstyle</Suffix>
+                </AxisStyle>
+              </SubMember>
+              <Guid>35bd72d7-a672-4fc4-8a77-9fd465931190</Guid>
+              <Title>Time Axis</Title>
+              <Name>Time Axis</Name>
+              <Comment />
+              <DisplayColor>Black</DisplayColor>
+              <SortPriority>100</SortPriority>
+              <IsFileBased>false</IsFileBased>
+              <Suffix>.svaxis</Suffix>
+            </TimeAxis>
+            <ValueAxis AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+              <Orientation>Y</Orientation>
+              <ManualMin>-0.5</ManualMin>
+              <ManualMax>0.5</ManualMax>
+              <ScalingMode>AutoGrowOnly</ScalingMode>
+              <Inverted>false</Inverted>
+              <Logarithmic>false</Logarithmic>
+              <SubMember>
+                <AxisStyle AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+                  <Grid>true</Grid>
+                  <SubGrid>false</SubGrid>
+                  <GridDivisions>10</GridDivisions>
+                  <SubGridDivisions>5</SubGridDivisions>
+                  <GridLineWidth>1</GridLineWidth>
+                  <GridColor>DarkSlateGray</GridColor>
+                  <Precision>6</Precision>
+                  <ShowName>false</ShowName>
+                  <LineWidth>1</LineWidth>
+                  <Visible>true</Visible>
+                  <Guid>d44c4b2c-0e9b-4241-95a1-f58173b18aaf</Guid>
+                  <Title>AxisStyle_101</Title>
+                  <Name>Axis Style (1)</Name>
+                  <Comment />
+                  <DisplayColor>DarkSlateGray</DisplayColor>
+                  <SortPriority>100</SortPriority>
+                  <IsFileBased>false</IsFileBased>
+                  <Suffix>.svstyle</Suffix>
+                </AxisStyle>
+              </SubMember>
+              <Guid>f90623fa-31ec-4ac8-9188-3697ee87083d</Guid>
+              <Title>Value Axis</Title>
+              <Name>Value Axis</Name>
+              <Comment />
+              <DisplayColor>Black</DisplayColor>
+              <SortPriority>100</SortPriority>
+              <IsFileBased>false</IsFileBased>
+              <Suffix>.svaxis</Suffix>
+            </ValueAxis>
+            <MarkerContainer AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+              <SubMember />
+              <Guid>4b8d8fa0-b491-49e8-bee8-6f2d26d88c34</Guid>
+              <Title>MarkerContainer_105</Title>
+              <Name>Marker Container</Name>
+              <Comment />
+              <DisplayColor>Black</DisplayColor>
+              <SortPriority>100</SortPriority>
+              <IsFileBased>false</IsFileBased>
+              <Suffix>.svmc</Suffix>
+            </MarkerContainer>
+            <Channel AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+              <Enabled>true</Enabled>
+              <SubMember>
+                <AcquisitionInterpreter AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+                  <Offset>0</Offset>
+                  <BitMask>18446744073709551615</BitMask>
+                  <ScaleFactor>1</ScaleFactor>
+                  <ResultingUnit>
+                    <Unit>
+                      <BaseUnitValue>0</BaseUnitValue>
+                      <Prefix>none</Prefix>
+                      <ScaleFactor>1</ScaleFactor>
+                      <Offset>0</Offset>
+                      <Symbol></Symbol>
+                      <ReturnText> (None) </ReturnText>
+                      <BaseUnitString />
+                      <NameExtension />
+                    </Unit>
+                    <Transformation>
+                      <BaseUnitValue>0</BaseUnitValue>
+                      <TargetUnitValue>0</TargetUnitValue>
+                      <ScaleFactor>1</ScaleFactor>
+                      <Name>None</Name>
+                      <SourceUnitString />
+                      <TargetUnitString />
+                      <SourceUnitPrefix>none</SourceUnitPrefix>
+                      <Symbol>1</Symbol>
+                    </Transformation>
+                    <UserUnit>
+                      <BaseUnitValue>0</BaseUnitValue>
+                      <Prefix>none</Prefix>
+                      <ScaleFactor>1</ScaleFactor>
+                      <Offset>0</Offset>
+                      <Name>None</Name>
+                      <BaseName>UnitOfOne</BaseName>
+                      <NameExtension />
+                      <Symbol></Symbol>
+                      <BaseUnitString />
+                      <UserPrefix>none</UserPrefix>
+                    </UserUnit>
+                    <UnitScaleResult>1</UnitScaleResult>
+                    <UnitOffsetResult>0</UnitOffsetResult>
+                  </ResultingUnit>
+                  <Usage>Y</Usage>
+                  <AcquisitionGUID>38985c30-fe86-433d-b476-ea7c4da7a9e1</AcquisitionGUID>
+                  <SubMember />
+                  <Guid>eb4fb412-f026-472b-b95d-fd9c103b71e7</Guid>
+                  <Title>AcquisitionInterpreter_111</Title>
+                  <Name>Y: M1K4YupActPos</Name>
+                  <Comment />
+                  <DisplayColor>Black</DisplayColor>
+                  <SortPriority>2</SortPriority>
+                  <IsFileBased>false</IsFileBased>
+                  <Suffix>.svai</Suffix>
+                </AcquisitionInterpreter>
+                <ChannelStyle AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+                  <Visible>true</Visible>
+                  <SubMember>
+                    <SeriesStyle AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+                      <MarkState>Auto</MarkState>
+                      <MarkSize>2</MarkSize>
+                      <MarkColor>-16744448</MarkColor>
+                      <FillMode>None</FillMode>
+                      <FillColor>838893568</FillColor>
+                      <SeriesType>Line</SeriesType>
+                      <LineWidth>1</LineWidth>
+                      <Antialias>true</Antialias>
+                      <Guid>f29ef0bc-7796-4a62-8a50-3b027374d1c8</Guid>
+                      <Title>SeriesStyle_115</Title>
+                      <Name>Series Style</Name>
+                      <Comment />
+                      <DisplayColor>Plum</DisplayColor>
+                      <SortPriority>100</SortPriority>
+                      <IsFileBased>false</IsFileBased>
+                      <Suffix>.svstyle</Suffix>
+                    </SeriesStyle>
+                    <MinMaxStyle AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+                      <ShowMin>false</ShowMin>
+                      <ShowMax>false</ShowMax>
+                      <Guid>03e9e65d-3336-49c7-9c13-0f9407ca2c6c</Guid>
+                      <Title>MinMaxStyle_116</Title>
+                      <Name>Min/Max Style</Name>
+                      <Comment />
+                      <DisplayColor>Black</DisplayColor>
+                      <SortPriority>100</SortPriority>
+                      <IsFileBased>false</IsFileBased>
+                      <Suffix>.svstyle</Suffix>
+                    </MinMaxStyle>
+                    <TimeShiftStyle AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+                      <TimeShift>0</TimeShift>
+                      <Guid>5e4053f3-4aea-4886-bc26-d8ce0bf7e025</Guid>
+                      <Title>TimeShiftStyle_117</Title>
+                      <Name>TimeShiftStyle_117</Name>
+                      <Comment />
+                      <DisplayColor>Black</DisplayColor>
+                      <SortPriority>100</SortPriority>
+                      <IsFileBased>false</IsFileBased>
+                      <Suffix>.svtss</Suffix>
+                    </TimeShiftStyle>
+                  </SubMember>
+                  <Guid>9fa03d58-27ab-4b39-911b-6e14fdebee96</Guid>
+                  <Title>ChannelStyle_113</Title>
+                  <Name>Channel Style</Name>
+                  <Comment />
+                  <DisplayColor>Black</DisplayColor>
+                  <SortPriority>100</SortPriority>
+                  <IsFileBased>false</IsFileBased>
+                  <Suffix>.svstyle</Suffix>
+                </ChannelStyle>
+              </SubMember>
+              <Guid>b83ca150-b9e2-4eda-9b8d-89a63844bafe</Guid>
+              <Title>Channel_109</Title>
+              <Name>M1K4YupActPos</Name>
+              <Comment />
+              <DisplayColor>-16744448</DisplayColor>
+              <SortPriority>10</SortPriority>
+              <IsFileBased>false</IsFileBased>
+              <Suffix>.svchannel</Suffix>
+            </Channel>
+            <Channel AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+              <Enabled>true</Enabled>
+              <SubMember>
+                <AcquisitionInterpreter AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+                  <Offset>0</Offset>
+                  <BitMask>18446744073709551615</BitMask>
+                  <ScaleFactor>1</ScaleFactor>
+                  <ResultingUnit>
+                    <Unit>
+                      <BaseUnitValue>0</BaseUnitValue>
+                      <Prefix>none</Prefix>
+                      <ScaleFactor>1</ScaleFactor>
+                      <Offset>0</Offset>
+                      <Symbol></Symbol>
+                      <ReturnText> (None) </ReturnText>
+                      <BaseUnitString />
+                      <NameExtension />
+                    </Unit>
+                    <Transformation>
+                      <BaseUnitValue>0</BaseUnitValue>
+                      <TargetUnitValue>0</TargetUnitValue>
+                      <ScaleFactor>1</ScaleFactor>
+                      <Name>None</Name>
+                      <SourceUnitString />
+                      <TargetUnitString />
+                      <SourceUnitPrefix>none</SourceUnitPrefix>
+                      <Symbol>1</Symbol>
+                    </Transformation>
+                    <UserUnit>
+                      <BaseUnitValue>0</BaseUnitValue>
+                      <Prefix>none</Prefix>
+                      <ScaleFactor>1</ScaleFactor>
+                      <Offset>0</Offset>
+                      <Name>None</Name>
+                      <BaseName>UnitOfOne</BaseName>
+                      <NameExtension />
+                      <Symbol></Symbol>
+                      <BaseUnitString />
+                      <UserPrefix>none</UserPrefix>
+                    </UserUnit>
+                    <UnitScaleResult>1</UnitScaleResult>
+                    <UnitOffsetResult>0</UnitOffsetResult>
+                  </ResultingUnit>
+                  <Usage>Y</Usage>
+                  <AcquisitionGUID>4381e43e-49cb-47d0-bcd9-edd38d328014</AcquisitionGUID>
+                  <SubMember />
+                  <Guid>801e57e1-180a-4ffc-b311-5dc81e22bf73</Guid>
+                  <Title>AcquisitionInterpreter_111</Title>
+                  <Name>Y: M1K4YupSetPos</Name>
+                  <Comment />
+                  <DisplayColor>Black</DisplayColor>
+                  <SortPriority>2</SortPriority>
+                  <IsFileBased>false</IsFileBased>
+                  <Suffix>.svai</Suffix>
+                </AcquisitionInterpreter>
+                <ChannelStyle AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+                  <Visible>true</Visible>
+                  <SubMember>
+                    <SeriesStyle AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+                      <MarkState>Auto</MarkState>
+                      <MarkSize>2</MarkSize>
+                      <MarkColor>-16776961</MarkColor>
+                      <FillMode>None</FillMode>
+                      <FillColor>838861055</FillColor>
+                      <SeriesType>Line</SeriesType>
+                      <LineWidth>1</LineWidth>
+                      <Antialias>true</Antialias>
+                      <Guid>3bf3b6b6-754b-4c54-921b-eba01bf54985</Guid>
+                      <Title>SeriesStyle_115</Title>
+                      <Name>Series Style (1)</Name>
+                      <Comment />
+                      <DisplayColor>Plum</DisplayColor>
+                      <SortPriority>100</SortPriority>
+                      <IsFileBased>false</IsFileBased>
+                      <Suffix>.svstyle</Suffix>
+                    </SeriesStyle>
+                    <MinMaxStyle AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+                      <ShowMin>false</ShowMin>
+                      <ShowMax>false</ShowMax>
+                      <Guid>09f55c1d-21eb-4913-b124-6850073064ed</Guid>
+                      <Title>MinMaxStyle_123</Title>
+                      <Name>Min/Max Style (1)</Name>
+                      <Comment />
+                      <DisplayColor>Black</DisplayColor>
+                      <SortPriority>100</SortPriority>
+                      <IsFileBased>false</IsFileBased>
+                      <Suffix>.svstyle</Suffix>
+                    </MinMaxStyle>
+                    <TimeShiftStyle AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+                      <TimeShift>0</TimeShift>
+                      <Guid>e7145a95-28b2-4feb-b155-205ef599c632</Guid>
+                      <Title>TimeShiftStyle_124</Title>
+                      <Name>TimeShiftStyle_124</Name>
+                      <Comment />
+                      <DisplayColor>Black</DisplayColor>
+                      <SortPriority>100</SortPriority>
+                      <IsFileBased>false</IsFileBased>
+                      <Suffix>.svtss</Suffix>
+                    </TimeShiftStyle>
+                  </SubMember>
+                  <Guid>bf82801b-b4c5-45b4-987d-011516581528</Guid>
+                  <Title>ChannelStyle_113</Title>
+                  <Name>Channel Style (1)</Name>
+                  <Comment />
+                  <DisplayColor>Black</DisplayColor>
+                  <SortPriority>100</SortPriority>
+                  <IsFileBased>false</IsFileBased>
+                  <Suffix>.svstyle</Suffix>
+                </ChannelStyle>
+              </SubMember>
+              <Guid>9c52f61a-2f3e-4454-95c9-69403cd150e5</Guid>
+              <Title>Channel_109</Title>
+              <Name>M1K4YupSetPos</Name>
+              <Comment />
+              <DisplayColor>-16776961</DisplayColor>
+              <SortPriority>11</SortPriority>
+              <IsFileBased>false</IsFileBased>
+              <Suffix>.svchannel</Suffix>
+            </Channel>
+          </SubMember>
+          <Guid>9da72320-b970-4e3f-8d6d-b6a24b240e77</Guid>
+          <Title>AxisGroup_97</Title>
+          <Name>M1K4 Yup Position</Name>
+          <Comment />
+          <DisplayColor>-1118482</DisplayColor>
+          <SortPriority>10</SortPriority>
+          <IsFileBased>false</IsFileBased>
+          <Suffix>.svagroup</Suffix>
+        </AxisGroup>
+        <AxisGroup AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+          <Enabled>false</Enabled>
+          <SubMember>
+            <RefGuid-TimeAxis>35bd72d7-a672-4fc4-8a77-9fd465931190</RefGuid-TimeAxis>
+            <ValueAxis AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+              <Orientation>Y</Orientation>
+              <ManualMin>-0.5</ManualMin>
+              <ManualMax>0.5</ManualMax>
+              <ScalingMode>AutoGrowOnly</ScalingMode>
+              <Inverted>false</Inverted>
+              <Logarithmic>false</Logarithmic>
+              <SubMember>
+                <AxisStyle AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+                  <Grid>true</Grid>
+                  <SubGrid>false</SubGrid>
+                  <GridDivisions>10</GridDivisions>
+                  <SubGridDivisions>5</SubGridDivisions>
+                  <GridLineWidth>1</GridLineWidth>
+                  <GridColor>DarkSlateGray</GridColor>
+                  <Precision>6</Precision>
+                  <ShowName>false</ShowName>
+                  <LineWidth>1</LineWidth>
+                  <Visible>true</Visible>
+                  <Guid>e1c43c16-eeaf-41b0-a3ac-27e6163771b1</Guid>
+                  <Title>AxisStyle_101</Title>
+                  <Name>Axis Style (2)</Name>
+                  <Comment />
+                  <DisplayColor>DarkSlateGray</DisplayColor>
+                  <SortPriority>100</SortPriority>
+                  <IsFileBased>false</IsFileBased>
+                  <Suffix>.svstyle</Suffix>
+                </AxisStyle>
+              </SubMember>
+              <Guid>ea41e4b8-a3b9-4885-a458-e6f5eb73b4b6</Guid>
+              <Title>Value Axis</Title>
+              <Name>Value Axis (1)</Name>
+              <Comment />
+              <DisplayColor>Black</DisplayColor>
+              <SortPriority>100</SortPriority>
+              <IsFileBased>false</IsFileBased>
+              <Suffix>.svaxis</Suffix>
+            </ValueAxis>
+            <MarkerContainer AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+              <SubMember />
+              <Guid>dcc2ea18-585e-44d5-b069-f742010a611d</Guid>
+              <Title>MarkerContainer_128</Title>
+              <Name>Marker Container (1)</Name>
+              <Comment />
+              <DisplayColor>Black</DisplayColor>
+              <SortPriority>100</SortPriority>
+              <IsFileBased>false</IsFileBased>
+              <Suffix>.svmc</Suffix>
+            </MarkerContainer>
+            <Channel AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+              <Enabled>true</Enabled>
+              <SubMember>
+                <AcquisitionInterpreter AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+                  <Offset>0</Offset>
+                  <BitMask>18446744073709551615</BitMask>
+                  <ScaleFactor>1</ScaleFactor>
+                  <ResultingUnit>
+                    <Unit>
+                      <BaseUnitValue>0</BaseUnitValue>
+                      <Prefix>none</Prefix>
+                      <ScaleFactor>1</ScaleFactor>
+                      <Offset>0</Offset>
+                      <Symbol></Symbol>
+                      <ReturnText> (None) </ReturnText>
+                      <BaseUnitString />
+                      <NameExtension />
+                    </Unit>
+                    <Transformation>
+                      <BaseUnitValue>0</BaseUnitValue>
+                      <TargetUnitValue>0</TargetUnitValue>
+                      <ScaleFactor>1</ScaleFactor>
+                      <Name>None</Name>
+                      <SourceUnitString />
+                      <TargetUnitString />
+                      <SourceUnitPrefix>none</SourceUnitPrefix>
+                      <Symbol>1</Symbol>
+                    </Transformation>
+                    <UserUnit>
+                      <BaseUnitValue>0</BaseUnitValue>
+                      <Prefix>none</Prefix>
+                      <ScaleFactor>1</ScaleFactor>
+                      <Offset>0</Offset>
+                      <Name>None</Name>
+                      <BaseName>UnitOfOne</BaseName>
+                      <NameExtension />
+                      <Symbol></Symbol>
+                      <BaseUnitString />
+                      <UserPrefix>none</UserPrefix>
+                    </UserUnit>
+                    <UnitScaleResult>1</UnitScaleResult>
+                    <UnitOffsetResult>0</UnitOffsetResult>
+                  </ResultingUnit>
+                  <Usage>Y</Usage>
+                  <AcquisitionGUID>3cad69ef-2fa5-4eab-9899-971ac787185b</AcquisitionGUID>
+                  <SubMember />
+                  <Guid>04ce768e-2598-4796-aaca-39ca5f508c64</Guid>
+                  <Title>AcquisitionInterpreter_111</Title>
+                  <Name>Y: M1K4YdwnActPos</Name>
+                  <Comment />
+                  <DisplayColor>Black</DisplayColor>
+                  <SortPriority>2</SortPriority>
+                  <IsFileBased>false</IsFileBased>
+                  <Suffix>.svai</Suffix>
+                </AcquisitionInterpreter>
+                <ChannelStyle AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+                  <Visible>true</Visible>
+                  <SubMember>
+                    <SeriesStyle AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+                      <MarkState>Auto</MarkState>
+                      <MarkSize>2</MarkSize>
+                      <MarkColor>-23296</MarkColor>
+                      <FillMode>None</FillMode>
+                      <FillColor>855614720</FillColor>
+                      <SeriesType>Line</SeriesType>
+                      <LineWidth>1</LineWidth>
+                      <Antialias>true</Antialias>
+                      <Guid>14fcc9d6-30b3-4a81-b454-78d949a55b64</Guid>
+                      <Title>SeriesStyle_115</Title>
+                      <Name>Series Style (2)</Name>
+                      <Comment />
+                      <DisplayColor>Plum</DisplayColor>
+                      <SortPriority>100</SortPriority>
+                      <IsFileBased>false</IsFileBased>
+                      <Suffix>.svstyle</Suffix>
+                    </SeriesStyle>
+                    <MinMaxStyle AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+                      <ShowMin>false</ShowMin>
+                      <ShowMax>false</ShowMax>
+                      <Guid>0023868f-e763-4056-b01e-d32cd37db60e</Guid>
+                      <Title>MinMaxStyle_134</Title>
+                      <Name>Min/Max Style (2)</Name>
+                      <Comment />
+                      <DisplayColor>Black</DisplayColor>
+                      <SortPriority>100</SortPriority>
+                      <IsFileBased>false</IsFileBased>
+                      <Suffix>.svstyle</Suffix>
+                    </MinMaxStyle>
+                    <TimeShiftStyle AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+                      <TimeShift>0</TimeShift>
+                      <Guid>c82a2daa-2725-417c-ba1b-d51024ef3d5c</Guid>
+                      <Title>TimeShiftStyle_135</Title>
+                      <Name>TimeShiftStyle_135</Name>
+                      <Comment />
+                      <DisplayColor>Black</DisplayColor>
+                      <SortPriority>100</SortPriority>
+                      <IsFileBased>false</IsFileBased>
+                      <Suffix>.svtss</Suffix>
+                    </TimeShiftStyle>
+                  </SubMember>
+                  <Guid>6ffe16af-370a-4963-954c-7f42d8aafa5d</Guid>
+                  <Title>ChannelStyle_113</Title>
+                  <Name>Channel Style (2)</Name>
+                  <Comment />
+                  <DisplayColor>Black</DisplayColor>
+                  <SortPriority>100</SortPriority>
+                  <IsFileBased>false</IsFileBased>
+                  <Suffix>.svstyle</Suffix>
+                </ChannelStyle>
+              </SubMember>
+              <Guid>1a3aed97-c5bb-4610-bdd1-4ac975e68927</Guid>
+              <Title>Channel_109</Title>
+              <Name>M1K4YdwnActPos</Name>
+              <Comment />
+              <DisplayColor>-23296</DisplayColor>
+              <SortPriority>10</SortPriority>
+              <IsFileBased>false</IsFileBased>
+              <Suffix>.svchannel</Suffix>
+            </Channel>
+            <Channel AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+              <Enabled>true</Enabled>
+              <SubMember>
+                <AcquisitionInterpreter AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+                  <Offset>0</Offset>
+                  <BitMask>18446744073709551615</BitMask>
+                  <ScaleFactor>1</ScaleFactor>
+                  <ResultingUnit>
+                    <Unit>
+                      <BaseUnitValue>0</BaseUnitValue>
+                      <Prefix>none</Prefix>
+                      <ScaleFactor>1</ScaleFactor>
+                      <Offset>0</Offset>
+                      <Symbol></Symbol>
+                      <ReturnText> (None) </ReturnText>
+                      <BaseUnitString />
+                      <NameExtension />
+                    </Unit>
+                    <Transformation>
+                      <BaseUnitValue>0</BaseUnitValue>
+                      <TargetUnitValue>0</TargetUnitValue>
+                      <ScaleFactor>1</ScaleFactor>
+                      <Name>None</Name>
+                      <SourceUnitString />
+                      <TargetUnitString />
+                      <SourceUnitPrefix>none</SourceUnitPrefix>
+                      <Symbol>1</Symbol>
+                    </Transformation>
+                    <UserUnit>
+                      <BaseUnitValue>0</BaseUnitValue>
+                      <Prefix>none</Prefix>
+                      <ScaleFactor>1</ScaleFactor>
+                      <Offset>0</Offset>
+                      <Name>None</Name>
+                      <BaseName>UnitOfOne</BaseName>
+                      <NameExtension />
+                      <Symbol></Symbol>
+                      <BaseUnitString />
+                      <UserPrefix>none</UserPrefix>
+                    </UserUnit>
+                    <UnitScaleResult>1</UnitScaleResult>
+                    <UnitOffsetResult>0</UnitOffsetResult>
+                  </ResultingUnit>
+                  <Usage>Y</Usage>
+                  <AcquisitionGUID>2b155ab9-8e03-4a3f-8531-2cd1ebb5570e</AcquisitionGUID>
+                  <SubMember />
+                  <Guid>c4cad5ae-84b6-4bbc-8635-0c8ff3a5fa4f</Guid>
+                  <Title>AcquisitionInterpreter_111</Title>
+                  <Name>Y: M1K4YdwnSetPos</Name>
+                  <Comment />
+                  <DisplayColor>Black</DisplayColor>
+                  <SortPriority>2</SortPriority>
+                  <IsFileBased>false</IsFileBased>
+                  <Suffix>.svai</Suffix>
+                </AcquisitionInterpreter>
+                <ChannelStyle AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+                  <Visible>true</Visible>
+                  <SubMember>
+                    <SeriesStyle AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+                      <MarkState>Auto</MarkState>
+                      <MarkSize>2</MarkSize>
+                      <MarkColor>-16711936</MarkColor>
+                      <FillMode>None</FillMode>
+                      <FillColor>838926080</FillColor>
+                      <SeriesType>Line</SeriesType>
+                      <LineWidth>1</LineWidth>
+                      <Antialias>true</Antialias>
+                      <Guid>e13c98db-0581-4e03-a5ce-ec48e0de9628</Guid>
+                      <Title>SeriesStyle_115</Title>
+                      <Name>Series Style (3)</Name>
+                      <Comment />
+                      <DisplayColor>Plum</DisplayColor>
+                      <SortPriority>100</SortPriority>
+                      <IsFileBased>false</IsFileBased>
+                      <Suffix>.svstyle</Suffix>
+                    </SeriesStyle>
+                    <MinMaxStyle AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+                      <ShowMin>false</ShowMin>
+                      <ShowMax>false</ShowMax>
+                      <Guid>88278418-899b-4263-a0ad-67809a37d28b</Guid>
+                      <Title>MinMaxStyle_141</Title>
+                      <Name>Min/Max Style (3)</Name>
+                      <Comment />
+                      <DisplayColor>Black</DisplayColor>
+                      <SortPriority>100</SortPriority>
+                      <IsFileBased>false</IsFileBased>
+                      <Suffix>.svstyle</Suffix>
+                    </MinMaxStyle>
+                    <TimeShiftStyle AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+                      <TimeShift>0</TimeShift>
+                      <Guid>e4a76169-27d4-467e-96b0-8f6bdfb7c39c</Guid>
+                      <Title>TimeShiftStyle_142</Title>
+                      <Name>TimeShiftStyle_142</Name>
+                      <Comment />
+                      <DisplayColor>Black</DisplayColor>
+                      <SortPriority>100</SortPriority>
+                      <IsFileBased>false</IsFileBased>
+                      <Suffix>.svtss</Suffix>
+                    </TimeShiftStyle>
+                  </SubMember>
+                  <Guid>28913b4c-70ae-4841-b536-8f1e3b478973</Guid>
+                  <Title>ChannelStyle_113</Title>
+                  <Name>Channel Style (3)</Name>
+                  <Comment />
+                  <DisplayColor>Black</DisplayColor>
+                  <SortPriority>100</SortPriority>
+                  <IsFileBased>false</IsFileBased>
+                  <Suffix>.svstyle</Suffix>
+                </ChannelStyle>
+              </SubMember>
+              <Guid>c8ed0145-69a6-40af-b102-0ce9a6fef429</Guid>
+              <Title>Channel_109</Title>
+              <Name>M1K4YdwnSetPos</Name>
+              <Comment />
+              <DisplayColor>-16711936</DisplayColor>
+              <SortPriority>11</SortPriority>
+              <IsFileBased>false</IsFileBased>
+              <Suffix>.svchannel</Suffix>
+            </Channel>
+          </SubMember>
+          <Guid>a2a7fe8f-f3f9-49af-8a82-f99569ad6bd6</Guid>
+          <Title>AxisGroup_97</Title>
+          <Name>M1K4 Ydwn Position</Name>
+          <Comment />
+          <DisplayColor>-1118482</DisplayColor>
+          <SortPriority>11</SortPriority>
+          <IsFileBased>false</IsFileBased>
+          <Suffix>.svagroup</Suffix>
+        </AxisGroup>
+        <AxisGroup AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+          <Enabled>false</Enabled>
+          <SubMember>
+            <RefGuid-TimeAxis>35bd72d7-a672-4fc4-8a77-9fd465931190</RefGuid-TimeAxis>
+            <ValueAxis AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+              <Orientation>Y</Orientation>
+              <ManualMin>-0.5</ManualMin>
+              <ManualMax>0.5</ManualMax>
+              <ScalingMode>AutoGrowOnly</ScalingMode>
+              <Inverted>false</Inverted>
+              <Logarithmic>false</Logarithmic>
+              <SubMember>
+                <AxisStyle AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+                  <Grid>true</Grid>
+                  <SubGrid>false</SubGrid>
+                  <GridDivisions>10</GridDivisions>
+                  <SubGridDivisions>5</SubGridDivisions>
+                  <GridLineWidth>1</GridLineWidth>
+                  <GridColor>DarkSlateGray</GridColor>
+                  <Precision>6</Precision>
+                  <ShowName>false</ShowName>
+                  <LineWidth>1</LineWidth>
+                  <Visible>true</Visible>
+                  <Guid>ae74d61c-6795-42fc-b88d-269d72fa6707</Guid>
+                  <Title>AxisStyle_101</Title>
+                  <Name>Axis Style (3)</Name>
+                  <Comment />
+                  <DisplayColor>DarkSlateGray</DisplayColor>
+                  <SortPriority>100</SortPriority>
+                  <IsFileBased>false</IsFileBased>
+                  <Suffix>.svstyle</Suffix>
+                </AxisStyle>
+              </SubMember>
+              <Guid>5e7ffa25-bd33-4e77-b7d6-54eac67e09b4</Guid>
+              <Title>Value Axis</Title>
+              <Name>Value Axis (2)</Name>
+              <Comment />
+              <DisplayColor>Black</DisplayColor>
+              <SortPriority>100</SortPriority>
+              <IsFileBased>false</IsFileBased>
+              <Suffix>.svaxis</Suffix>
+            </ValueAxis>
+            <MarkerContainer AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+              <SubMember />
+              <Guid>77d92e9e-a1a0-4f48-bed8-79af19fa8bcc</Guid>
+              <Title>MarkerContainer_146</Title>
+              <Name>Marker Container (2)</Name>
+              <Comment />
+              <DisplayColor>Black</DisplayColor>
+              <SortPriority>100</SortPriority>
+              <IsFileBased>false</IsFileBased>
+              <Suffix>.svmc</Suffix>
+            </MarkerContainer>
+            <Channel AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+              <Enabled>true</Enabled>
+              <SubMember>
+                <AcquisitionInterpreter AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+                  <Offset>0</Offset>
+                  <BitMask>18446744073709551615</BitMask>
+                  <ScaleFactor>1</ScaleFactor>
+                  <ResultingUnit>
+                    <Unit>
+                      <BaseUnitValue>0</BaseUnitValue>
+                      <Prefix>none</Prefix>
+                      <ScaleFactor>1</ScaleFactor>
+                      <Offset>0</Offset>
+                      <Symbol></Symbol>
+                      <ReturnText> (None) </ReturnText>
+                      <BaseUnitString />
+                      <NameExtension />
+                    </Unit>
+                    <Transformation>
+                      <BaseUnitValue>0</BaseUnitValue>
+                      <TargetUnitValue>0</TargetUnitValue>
+                      <ScaleFactor>1</ScaleFactor>
+                      <Name>None</Name>
+                      <SourceUnitString />
+                      <TargetUnitString />
+                      <SourceUnitPrefix>none</SourceUnitPrefix>
+                      <Symbol>1</Symbol>
+                    </Transformation>
+                    <UserUnit>
+                      <BaseUnitValue>0</BaseUnitValue>
+                      <Prefix>none</Prefix>
+                      <ScaleFactor>1</ScaleFactor>
+                      <Offset>0</Offset>
+                      <Name>None</Name>
+                      <BaseName>UnitOfOne</BaseName>
+                      <NameExtension />
+                      <Symbol></Symbol>
+                      <BaseUnitString />
+                      <UserPrefix>none</UserPrefix>
+                    </UserUnit>
+                    <UnitScaleResult>1</UnitScaleResult>
+                    <UnitOffsetResult>0</UnitOffsetResult>
+                  </ResultingUnit>
+                  <Usage>Y</Usage>
+                  <AcquisitionGUID>c7f449ef-9cb5-4d65-8ad5-f53ea20d243c</AcquisitionGUID>
+                  <SubMember />
+                  <Guid>210cba0e-6594-4372-a046-f7e98d58f5e2</Guid>
+                  <Title>AcquisitionInterpreter_111</Title>
+                  <Name>Y: M1K4XupActPos</Name>
+                  <Comment />
+                  <DisplayColor>Black</DisplayColor>
+                  <SortPriority>2</SortPriority>
+                  <IsFileBased>false</IsFileBased>
+                  <Suffix>.svai</Suffix>
+                </AcquisitionInterpreter>
+                <ChannelStyle AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+                  <Visible>true</Visible>
+                  <SubMember>
+                    <SeriesStyle AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+                      <MarkState>Auto</MarkState>
+                      <MarkSize>2</MarkSize>
+                      <MarkColor>-14774017</MarkColor>
+                      <FillMode>None</FillMode>
+                      <FillColor>840863999</FillColor>
+                      <SeriesType>Line</SeriesType>
+                      <LineWidth>1</LineWidth>
+                      <Antialias>true</Antialias>
+                      <Guid>cd4162e2-5bc9-46b8-b558-5727a89ee80f</Guid>
+                      <Title>SeriesStyle_115</Title>
+                      <Name>Series Style (4)</Name>
+                      <Comment />
+                      <DisplayColor>Plum</DisplayColor>
+                      <SortPriority>100</SortPriority>
+                      <IsFileBased>false</IsFileBased>
+                      <Suffix>.svstyle</Suffix>
+                    </SeriesStyle>
+                    <MinMaxStyle AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+                      <ShowMin>false</ShowMin>
+                      <ShowMax>false</ShowMax>
+                      <Guid>959c0a9d-edf4-4c3e-97e5-9578dcd103f0</Guid>
+                      <Title>MinMaxStyle_152</Title>
+                      <Name>Min/Max Style (4)</Name>
+                      <Comment />
+                      <DisplayColor>Black</DisplayColor>
+                      <SortPriority>100</SortPriority>
+                      <IsFileBased>false</IsFileBased>
+                      <Suffix>.svstyle</Suffix>
+                    </MinMaxStyle>
+                    <TimeShiftStyle AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+                      <TimeShift>0</TimeShift>
+                      <Guid>3575a5a1-40d5-403c-9aa1-086402853eed</Guid>
+                      <Title>TimeShiftStyle_153</Title>
+                      <Name>TimeShiftStyle_153</Name>
+                      <Comment />
+                      <DisplayColor>Black</DisplayColor>
+                      <SortPriority>100</SortPriority>
+                      <IsFileBased>false</IsFileBased>
+                      <Suffix>.svtss</Suffix>
+                    </TimeShiftStyle>
+                  </SubMember>
+                  <Guid>20c0fbe8-b386-4ae9-a1bf-d68fe953aded</Guid>
+                  <Title>ChannelStyle_113</Title>
+                  <Name>Channel Style (4)</Name>
+                  <Comment />
+                  <DisplayColor>Black</DisplayColor>
+                  <SortPriority>100</SortPriority>
+                  <IsFileBased>false</IsFileBased>
+                  <Suffix>.svstyle</Suffix>
+                </ChannelStyle>
+              </SubMember>
+              <Guid>919fa060-a4f7-490d-adef-e5ce74259739</Guid>
+              <Title>Channel_109</Title>
+              <Name>M1K4XupActPos</Name>
+              <Comment />
+              <DisplayColor>-14774017</DisplayColor>
+              <SortPriority>10</SortPriority>
+              <IsFileBased>false</IsFileBased>
+              <Suffix>.svchannel</Suffix>
+            </Channel>
+            <Channel AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+              <Enabled>true</Enabled>
+              <SubMember>
+                <AcquisitionInterpreter AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+                  <Offset>0</Offset>
+                  <BitMask>18446744073709551615</BitMask>
+                  <ScaleFactor>1</ScaleFactor>
+                  <ResultingUnit>
+                    <Unit>
+                      <BaseUnitValue>0</BaseUnitValue>
+                      <Prefix>none</Prefix>
+                      <ScaleFactor>1</ScaleFactor>
+                      <Offset>0</Offset>
+                      <Symbol></Symbol>
+                      <ReturnText> (None) </ReturnText>
+                      <BaseUnitString />
+                      <NameExtension />
+                    </Unit>
+                    <Transformation>
+                      <BaseUnitValue>0</BaseUnitValue>
+                      <TargetUnitValue>0</TargetUnitValue>
+                      <ScaleFactor>1</ScaleFactor>
+                      <Name>None</Name>
+                      <SourceUnitString />
+                      <TargetUnitString />
+                      <SourceUnitPrefix>none</SourceUnitPrefix>
+                      <Symbol>1</Symbol>
+                    </Transformation>
+                    <UserUnit>
+                      <BaseUnitValue>0</BaseUnitValue>
+                      <Prefix>none</Prefix>
+                      <ScaleFactor>1</ScaleFactor>
+                      <Offset>0</Offset>
+                      <Name>None</Name>
+                      <BaseName>UnitOfOne</BaseName>
+                      <NameExtension />
+                      <Symbol></Symbol>
+                      <BaseUnitString />
+                      <UserPrefix>none</UserPrefix>
+                    </UserUnit>
+                    <UnitScaleResult>1</UnitScaleResult>
+                    <UnitOffsetResult>0</UnitOffsetResult>
+                  </ResultingUnit>
+                  <Usage>Y</Usage>
+                  <AcquisitionGUID>fb2a0a62-81a5-42ee-ba1c-e3e19182d32d</AcquisitionGUID>
+                  <SubMember />
+                  <Guid>ab343d0b-518d-489a-9f9e-79aab3053cbe</Guid>
+                  <Title>AcquisitionInterpreter_111</Title>
+                  <Name>Y: M1K4XupSetPos</Name>
+                  <Comment />
+                  <DisplayColor>Black</DisplayColor>
+                  <SortPriority>2</SortPriority>
+                  <IsFileBased>false</IsFileBased>
+                  <Suffix>.svai</Suffix>
+                </AcquisitionInterpreter>
+                <ChannelStyle AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+                  <Visible>true</Visible>
+                  <SubMember>
+                    <SeriesStyle AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+                      <MarkState>Auto</MarkState>
+                      <MarkSize>2</MarkSize>
+                      <MarkColor>-65281</MarkColor>
+                      <FillMode>None</FillMode>
+                      <FillColor>855572735</FillColor>
+                      <SeriesType>Line</SeriesType>
+                      <LineWidth>1</LineWidth>
+                      <Antialias>true</Antialias>
+                      <Guid>760dc6b8-603b-47bf-93d8-faf16bbd3b64</Guid>
+                      <Title>SeriesStyle_115</Title>
+                      <Name>Series Style (5)</Name>
+                      <Comment />
+                      <DisplayColor>Plum</DisplayColor>
+                      <SortPriority>100</SortPriority>
+                      <IsFileBased>false</IsFileBased>
+                      <Suffix>.svstyle</Suffix>
+                    </SeriesStyle>
+                    <MinMaxStyle AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+                      <ShowMin>false</ShowMin>
+                      <ShowMax>false</ShowMax>
+                      <Guid>018fc9e0-3517-4451-af19-c17c73b404ef</Guid>
+                      <Title>MinMaxStyle_159</Title>
+                      <Name>Min/Max Style (5)</Name>
+                      <Comment />
+                      <DisplayColor>Black</DisplayColor>
+                      <SortPriority>100</SortPriority>
+                      <IsFileBased>false</IsFileBased>
+                      <Suffix>.svstyle</Suffix>
+                    </MinMaxStyle>
+                    <TimeShiftStyle AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+                      <TimeShift>0</TimeShift>
+                      <Guid>75a2cde6-057e-43ba-ae60-e0da52ce8375</Guid>
+                      <Title>TimeShiftStyle_160</Title>
+                      <Name>TimeShiftStyle_160</Name>
+                      <Comment />
+                      <DisplayColor>Black</DisplayColor>
+                      <SortPriority>100</SortPriority>
+                      <IsFileBased>false</IsFileBased>
+                      <Suffix>.svtss</Suffix>
+                    </TimeShiftStyle>
+                  </SubMember>
+                  <Guid>3acdfe24-b55c-4d90-a054-d0724fe5023b</Guid>
+                  <Title>ChannelStyle_113</Title>
+                  <Name>Channel Style (5)</Name>
+                  <Comment />
+                  <DisplayColor>Black</DisplayColor>
+                  <SortPriority>100</SortPriority>
+                  <IsFileBased>false</IsFileBased>
+                  <Suffix>.svstyle</Suffix>
+                </ChannelStyle>
+              </SubMember>
+              <Guid>c2228010-bd98-43ec-8bb0-116575cd8c97</Guid>
+              <Title>Channel_109</Title>
+              <Name>M1K4XupSetPos</Name>
+              <Comment />
+              <DisplayColor>-65281</DisplayColor>
+              <SortPriority>11</SortPriority>
+              <IsFileBased>false</IsFileBased>
+              <Suffix>.svchannel</Suffix>
+            </Channel>
+          </SubMember>
+          <Guid>5d531f28-abd9-4020-b4ab-f7d16999c155</Guid>
+          <Title>AxisGroup_97</Title>
+          <Name>M1K4 Xup Position</Name>
+          <Comment />
+          <DisplayColor>-1118482</DisplayColor>
+          <SortPriority>12</SortPriority>
+          <IsFileBased>false</IsFileBased>
+          <Suffix>.svagroup</Suffix>
+        </AxisGroup>
+        <AxisGroup AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+          <Enabled>false</Enabled>
+          <SubMember>
+            <RefGuid-TimeAxis>35bd72d7-a672-4fc4-8a77-9fd465931190</RefGuid-TimeAxis>
+            <ValueAxis AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+              <Orientation>Y</Orientation>
+              <ManualMin>-0.5</ManualMin>
+              <ManualMax>0.5</ManualMax>
+              <ScalingMode>AutoGrowNShrink</ScalingMode>
+              <Inverted>false</Inverted>
+              <Logarithmic>false</Logarithmic>
+              <SubMember>
+                <AxisStyle AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+                  <Grid>true</Grid>
+                  <SubGrid>false</SubGrid>
+                  <GridDivisions>10</GridDivisions>
+                  <SubGridDivisions>5</SubGridDivisions>
+                  <GridLineWidth>1</GridLineWidth>
+                  <GridColor>DarkSlateGray</GridColor>
+                  <Precision>6</Precision>
+                  <ShowName>true</ShowName>
+                  <LineWidth>1</LineWidth>
+                  <Visible>true</Visible>
+                  <Guid>1a09f8f4-c527-4329-9847-63d31da4cd09</Guid>
+                  <Title>AxisStyle_101</Title>
+                  <Name>Axis Style (4)</Name>
+                  <Comment />
+                  <DisplayColor>DarkSlateGray</DisplayColor>
+                  <SortPriority>100</SortPriority>
+                  <IsFileBased>false</IsFileBased>
+                  <Suffix>.svstyle</Suffix>
+                </AxisStyle>
+              </SubMember>
+              <Guid>30afd854-6bf7-4f52-b553-b6e302dc29ad</Guid>
+              <Title>M1K4 Xdwn Position</Title>
+              <Name>Value Axis (3)</Name>
+              <Comment />
+              <DisplayColor>Black</DisplayColor>
+              <SortPriority>100</SortPriority>
+              <IsFileBased>false</IsFileBased>
+              <Suffix>.svaxis</Suffix>
+            </ValueAxis>
+            <MarkerContainer AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+              <SubMember />
+              <Guid>138c3fba-e6a1-45fb-83b8-534a11e78692</Guid>
+              <Title>MarkerContainer_164</Title>
+              <Name>Marker Container (3)</Name>
+              <Comment />
+              <DisplayColor>Black</DisplayColor>
+              <SortPriority>100</SortPriority>
+              <IsFileBased>false</IsFileBased>
+              <Suffix>.svmc</Suffix>
+            </MarkerContainer>
+            <Channel AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+              <Enabled>true</Enabled>
+              <SubMember>
+                <AcquisitionInterpreter AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+                  <Offset>0</Offset>
+                  <BitMask>18446744073709551615</BitMask>
+                  <ScaleFactor>1</ScaleFactor>
+                  <ResultingUnit>
+                    <Unit>
+                      <BaseUnitValue>0</BaseUnitValue>
+                      <Prefix>none</Prefix>
+                      <ScaleFactor>1</ScaleFactor>
+                      <Offset>0</Offset>
+                      <Symbol></Symbol>
+                      <ReturnText> (None) </ReturnText>
+                      <BaseUnitString />
+                      <NameExtension />
+                    </Unit>
+                    <Transformation>
+                      <BaseUnitValue>0</BaseUnitValue>
+                      <TargetUnitValue>0</TargetUnitValue>
+                      <ScaleFactor>1</ScaleFactor>
+                      <Name>None</Name>
+                      <SourceUnitString />
+                      <TargetUnitString />
+                      <SourceUnitPrefix>none</SourceUnitPrefix>
+                      <Symbol>1</Symbol>
+                    </Transformation>
+                    <UserUnit>
+                      <BaseUnitValue>0</BaseUnitValue>
+                      <Prefix>none</Prefix>
+                      <ScaleFactor>1</ScaleFactor>
+                      <Offset>0</Offset>
+                      <Name>None</Name>
+                      <BaseName>UnitOfOne</BaseName>
+                      <NameExtension />
+                      <Symbol></Symbol>
+                      <BaseUnitString />
+                      <UserPrefix>none</UserPrefix>
+                    </UserUnit>
+                    <UnitScaleResult>1</UnitScaleResult>
+                    <UnitOffsetResult>0</UnitOffsetResult>
+                  </ResultingUnit>
+                  <Usage>Y</Usage>
+                  <AcquisitionGUID>4bde2ee0-8c33-489f-940d-2674103800f1</AcquisitionGUID>
+                  <SubMember />
+                  <Guid>876f11b7-5a00-4f2c-b47f-c46dc34882c4</Guid>
+                  <Title>AcquisitionInterpreter_111</Title>
+                  <Name>Y: M1K4XdwnActPos</Name>
+                  <Comment />
+                  <DisplayColor>Black</DisplayColor>
+                  <SortPriority>2</SortPriority>
+                  <IsFileBased>false</IsFileBased>
+                  <Suffix>.svai</Suffix>
+                </AcquisitionInterpreter>
+                <ChannelStyle AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+                  <Visible>true</Visible>
+                  <SubMember>
+                    <SeriesStyle AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+                      <MarkState>Auto</MarkState>
+                      <MarkSize>2</MarkSize>
+                      <MarkColor>-8355840</MarkColor>
+                      <FillMode>None</FillMode>
+                      <FillColor>847282176</FillColor>
+                      <SeriesType>Line</SeriesType>
+                      <LineWidth>1</LineWidth>
+                      <Antialias>true</Antialias>
+                      <Guid>9b7032ec-52ac-441e-a788-21cf90ea6fa7</Guid>
+                      <Title>SeriesStyle_115</Title>
+                      <Name>Series Style (6)</Name>
+                      <Comment />
+                      <DisplayColor>Plum</DisplayColor>
+                      <SortPriority>100</SortPriority>
+                      <IsFileBased>false</IsFileBased>
+                      <Suffix>.svstyle</Suffix>
+                    </SeriesStyle>
+                    <MinMaxStyle AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+                      <ShowMin>false</ShowMin>
+                      <ShowMax>false</ShowMax>
+                      <Guid>5843c8c7-1b56-440c-9e76-0f91c0032051</Guid>
+                      <Title>MinMaxStyle_170</Title>
+                      <Name>Min/Max Style (6)</Name>
+                      <Comment />
+                      <DisplayColor>Black</DisplayColor>
+                      <SortPriority>100</SortPriority>
+                      <IsFileBased>false</IsFileBased>
+                      <Suffix>.svstyle</Suffix>
+                    </MinMaxStyle>
+                    <TimeShiftStyle AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+                      <TimeShift>0</TimeShift>
+                      <Guid>bcd98831-458c-45ed-9848-3d047df425f9</Guid>
+                      <Title>TimeShiftStyle_171</Title>
+                      <Name>TimeShiftStyle_171</Name>
+                      <Comment />
+                      <DisplayColor>Black</DisplayColor>
+                      <SortPriority>100</SortPriority>
+                      <IsFileBased>false</IsFileBased>
+                      <Suffix>.svtss</Suffix>
+                    </TimeShiftStyle>
+                  </SubMember>
+                  <Guid>0a3bed4d-3623-4a29-9636-629665ab28b0</Guid>
+                  <Title>ChannelStyle_113</Title>
+                  <Name>Channel Style (6)</Name>
+                  <Comment />
+                  <DisplayColor>Black</DisplayColor>
+                  <SortPriority>100</SortPriority>
+                  <IsFileBased>false</IsFileBased>
+                  <Suffix>.svstyle</Suffix>
+                </ChannelStyle>
+              </SubMember>
+              <Guid>6d250ba2-5466-4616-a276-a781c48ac00d</Guid>
+              <Title>Channel_109</Title>
+              <Name>M1K4XdwnActPos</Name>
+              <Comment />
+              <DisplayColor>-8355840</DisplayColor>
+              <SortPriority>10</SortPriority>
+              <IsFileBased>false</IsFileBased>
+              <Suffix>.svchannel</Suffix>
+            </Channel>
+            <Channel AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+              <Enabled>true</Enabled>
+              <SubMember>
+                <AcquisitionInterpreter AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+                  <Offset>0</Offset>
+                  <BitMask>18446744073709551615</BitMask>
+                  <ScaleFactor>1</ScaleFactor>
+                  <ResultingUnit>
+                    <Unit>
+                      <BaseUnitValue>0</BaseUnitValue>
+                      <Prefix>none</Prefix>
+                      <ScaleFactor>1</ScaleFactor>
+                      <Offset>0</Offset>
+                      <Symbol></Symbol>
+                      <ReturnText> (None) </ReturnText>
+                      <BaseUnitString />
+                      <NameExtension />
+                    </Unit>
+                    <Transformation>
+                      <BaseUnitValue>0</BaseUnitValue>
+                      <TargetUnitValue>0</TargetUnitValue>
+                      <ScaleFactor>1</ScaleFactor>
+                      <Name>None</Name>
+                      <SourceUnitString />
+                      <TargetUnitString />
+                      <SourceUnitPrefix>none</SourceUnitPrefix>
+                      <Symbol>1</Symbol>
+                    </Transformation>
+                    <UserUnit>
+                      <BaseUnitValue>0</BaseUnitValue>
+                      <Prefix>none</Prefix>
+                      <ScaleFactor>1</ScaleFactor>
+                      <Offset>0</Offset>
+                      <Name>None</Name>
+                      <BaseName>UnitOfOne</BaseName>
+                      <NameExtension />
+                      <Symbol></Symbol>
+                      <BaseUnitString />
+                      <UserPrefix>none</UserPrefix>
+                    </UserUnit>
+                    <UnitScaleResult>1</UnitScaleResult>
+                    <UnitOffsetResult>0</UnitOffsetResult>
+                  </ResultingUnit>
+                  <Usage>Y</Usage>
+                  <AcquisitionGUID>b2641d1d-dc80-47cf-8ec0-560346af7e1e</AcquisitionGUID>
+                  <SubMember />
+                  <Guid>6da79f94-bff7-467e-924e-f1e0365f2d1a</Guid>
+                  <Title>AcquisitionInterpreter_111</Title>
+                  <Name>Y: M1K4XdwnSetPos</Name>
+                  <Comment />
+                  <DisplayColor>Black</DisplayColor>
+                  <SortPriority>2</SortPriority>
+                  <IsFileBased>false</IsFileBased>
+                  <Suffix>.svai</Suffix>
+                </AcquisitionInterpreter>
+                <ChannelStyle AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+                  <Visible>true</Visible>
+                  <SubMember>
+                    <SeriesStyle AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+                      <MarkState>Auto</MarkState>
+                      <MarkSize>2</MarkSize>
+                      <MarkColor>-16711681</MarkColor>
+                      <FillMode>None</FillMode>
+                      <FillColor>838926335</FillColor>
+                      <SeriesType>Line</SeriesType>
+                      <LineWidth>1</LineWidth>
+                      <Antialias>true</Antialias>
+                      <Guid>4afeb454-7502-47d7-b7da-85f03125b9c7</Guid>
+                      <Title>SeriesStyle_115</Title>
+                      <Name>Series Style (7)</Name>
+                      <Comment />
+                      <DisplayColor>Plum</DisplayColor>
+                      <SortPriority>100</SortPriority>
+                      <IsFileBased>false</IsFileBased>
+                      <Suffix>.svstyle</Suffix>
+                    </SeriesStyle>
+                    <MinMaxStyle AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+                      <ShowMin>false</ShowMin>
+                      <ShowMax>false</ShowMax>
+                      <Guid>7a252a23-1fa0-4eb3-b9f5-58e5cd3cd3a1</Guid>
+                      <Title>MinMaxStyle_177</Title>
+                      <Name>Min/Max Style (7)</Name>
+                      <Comment />
+                      <DisplayColor>Black</DisplayColor>
+                      <SortPriority>100</SortPriority>
+                      <IsFileBased>false</IsFileBased>
+                      <Suffix>.svstyle</Suffix>
+                    </MinMaxStyle>
+                    <TimeShiftStyle AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+                      <TimeShift>0</TimeShift>
+                      <Guid>77b064bf-f024-4d13-ba75-a822d1f4f568</Guid>
+                      <Title>TimeShiftStyle_178</Title>
+                      <Name>TimeShiftStyle_178</Name>
+                      <Comment />
+                      <DisplayColor>Black</DisplayColor>
+                      <SortPriority>100</SortPriority>
+                      <IsFileBased>false</IsFileBased>
+                      <Suffix>.svtss</Suffix>
+                    </TimeShiftStyle>
+                  </SubMember>
+                  <Guid>f8f63e88-7e5a-4eb5-b683-d862b33843c5</Guid>
+                  <Title>ChannelStyle_113</Title>
+                  <Name>Channel Style (7)</Name>
+                  <Comment />
+                  <DisplayColor>Black</DisplayColor>
+                  <SortPriority>100</SortPriority>
+                  <IsFileBased>false</IsFileBased>
+                  <Suffix>.svstyle</Suffix>
+                </ChannelStyle>
+              </SubMember>
+              <Guid>d324cc78-74d6-4e80-af9d-3ef208be0367</Guid>
+              <Title>Channel_109</Title>
+              <Name>M1K4XdwnSetPos</Name>
+              <Comment />
+              <DisplayColor>-16711681</DisplayColor>
+              <SortPriority>11</SortPriority>
+              <IsFileBased>false</IsFileBased>
+              <Suffix>.svchannel</Suffix>
+            </Channel>
+          </SubMember>
+          <Guid>7a9d5196-d1fa-47fd-ac2e-6b8902d951ba</Guid>
+          <Title>AxisGroup_97</Title>
+          <Name>M1K4 Xdwn Position</Name>
+          <Comment />
+          <DisplayColor>-1118482</DisplayColor>
+          <SortPriority>13</SortPriority>
+          <IsFileBased>false</IsFileBased>
+          <Suffix>.svagroup</Suffix>
+        </AxisGroup>
+        <AxisGroup AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+          <Enabled>true</Enabled>
+          <SubMember>
+            <RefGuid-TimeAxis>35bd72d7-a672-4fc4-8a77-9fd465931190</RefGuid-TimeAxis>
+            <ValueAxis AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+              <Orientation>Y</Orientation>
+              <ManualMin>-0.5</ManualMin>
+              <ManualMax>0.5</ManualMax>
+              <ScalingMode>AutoGrowNShrink</ScalingMode>
+              <Inverted>false</Inverted>
+              <Logarithmic>false</Logarithmic>
+              <SubMember>
+                <AxisStyle AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+                  <Grid>true</Grid>
+                  <SubGrid>false</SubGrid>
+                  <GridDivisions>10</GridDivisions>
+                  <SubGridDivisions>5</SubGridDivisions>
+                  <GridLineWidth>1</GridLineWidth>
+                  <GridColor>DarkSlateGray</GridColor>
+                  <Precision>6</Precision>
+                  <ShowName>true</ShowName>
+                  <LineWidth>1</LineWidth>
+                  <Visible>true</Visible>
+                  <Guid>9a69b365-62dd-4d5e-863c-27575ce4634e</Guid>
+                  <Title>AxisStyle_101</Title>
+                  <Name>Axis Style (5)</Name>
+                  <Comment />
+                  <DisplayColor>DarkSlateGray</DisplayColor>
+                  <SortPriority>100</SortPriority>
+                  <IsFileBased>false</IsFileBased>
+                  <Suffix>.svstyle</Suffix>
+                </AxisStyle>
+              </SubMember>
+              <Guid>a1a05f65-bd1a-423d-aff7-dacda9afefc0</Guid>
+              <Title>M1K4 Pitch Position</Title>
+              <Name>Value Axis (4)</Name>
+              <Comment />
+              <DisplayColor>Black</DisplayColor>
+              <SortPriority>100</SortPriority>
+              <IsFileBased>false</IsFileBased>
+              <Suffix>.svaxis</Suffix>
+            </ValueAxis>
+            <MarkerContainer AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+              <SubMember />
+              <Guid>5c32b11f-20b2-40a0-a283-3aab5b2a6de5</Guid>
+              <Title>MarkerContainer_182</Title>
+              <Name>Marker Container (4)</Name>
+              <Comment />
+              <DisplayColor>Black</DisplayColor>
+              <SortPriority>100</SortPriority>
+              <IsFileBased>false</IsFileBased>
+              <Suffix>.svmc</Suffix>
+            </MarkerContainer>
+            <Channel AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+              <Enabled>true</Enabled>
+              <SubMember>
+                <AcquisitionInterpreter AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+                  <Offset>0</Offset>
+                  <BitMask>18446744073709551615</BitMask>
+                  <ScaleFactor>1</ScaleFactor>
+                  <ResultingUnit>
+                    <Unit>
+                      <BaseUnitValue>0</BaseUnitValue>
+                      <Prefix>none</Prefix>
+                      <ScaleFactor>1</ScaleFactor>
+                      <Offset>0</Offset>
+                      <Symbol></Symbol>
+                      <ReturnText> (None) </ReturnText>
+                      <BaseUnitString />
+                      <NameExtension />
+                    </Unit>
+                    <Transformation>
+                      <BaseUnitValue>0</BaseUnitValue>
+                      <TargetUnitValue>0</TargetUnitValue>
+                      <ScaleFactor>1</ScaleFactor>
+                      <Name>None</Name>
+                      <SourceUnitString />
+                      <TargetUnitString />
+                      <SourceUnitPrefix>none</SourceUnitPrefix>
+                      <Symbol>1</Symbol>
+                    </Transformation>
+                    <UserUnit>
+                      <BaseUnitValue>0</BaseUnitValue>
+                      <Prefix>none</Prefix>
+                      <ScaleFactor>1</ScaleFactor>
+                      <Offset>0</Offset>
+                      <Name>None</Name>
+                      <BaseName>UnitOfOne</BaseName>
+                      <NameExtension />
+                      <Symbol></Symbol>
+                      <BaseUnitString />
+                      <UserPrefix>none</UserPrefix>
+                    </UserUnit>
+                    <UnitScaleResult>1</UnitScaleResult>
+                    <UnitOffsetResult>0</UnitOffsetResult>
+                  </ResultingUnit>
+                  <Usage>Y</Usage>
+                  <AcquisitionGUID>8f9d16bb-3fd4-4408-898f-8a23052583dd</AcquisitionGUID>
+                  <SubMember />
+                  <Guid>e3882995-8218-4acc-835f-42ac6da5fd52</Guid>
+                  <Title>AcquisitionInterpreter_111</Title>
+                  <Name>Y: M1K4PitchActPos</Name>
+                  <Comment />
+                  <DisplayColor>Black</DisplayColor>
+                  <SortPriority>2</SortPriority>
+                  <IsFileBased>false</IsFileBased>
+                  <Suffix>.svai</Suffix>
+                </AcquisitionInterpreter>
+                <ChannelStyle AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+                  <Visible>true</Visible>
+                  <SubMember>
+                    <SeriesStyle AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+                      <MarkState>Auto</MarkState>
+                      <MarkSize>2</MarkSize>
+                      <MarkColor>-5952982</MarkColor>
+                      <FillMode>None</FillMode>
+                      <FillColor>849685034</FillColor>
+                      <SeriesType>Line</SeriesType>
+                      <LineWidth>1</LineWidth>
+                      <Antialias>true</Antialias>
+                      <Guid>cfdde345-8061-4f94-943c-f222f7451f7c</Guid>
+                      <Title>SeriesStyle_115</Title>
+                      <Name>Series Style (8)</Name>
+                      <Comment />
+                      <DisplayColor>Plum</DisplayColor>
+                      <SortPriority>100</SortPriority>
+                      <IsFileBased>false</IsFileBased>
+                      <Suffix>.svstyle</Suffix>
+                    </SeriesStyle>
+                    <MinMaxStyle AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+                      <ShowMin>false</ShowMin>
+                      <ShowMax>false</ShowMax>
+                      <Guid>1c32f9e2-00a1-4fbe-a0cb-c23e646beadd</Guid>
+                      <Title>MinMaxStyle_188</Title>
+                      <Name>Min/Max Style (8)</Name>
+                      <Comment />
+                      <DisplayColor>Black</DisplayColor>
+                      <SortPriority>100</SortPriority>
+                      <IsFileBased>false</IsFileBased>
+                      <Suffix>.svstyle</Suffix>
+                    </MinMaxStyle>
+                    <TimeShiftStyle AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+                      <TimeShift>0</TimeShift>
+                      <Guid>b65a862c-4ec2-4ae1-aa43-f7239b27fcfa</Guid>
+                      <Title>TimeShiftStyle_189</Title>
+                      <Name>TimeShiftStyle_189</Name>
+                      <Comment />
+                      <DisplayColor>Black</DisplayColor>
+                      <SortPriority>100</SortPriority>
+                      <IsFileBased>false</IsFileBased>
+                      <Suffix>.svtss</Suffix>
+                    </TimeShiftStyle>
+                  </SubMember>
+                  <Guid>5a166a67-ba10-4dc5-a077-489b0e9f707e</Guid>
+                  <Title>ChannelStyle_113</Title>
+                  <Name>Channel Style (8)</Name>
+                  <Comment />
+                  <DisplayColor>Black</DisplayColor>
+                  <SortPriority>100</SortPriority>
+                  <IsFileBased>false</IsFileBased>
+                  <Suffix>.svstyle</Suffix>
+                </ChannelStyle>
+              </SubMember>
+              <Guid>01b780ab-d99e-4e61-8fb9-bc0b8439b61c</Guid>
+              <Title>Channel_109</Title>
+              <Name>M1K4PitchActPos</Name>
+              <Comment />
+              <DisplayColor>-5952982</DisplayColor>
+              <SortPriority>10</SortPriority>
+              <IsFileBased>false</IsFileBased>
+              <Suffix>.svchannel</Suffix>
+            </Channel>
+            <Channel AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+              <Enabled>true</Enabled>
+              <SubMember>
+                <AcquisitionInterpreter AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+                  <Offset>0</Offset>
+                  <BitMask>18446744073709551615</BitMask>
+                  <ScaleFactor>1</ScaleFactor>
+                  <ResultingUnit>
+                    <Unit>
+                      <BaseUnitValue>0</BaseUnitValue>
+                      <Prefix>none</Prefix>
+                      <ScaleFactor>1</ScaleFactor>
+                      <Offset>0</Offset>
+                      <Symbol></Symbol>
+                      <ReturnText> (None) </ReturnText>
+                      <BaseUnitString />
+                      <NameExtension />
+                    </Unit>
+                    <Transformation>
+                      <BaseUnitValue>0</BaseUnitValue>
+                      <TargetUnitValue>0</TargetUnitValue>
+                      <ScaleFactor>1</ScaleFactor>
+                      <Name>None</Name>
+                      <SourceUnitString />
+                      <TargetUnitString />
+                      <SourceUnitPrefix>none</SourceUnitPrefix>
+                      <Symbol>1</Symbol>
+                    </Transformation>
+                    <UserUnit>
+                      <BaseUnitValue>0</BaseUnitValue>
+                      <Prefix>none</Prefix>
+                      <ScaleFactor>1</ScaleFactor>
+                      <Offset>0</Offset>
+                      <Name>None</Name>
+                      <BaseName>UnitOfOne</BaseName>
+                      <NameExtension />
+                      <Symbol></Symbol>
+                      <BaseUnitString />
+                      <UserPrefix>none</UserPrefix>
+                    </UserUnit>
+                    <UnitScaleResult>1</UnitScaleResult>
+                    <UnitOffsetResult>0</UnitOffsetResult>
+                  </ResultingUnit>
+                  <Usage>Y</Usage>
+                  <AcquisitionGUID>ff1efce0-5781-452d-b72c-e5a4871ee2a1</AcquisitionGUID>
+                  <SubMember />
+                  <Guid>78edd266-654d-4265-80cf-63f2a2f24961</Guid>
+                  <Title>AcquisitionInterpreter_111</Title>
+                  <Name>Y: M1K4PitchSetPos</Name>
+                  <Comment />
+                  <DisplayColor>Black</DisplayColor>
+                  <SortPriority>2</SortPriority>
+                  <IsFileBased>false</IsFileBased>
+                  <Suffix>.svai</Suffix>
+                </AcquisitionInterpreter>
+                <ChannelStyle AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+                  <Visible>true</Visible>
+                  <SubMember>
+                    <SeriesStyle AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+                      <MarkState>Auto</MarkState>
+                      <MarkSize>2</MarkSize>
+                      <MarkColor>-9728477</MarkColor>
+                      <FillMode>None</FillMode>
+                      <FillColor>845909539</FillColor>
+                      <SeriesType>Line</SeriesType>
+                      <LineWidth>1</LineWidth>
+                      <Antialias>true</Antialias>
+                      <Guid>ffee6d51-2516-43e1-a3ae-d5398896beda</Guid>
+                      <Title>SeriesStyle_115</Title>
+                      <Name>Series Style (9)</Name>
+                      <Comment />
+                      <DisplayColor>Plum</DisplayColor>
+                      <SortPriority>100</SortPriority>
+                      <IsFileBased>false</IsFileBased>
+                      <Suffix>.svstyle</Suffix>
+                    </SeriesStyle>
+                    <MinMaxStyle AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+                      <ShowMin>false</ShowMin>
+                      <ShowMax>false</ShowMax>
+                      <Guid>ebd3a151-cff2-46f4-b4f1-5d6661cc1e6a</Guid>
+                      <Title>MinMaxStyle_195</Title>
+                      <Name>Min/Max Style (9)</Name>
+                      <Comment />
+                      <DisplayColor>Black</DisplayColor>
+                      <SortPriority>100</SortPriority>
+                      <IsFileBased>false</IsFileBased>
+                      <Suffix>.svstyle</Suffix>
+                    </MinMaxStyle>
+                    <TimeShiftStyle AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+                      <TimeShift>0</TimeShift>
+                      <Guid>4eb545e1-2570-4711-bfa4-489dca796443</Guid>
+                      <Title>TimeShiftStyle_196</Title>
+                      <Name>TimeShiftStyle_196</Name>
+                      <Comment />
+                      <DisplayColor>Black</DisplayColor>
+                      <SortPriority>100</SortPriority>
+                      <IsFileBased>false</IsFileBased>
+                      <Suffix>.svtss</Suffix>
+                    </TimeShiftStyle>
+                  </SubMember>
+                  <Guid>2cf4246c-cd8d-42a2-acbd-a520470a1617</Guid>
+                  <Title>ChannelStyle_113</Title>
+                  <Name>Channel Style (9)</Name>
+                  <Comment />
+                  <DisplayColor>Black</DisplayColor>
+                  <SortPriority>100</SortPriority>
+                  <IsFileBased>false</IsFileBased>
+                  <Suffix>.svstyle</Suffix>
+                </ChannelStyle>
+              </SubMember>
+              <Guid>6484fbe2-a6e6-46ae-a62b-2dfa08b398bf</Guid>
+              <Title>Channel_109</Title>
+              <Name>M1K4PitchSetPos</Name>
+              <Comment />
+              <DisplayColor>-9728477</DisplayColor>
+              <SortPriority>11</SortPriority>
+              <IsFileBased>false</IsFileBased>
+              <Suffix>.svchannel</Suffix>
+            </Channel>
+          </SubMember>
+          <Guid>d29d1c61-e7f7-4c9e-9341-1818a1a0c202</Guid>
+          <Title>AxisGroup_97</Title>
+          <Name>M1K4 Pitch Position</Name>
+          <Comment />
+          <DisplayColor>-1118482</DisplayColor>
+          <SortPriority>14</SortPriority>
+          <IsFileBased>false</IsFileBased>
+          <Suffix>.svagroup</Suffix>
+        </AxisGroup>
+      </SubMember>
+      <Guid>0df4d2ef-65c1-45b6-8b34-ba2dc7f63253</Guid>
+      <Title>NC Axis 1</Title>
+      <Name>NC Axis 1</Name>
+      <Comment />
+      <DisplayColor>-1973016</DisplayColor>
+      <SortPriority>10</SortPriority>
+      <IsFileBased>false</IsFileBased>
+      <Suffix>.svchart</Suffix>
+    </YTChart>
+    <DataPool AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+      <SubMember>
+        <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+          <IndexGroup>16641</IndexGroup>
+          <IndexOffset>65538</IndexOffset>
+          <SymbolName>Axes.M1K4-Yup.ActPos</SymbolName>
+          <SymbolBased>true</SymbolBased>
+          <TargetPort>501</TargetPort>
+          <IsHistorical>false</IsHistorical>
+          <AmsNetId>172.21.92.63.1.1</AmsNetId>
+          <DataType>REAL64</DataType>
+          <UseTaskSampleTime>true</UseTaskSampleTime>
+          <ContextMask>0</ContextMask>
+          <VariableSize>8</VariableSize>
+          <DataAccess>
+            <DataAccessMode>
+              <Source>TwinCAT</Source>
+              <Protocoll>ADS</Protocoll>
+              <Format>TcBinary</Format>
+              <TimeContext>Present</TimeContext>
+              <TimeTangeInfo>
+                <StartTimeStamp>0</StartTimeStamp>
+                <EndTimeStamp>0</EndTimeStamp>
+              </TimeTangeInfo>
+            </DataAccessMode>
+          </DataAccess>
+          <Area>Local</Area>
+          <Guid>38985c30-fe86-433d-b476-ea7c4da7a9e1</Guid>
+          <Name>M1K4YupActPos</Name>
+          <SortPriority>10</SortPriority>
+          <Enabled>true</Enabled>
+          <UseLocalServer>true</UseLocalServer>
+          <FileHandle>0</FileHandle>
+          <ServerHandle>0</ServerHandle>
+          <ChannelStyleInformation />
+          <BaseSampleTime>20000</BaseSampleTime>
+          <Oversample>0</Oversample>
+          <ForceOversampling>false</ForceOversampling>
+          <ArrayLength>0</ArrayLength>
+          <TimeOffset>0</TimeOffset>
+          <RawUnit>
+            <Unit>
+              <BaseUnitValue>0</BaseUnitValue>
+              <Prefix>none</Prefix>
+              <ScaleFactor>1</ScaleFactor>
+              <Offset>0</Offset>
+              <Symbol></Symbol>
+              <ReturnText> (None) </ReturnText>
+              <BaseUnitString />
+              <NameExtension />
+            </Unit>
+            <Transformation>
+              <BaseUnitValue>0</BaseUnitValue>
+              <TargetUnitValue>0</TargetUnitValue>
+              <ScaleFactor>1</ScaleFactor>
+              <Name>None</Name>
+              <SourceUnitString />
+              <TargetUnitString />
+              <SourceUnitPrefix>none</SourceUnitPrefix>
+              <Symbol>1</Symbol>
+            </Transformation>
+            <UserUnit>
+              <BaseUnitValue>0</BaseUnitValue>
+              <Prefix>none</Prefix>
+              <ScaleFactor>1</ScaleFactor>
+              <Offset>0</Offset>
+              <Name>None</Name>
+              <BaseName>UnitOfOne</BaseName>
+              <NameExtension />
+              <Symbol></Symbol>
+              <BaseUnitString />
+              <UserPrefix>none</UserPrefix>
+            </UserUnit>
+            <UnitScaleResult>1</UnitScaleResult>
+            <UnitOffsetResult>0</UnitOffsetResult>
+          </RawUnit>
+          <Title>AdsAcquisition_107</Title>
+          <Comment></Comment>
+          <DisplayColor>Black</DisplayColor>
+          <IsFileBased>false</IsFileBased>
+          <Suffix>.svacq</Suffix>
+        </AdsAcquisition>
+        <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+          <IndexGroup>16641</IndexGroup>
+          <IndexOffset>10</IndexOffset>
+          <SymbolName>Axes.M1K4-Yup.SetPos</SymbolName>
+          <SymbolBased>true</SymbolBased>
+          <TargetPort>501</TargetPort>
+          <IsHistorical>false</IsHistorical>
+          <AmsNetId>172.21.92.63.1.1</AmsNetId>
+          <DataType>REAL64</DataType>
+          <UseTaskSampleTime>true</UseTaskSampleTime>
+          <ContextMask>0</ContextMask>
+          <VariableSize>8</VariableSize>
+          <DataAccess>
+            <DataAccessMode>
+              <Source>TwinCAT</Source>
+              <Protocoll>ADS</Protocoll>
+              <Format>TcBinary</Format>
+              <TimeContext>Present</TimeContext>
+              <TimeTangeInfo>
+                <StartTimeStamp>0</StartTimeStamp>
+                <EndTimeStamp>0</EndTimeStamp>
+              </TimeTangeInfo>
+            </DataAccessMode>
+          </DataAccess>
+          <Area>Local</Area>
+          <Guid>4381e43e-49cb-47d0-bcd9-edd38d328014</Guid>
+          <Name>M1K4YupSetPos</Name>
+          <SortPriority>10</SortPriority>
+          <Enabled>true</Enabled>
+          <UseLocalServer>true</UseLocalServer>
+          <FileHandle>0</FileHandle>
+          <ServerHandle>0</ServerHandle>
+          <ChannelStyleInformation />
+          <BaseSampleTime>20000</BaseSampleTime>
+          <Oversample>0</Oversample>
+          <ForceOversampling>false</ForceOversampling>
+          <ArrayLength>0</ArrayLength>
+          <TimeOffset>0</TimeOffset>
+          <RawUnit>
+            <Unit>
+              <BaseUnitValue>0</BaseUnitValue>
+              <Prefix>none</Prefix>
+              <ScaleFactor>1</ScaleFactor>
+              <Offset>0</Offset>
+              <Symbol></Symbol>
+              <ReturnText> (None) </ReturnText>
+              <BaseUnitString />
+              <NameExtension />
+            </Unit>
+            <Transformation>
+              <BaseUnitValue>0</BaseUnitValue>
+              <TargetUnitValue>0</TargetUnitValue>
+              <ScaleFactor>1</ScaleFactor>
+              <Name>None</Name>
+              <SourceUnitString />
+              <TargetUnitString />
+              <SourceUnitPrefix>none</SourceUnitPrefix>
+              <Symbol>1</Symbol>
+            </Transformation>
+            <UserUnit>
+              <BaseUnitValue>0</BaseUnitValue>
+              <Prefix>none</Prefix>
+              <ScaleFactor>1</ScaleFactor>
+              <Offset>0</Offset>
+              <Name>None</Name>
+              <BaseName>UnitOfOne</BaseName>
+              <NameExtension />
+              <Symbol></Symbol>
+              <BaseUnitString />
+              <UserPrefix>none</UserPrefix>
+            </UserUnit>
+            <UnitScaleResult>1</UnitScaleResult>
+            <UnitOffsetResult>0</UnitOffsetResult>
+          </RawUnit>
+          <Title>AdsAcquisition_107</Title>
+          <Comment></Comment>
+          <DisplayColor>Black</DisplayColor>
+          <IsFileBased>false</IsFileBased>
+          <Suffix>.svacq</Suffix>
+        </AdsAcquisition>
+        <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+          <IndexGroup>16642</IndexGroup>
+          <IndexOffset>65538</IndexOffset>
+          <SymbolName>Axes.M1K4-Ydwn.ActPos</SymbolName>
+          <SymbolBased>true</SymbolBased>
+          <TargetPort>501</TargetPort>
+          <IsHistorical>false</IsHistorical>
+          <AmsNetId>172.21.92.63.1.1</AmsNetId>
+          <DataType>REAL64</DataType>
+          <UseTaskSampleTime>true</UseTaskSampleTime>
+          <ContextMask>0</ContextMask>
+          <VariableSize>8</VariableSize>
+          <DataAccess>
+            <DataAccessMode>
+              <Source>TwinCAT</Source>
+              <Protocoll>ADS</Protocoll>
+              <Format>TcBinary</Format>
+              <TimeContext>Present</TimeContext>
+              <TimeTangeInfo>
+                <StartTimeStamp>0</StartTimeStamp>
+                <EndTimeStamp>0</EndTimeStamp>
+              </TimeTangeInfo>
+            </DataAccessMode>
+          </DataAccess>
+          <Area>Local</Area>
+          <Guid>3cad69ef-2fa5-4eab-9899-971ac787185b</Guid>
+          <Name>M1K4YdwnActPos</Name>
+          <SortPriority>10</SortPriority>
+          <Enabled>true</Enabled>
+          <UseLocalServer>true</UseLocalServer>
+          <FileHandle>0</FileHandle>
+          <ServerHandle>0</ServerHandle>
+          <ChannelStyleInformation />
+          <BaseSampleTime>20000</BaseSampleTime>
+          <Oversample>0</Oversample>
+          <ForceOversampling>false</ForceOversampling>
+          <ArrayLength>0</ArrayLength>
+          <TimeOffset>0</TimeOffset>
+          <RawUnit>
+            <Unit>
+              <BaseUnitValue>0</BaseUnitValue>
+              <Prefix>none</Prefix>
+              <ScaleFactor>1</ScaleFactor>
+              <Offset>0</Offset>
+              <Symbol></Symbol>
+              <ReturnText> (None) </ReturnText>
+              <BaseUnitString />
+              <NameExtension />
+            </Unit>
+            <Transformation>
+              <BaseUnitValue>0</BaseUnitValue>
+              <TargetUnitValue>0</TargetUnitValue>
+              <ScaleFactor>1</ScaleFactor>
+              <Name>None</Name>
+              <SourceUnitString />
+              <TargetUnitString />
+              <SourceUnitPrefix>none</SourceUnitPrefix>
+              <Symbol>1</Symbol>
+            </Transformation>
+            <UserUnit>
+              <BaseUnitValue>0</BaseUnitValue>
+              <Prefix>none</Prefix>
+              <ScaleFactor>1</ScaleFactor>
+              <Offset>0</Offset>
+              <Name>None</Name>
+              <BaseName>UnitOfOne</BaseName>
+              <NameExtension />
+              <Symbol></Symbol>
+              <BaseUnitString />
+              <UserPrefix>none</UserPrefix>
+            </UserUnit>
+            <UnitScaleResult>1</UnitScaleResult>
+            <UnitOffsetResult>0</UnitOffsetResult>
+          </RawUnit>
+          <Title>AdsAcquisition_107</Title>
+          <Comment></Comment>
+          <DisplayColor>Black</DisplayColor>
+          <IsFileBased>false</IsFileBased>
+          <Suffix>.svacq</Suffix>
+        </AdsAcquisition>
+        <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+          <IndexGroup>16642</IndexGroup>
+          <IndexOffset>10</IndexOffset>
+          <SymbolName>Axes.M1K4-Ydwn.SetPos</SymbolName>
+          <SymbolBased>true</SymbolBased>
+          <TargetPort>501</TargetPort>
+          <IsHistorical>false</IsHistorical>
+          <AmsNetId>172.21.92.63.1.1</AmsNetId>
+          <DataType>REAL64</DataType>
+          <UseTaskSampleTime>true</UseTaskSampleTime>
+          <ContextMask>0</ContextMask>
+          <VariableSize>8</VariableSize>
+          <DataAccess>
+            <DataAccessMode>
+              <Source>TwinCAT</Source>
+              <Protocoll>ADS</Protocoll>
+              <Format>TcBinary</Format>
+              <TimeContext>Present</TimeContext>
+              <TimeTangeInfo>
+                <StartTimeStamp>0</StartTimeStamp>
+                <EndTimeStamp>0</EndTimeStamp>
+              </TimeTangeInfo>
+            </DataAccessMode>
+          </DataAccess>
+          <Area>Local</Area>
+          <Guid>2b155ab9-8e03-4a3f-8531-2cd1ebb5570e</Guid>
+          <Name>M1K4YdwnSetPos</Name>
+          <SortPriority>10</SortPriority>
+          <Enabled>true</Enabled>
+          <UseLocalServer>true</UseLocalServer>
+          <FileHandle>0</FileHandle>
+          <ServerHandle>0</ServerHandle>
+          <ChannelStyleInformation />
+          <BaseSampleTime>20000</BaseSampleTime>
+          <Oversample>0</Oversample>
+          <ForceOversampling>false</ForceOversampling>
+          <ArrayLength>0</ArrayLength>
+          <TimeOffset>0</TimeOffset>
+          <RawUnit>
+            <Unit>
+              <BaseUnitValue>0</BaseUnitValue>
+              <Prefix>none</Prefix>
+              <ScaleFactor>1</ScaleFactor>
+              <Offset>0</Offset>
+              <Symbol></Symbol>
+              <ReturnText> (None) </ReturnText>
+              <BaseUnitString />
+              <NameExtension />
+            </Unit>
+            <Transformation>
+              <BaseUnitValue>0</BaseUnitValue>
+              <TargetUnitValue>0</TargetUnitValue>
+              <ScaleFactor>1</ScaleFactor>
+              <Name>None</Name>
+              <SourceUnitString />
+              <TargetUnitString />
+              <SourceUnitPrefix>none</SourceUnitPrefix>
+              <Symbol>1</Symbol>
+            </Transformation>
+            <UserUnit>
+              <BaseUnitValue>0</BaseUnitValue>
+              <Prefix>none</Prefix>
+              <ScaleFactor>1</ScaleFactor>
+              <Offset>0</Offset>
+              <Name>None</Name>
+              <BaseName>UnitOfOne</BaseName>
+              <NameExtension />
+              <Symbol></Symbol>
+              <BaseUnitString />
+              <UserPrefix>none</UserPrefix>
+            </UserUnit>
+            <UnitScaleResult>1</UnitScaleResult>
+            <UnitOffsetResult>0</UnitOffsetResult>
+          </RawUnit>
+          <Title>AdsAcquisition_107</Title>
+          <Comment></Comment>
+          <DisplayColor>Black</DisplayColor>
+          <IsFileBased>false</IsFileBased>
+          <Suffix>.svacq</Suffix>
+        </AdsAcquisition>
+        <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+          <IndexGroup>16643</IndexGroup>
+          <IndexOffset>65538</IndexOffset>
+          <SymbolName>Axes.M1K4-Xup.ActPos</SymbolName>
+          <SymbolBased>true</SymbolBased>
+          <TargetPort>501</TargetPort>
+          <IsHistorical>false</IsHistorical>
+          <AmsNetId>172.21.92.63.1.1</AmsNetId>
+          <DataType>REAL64</DataType>
+          <UseTaskSampleTime>true</UseTaskSampleTime>
+          <ContextMask>0</ContextMask>
+          <VariableSize>8</VariableSize>
+          <DataAccess>
+            <DataAccessMode>
+              <Source>TwinCAT</Source>
+              <Protocoll>ADS</Protocoll>
+              <Format>TcBinary</Format>
+              <TimeContext>Present</TimeContext>
+              <TimeTangeInfo>
+                <StartTimeStamp>0</StartTimeStamp>
+                <EndTimeStamp>0</EndTimeStamp>
+              </TimeTangeInfo>
+            </DataAccessMode>
+          </DataAccess>
+          <Area>Local</Area>
+          <Guid>c7f449ef-9cb5-4d65-8ad5-f53ea20d243c</Guid>
+          <Name>M1K4XupActPos</Name>
+          <SortPriority>10</SortPriority>
+          <Enabled>true</Enabled>
+          <UseLocalServer>true</UseLocalServer>
+          <FileHandle>0</FileHandle>
+          <ServerHandle>0</ServerHandle>
+          <ChannelStyleInformation />
+          <BaseSampleTime>20000</BaseSampleTime>
+          <Oversample>0</Oversample>
+          <ForceOversampling>false</ForceOversampling>
+          <ArrayLength>0</ArrayLength>
+          <TimeOffset>0</TimeOffset>
+          <RawUnit>
+            <Unit>
+              <BaseUnitValue>0</BaseUnitValue>
+              <Prefix>none</Prefix>
+              <ScaleFactor>1</ScaleFactor>
+              <Offset>0</Offset>
+              <Symbol></Symbol>
+              <ReturnText> (None) </ReturnText>
+              <BaseUnitString />
+              <NameExtension />
+            </Unit>
+            <Transformation>
+              <BaseUnitValue>0</BaseUnitValue>
+              <TargetUnitValue>0</TargetUnitValue>
+              <ScaleFactor>1</ScaleFactor>
+              <Name>None</Name>
+              <SourceUnitString />
+              <TargetUnitString />
+              <SourceUnitPrefix>none</SourceUnitPrefix>
+              <Symbol>1</Symbol>
+            </Transformation>
+            <UserUnit>
+              <BaseUnitValue>0</BaseUnitValue>
+              <Prefix>none</Prefix>
+              <ScaleFactor>1</ScaleFactor>
+              <Offset>0</Offset>
+              <Name>None</Name>
+              <BaseName>UnitOfOne</BaseName>
+              <NameExtension />
+              <Symbol></Symbol>
+              <BaseUnitString />
+              <UserPrefix>none</UserPrefix>
+            </UserUnit>
+            <UnitScaleResult>1</UnitScaleResult>
+            <UnitOffsetResult>0</UnitOffsetResult>
+          </RawUnit>
+          <Title>AdsAcquisition_107</Title>
+          <Comment></Comment>
+          <DisplayColor>Black</DisplayColor>
+          <IsFileBased>false</IsFileBased>
+          <Suffix>.svacq</Suffix>
+        </AdsAcquisition>
+        <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+          <IndexGroup>16643</IndexGroup>
+          <IndexOffset>10</IndexOffset>
+          <SymbolName>Axes.M1K4-Xup.SetPos</SymbolName>
+          <SymbolBased>true</SymbolBased>
+          <TargetPort>501</TargetPort>
+          <IsHistorical>false</IsHistorical>
+          <AmsNetId>172.21.92.63.1.1</AmsNetId>
+          <DataType>REAL64</DataType>
+          <UseTaskSampleTime>true</UseTaskSampleTime>
+          <ContextMask>0</ContextMask>
+          <VariableSize>8</VariableSize>
+          <DataAccess>
+            <DataAccessMode>
+              <Source>TwinCAT</Source>
+              <Protocoll>ADS</Protocoll>
+              <Format>TcBinary</Format>
+              <TimeContext>Present</TimeContext>
+              <TimeTangeInfo>
+                <StartTimeStamp>0</StartTimeStamp>
+                <EndTimeStamp>0</EndTimeStamp>
+              </TimeTangeInfo>
+            </DataAccessMode>
+          </DataAccess>
+          <Area>Local</Area>
+          <Guid>fb2a0a62-81a5-42ee-ba1c-e3e19182d32d</Guid>
+          <Name>M1K4XupSetPos</Name>
+          <SortPriority>10</SortPriority>
+          <Enabled>true</Enabled>
+          <UseLocalServer>true</UseLocalServer>
+          <FileHandle>0</FileHandle>
+          <ServerHandle>0</ServerHandle>
+          <ChannelStyleInformation />
+          <BaseSampleTime>20000</BaseSampleTime>
+          <Oversample>0</Oversample>
+          <ForceOversampling>false</ForceOversampling>
+          <ArrayLength>0</ArrayLength>
+          <TimeOffset>0</TimeOffset>
+          <RawUnit>
+            <Unit>
+              <BaseUnitValue>0</BaseUnitValue>
+              <Prefix>none</Prefix>
+              <ScaleFactor>1</ScaleFactor>
+              <Offset>0</Offset>
+              <Symbol></Symbol>
+              <ReturnText> (None) </ReturnText>
+              <BaseUnitString />
+              <NameExtension />
+            </Unit>
+            <Transformation>
+              <BaseUnitValue>0</BaseUnitValue>
+              <TargetUnitValue>0</TargetUnitValue>
+              <ScaleFactor>1</ScaleFactor>
+              <Name>None</Name>
+              <SourceUnitString />
+              <TargetUnitString />
+              <SourceUnitPrefix>none</SourceUnitPrefix>
+              <Symbol>1</Symbol>
+            </Transformation>
+            <UserUnit>
+              <BaseUnitValue>0</BaseUnitValue>
+              <Prefix>none</Prefix>
+              <ScaleFactor>1</ScaleFactor>
+              <Offset>0</Offset>
+              <Name>None</Name>
+              <BaseName>UnitOfOne</BaseName>
+              <NameExtension />
+              <Symbol></Symbol>
+              <BaseUnitString />
+              <UserPrefix>none</UserPrefix>
+            </UserUnit>
+            <UnitScaleResult>1</UnitScaleResult>
+            <UnitOffsetResult>0</UnitOffsetResult>
+          </RawUnit>
+          <Title>AdsAcquisition_107</Title>
+          <Comment></Comment>
+          <DisplayColor>Black</DisplayColor>
+          <IsFileBased>false</IsFileBased>
+          <Suffix>.svacq</Suffix>
+        </AdsAcquisition>
+        <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+          <IndexGroup>16644</IndexGroup>
+          <IndexOffset>65538</IndexOffset>
+          <SymbolName>Axes.M1K4-Xdwn.ActPos</SymbolName>
+          <SymbolBased>true</SymbolBased>
+          <TargetPort>501</TargetPort>
+          <IsHistorical>false</IsHistorical>
+          <AmsNetId>172.21.92.63.1.1</AmsNetId>
+          <DataType>REAL64</DataType>
+          <UseTaskSampleTime>true</UseTaskSampleTime>
+          <ContextMask>0</ContextMask>
+          <VariableSize>8</VariableSize>
+          <DataAccess>
+            <DataAccessMode>
+              <Source>TwinCAT</Source>
+              <Protocoll>ADS</Protocoll>
+              <Format>TcBinary</Format>
+              <TimeContext>Present</TimeContext>
+              <TimeTangeInfo>
+                <StartTimeStamp>0</StartTimeStamp>
+                <EndTimeStamp>0</EndTimeStamp>
+              </TimeTangeInfo>
+            </DataAccessMode>
+          </DataAccess>
+          <Area>Local</Area>
+          <Guid>4bde2ee0-8c33-489f-940d-2674103800f1</Guid>
+          <Name>M1K4XdwnActPos</Name>
+          <SortPriority>10</SortPriority>
+          <Enabled>true</Enabled>
+          <UseLocalServer>true</UseLocalServer>
+          <FileHandle>0</FileHandle>
+          <ServerHandle>0</ServerHandle>
+          <ChannelStyleInformation />
+          <BaseSampleTime>20000</BaseSampleTime>
+          <Oversample>0</Oversample>
+          <ForceOversampling>false</ForceOversampling>
+          <ArrayLength>0</ArrayLength>
+          <TimeOffset>0</TimeOffset>
+          <RawUnit>
+            <Unit>
+              <BaseUnitValue>0</BaseUnitValue>
+              <Prefix>none</Prefix>
+              <ScaleFactor>1</ScaleFactor>
+              <Offset>0</Offset>
+              <Symbol></Symbol>
+              <ReturnText> (None) </ReturnText>
+              <BaseUnitString />
+              <NameExtension />
+            </Unit>
+            <Transformation>
+              <BaseUnitValue>0</BaseUnitValue>
+              <TargetUnitValue>0</TargetUnitValue>
+              <ScaleFactor>1</ScaleFactor>
+              <Name>None</Name>
+              <SourceUnitString />
+              <TargetUnitString />
+              <SourceUnitPrefix>none</SourceUnitPrefix>
+              <Symbol>1</Symbol>
+            </Transformation>
+            <UserUnit>
+              <BaseUnitValue>0</BaseUnitValue>
+              <Prefix>none</Prefix>
+              <ScaleFactor>1</ScaleFactor>
+              <Offset>0</Offset>
+              <Name>None</Name>
+              <BaseName>UnitOfOne</BaseName>
+              <NameExtension />
+              <Symbol></Symbol>
+              <BaseUnitString />
+              <UserPrefix>none</UserPrefix>
+            </UserUnit>
+            <UnitScaleResult>1</UnitScaleResult>
+            <UnitOffsetResult>0</UnitOffsetResult>
+          </RawUnit>
+          <Title>AdsAcquisition_107</Title>
+          <Comment></Comment>
+          <DisplayColor>Black</DisplayColor>
+          <IsFileBased>false</IsFileBased>
+          <Suffix>.svacq</Suffix>
+        </AdsAcquisition>
+        <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+          <IndexGroup>16644</IndexGroup>
+          <IndexOffset>10</IndexOffset>
+          <SymbolName>Axes.M1K4-Xdwn.SetPos</SymbolName>
+          <SymbolBased>true</SymbolBased>
+          <TargetPort>501</TargetPort>
+          <IsHistorical>false</IsHistorical>
+          <AmsNetId>172.21.92.63.1.1</AmsNetId>
+          <DataType>REAL64</DataType>
+          <UseTaskSampleTime>true</UseTaskSampleTime>
+          <ContextMask>0</ContextMask>
+          <VariableSize>8</VariableSize>
+          <DataAccess>
+            <DataAccessMode>
+              <Source>TwinCAT</Source>
+              <Protocoll>ADS</Protocoll>
+              <Format>TcBinary</Format>
+              <TimeContext>Present</TimeContext>
+              <TimeTangeInfo>
+                <StartTimeStamp>0</StartTimeStamp>
+                <EndTimeStamp>0</EndTimeStamp>
+              </TimeTangeInfo>
+            </DataAccessMode>
+          </DataAccess>
+          <Area>Local</Area>
+          <Guid>b2641d1d-dc80-47cf-8ec0-560346af7e1e</Guid>
+          <Name>M1K4XdwnSetPos</Name>
+          <SortPriority>10</SortPriority>
+          <Enabled>true</Enabled>
+          <UseLocalServer>true</UseLocalServer>
+          <FileHandle>0</FileHandle>
+          <ServerHandle>0</ServerHandle>
+          <ChannelStyleInformation />
+          <BaseSampleTime>20000</BaseSampleTime>
+          <Oversample>0</Oversample>
+          <ForceOversampling>false</ForceOversampling>
+          <ArrayLength>0</ArrayLength>
+          <TimeOffset>0</TimeOffset>
+          <RawUnit>
+            <Unit>
+              <BaseUnitValue>0</BaseUnitValue>
+              <Prefix>none</Prefix>
+              <ScaleFactor>1</ScaleFactor>
+              <Offset>0</Offset>
+              <Symbol></Symbol>
+              <ReturnText> (None) </ReturnText>
+              <BaseUnitString />
+              <NameExtension />
+            </Unit>
+            <Transformation>
+              <BaseUnitValue>0</BaseUnitValue>
+              <TargetUnitValue>0</TargetUnitValue>
+              <ScaleFactor>1</ScaleFactor>
+              <Name>None</Name>
+              <SourceUnitString />
+              <TargetUnitString />
+              <SourceUnitPrefix>none</SourceUnitPrefix>
+              <Symbol>1</Symbol>
+            </Transformation>
+            <UserUnit>
+              <BaseUnitValue>0</BaseUnitValue>
+              <Prefix>none</Prefix>
+              <ScaleFactor>1</ScaleFactor>
+              <Offset>0</Offset>
+              <Name>None</Name>
+              <BaseName>UnitOfOne</BaseName>
+              <NameExtension />
+              <Symbol></Symbol>
+              <BaseUnitString />
+              <UserPrefix>none</UserPrefix>
+            </UserUnit>
+            <UnitScaleResult>1</UnitScaleResult>
+            <UnitOffsetResult>0</UnitOffsetResult>
+          </RawUnit>
+          <Title>AdsAcquisition_107</Title>
+          <Comment></Comment>
+          <DisplayColor>Black</DisplayColor>
+          <IsFileBased>false</IsFileBased>
+          <Suffix>.svacq</Suffix>
+        </AdsAcquisition>
+        <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+          <IndexGroup>16645</IndexGroup>
+          <IndexOffset>65538</IndexOffset>
+          <SymbolName>Axes.M1K4-Pitch.ActPos</SymbolName>
+          <SymbolBased>true</SymbolBased>
+          <TargetPort>501</TargetPort>
+          <IsHistorical>false</IsHistorical>
+          <AmsNetId>172.21.92.63.1.1</AmsNetId>
+          <DataType>REAL64</DataType>
+          <UseTaskSampleTime>true</UseTaskSampleTime>
+          <ContextMask>0</ContextMask>
+          <VariableSize>8</VariableSize>
+          <DataAccess>
+            <DataAccessMode>
+              <Source>TwinCAT</Source>
+              <Protocoll>ADS</Protocoll>
+              <Format>TcBinary</Format>
+              <TimeContext>Present</TimeContext>
+              <TimeTangeInfo>
+                <StartTimeStamp>0</StartTimeStamp>
+                <EndTimeStamp>0</EndTimeStamp>
+              </TimeTangeInfo>
+            </DataAccessMode>
+          </DataAccess>
+          <Area>Local</Area>
+          <Guid>8f9d16bb-3fd4-4408-898f-8a23052583dd</Guid>
+          <Name>M1K4PitchActPos</Name>
+          <SortPriority>10</SortPriority>
+          <Enabled>true</Enabled>
+          <UseLocalServer>true</UseLocalServer>
+          <FileHandle>0</FileHandle>
+          <ServerHandle>0</ServerHandle>
+          <ChannelStyleInformation />
+          <BaseSampleTime>20000</BaseSampleTime>
+          <Oversample>0</Oversample>
+          <ForceOversampling>false</ForceOversampling>
+          <ArrayLength>0</ArrayLength>
+          <TimeOffset>0</TimeOffset>
+          <RawUnit>
+            <Unit>
+              <BaseUnitValue>0</BaseUnitValue>
+              <Prefix>none</Prefix>
+              <ScaleFactor>1</ScaleFactor>
+              <Offset>0</Offset>
+              <Symbol></Symbol>
+              <ReturnText> (None) </ReturnText>
+              <BaseUnitString />
+              <NameExtension />
+            </Unit>
+            <Transformation>
+              <BaseUnitValue>0</BaseUnitValue>
+              <TargetUnitValue>0</TargetUnitValue>
+              <ScaleFactor>1</ScaleFactor>
+              <Name>None</Name>
+              <SourceUnitString />
+              <TargetUnitString />
+              <SourceUnitPrefix>none</SourceUnitPrefix>
+              <Symbol>1</Symbol>
+            </Transformation>
+            <UserUnit>
+              <BaseUnitValue>0</BaseUnitValue>
+              <Prefix>none</Prefix>
+              <ScaleFactor>1</ScaleFactor>
+              <Offset>0</Offset>
+              <Name>None</Name>
+              <BaseName>UnitOfOne</BaseName>
+              <NameExtension />
+              <Symbol></Symbol>
+              <BaseUnitString />
+              <UserPrefix>none</UserPrefix>
+            </UserUnit>
+            <UnitScaleResult>1</UnitScaleResult>
+            <UnitOffsetResult>0</UnitOffsetResult>
+          </RawUnit>
+          <Title>AdsAcquisition_107</Title>
+          <Comment></Comment>
+          <DisplayColor>Black</DisplayColor>
+          <IsFileBased>false</IsFileBased>
+          <Suffix>.svacq</Suffix>
+        </AdsAcquisition>
+        <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+          <IndexGroup>16645</IndexGroup>
+          <IndexOffset>10</IndexOffset>
+          <SymbolName>Axes.M1K4-Pitch.SetPos</SymbolName>
+          <SymbolBased>true</SymbolBased>
+          <TargetPort>501</TargetPort>
+          <IsHistorical>false</IsHistorical>
+          <AmsNetId>172.21.92.63.1.1</AmsNetId>
+          <DataType>REAL64</DataType>
+          <UseTaskSampleTime>true</UseTaskSampleTime>
+          <ContextMask>0</ContextMask>
+          <VariableSize>8</VariableSize>
+          <DataAccess>
+            <DataAccessMode>
+              <Source>TwinCAT</Source>
+              <Protocoll>ADS</Protocoll>
+              <Format>TcBinary</Format>
+              <TimeContext>Present</TimeContext>
+              <TimeTangeInfo>
+                <StartTimeStamp>0</StartTimeStamp>
+                <EndTimeStamp>0</EndTimeStamp>
+              </TimeTangeInfo>
+            </DataAccessMode>
+          </DataAccess>
+          <Area>Local</Area>
+          <Guid>ff1efce0-5781-452d-b72c-e5a4871ee2a1</Guid>
+          <Name>M1K4PitchSetPos</Name>
+          <SortPriority>10</SortPriority>
+          <Enabled>true</Enabled>
+          <UseLocalServer>true</UseLocalServer>
+          <FileHandle>0</FileHandle>
+          <ServerHandle>0</ServerHandle>
+          <ChannelStyleInformation />
+          <BaseSampleTime>20000</BaseSampleTime>
+          <Oversample>0</Oversample>
+          <ForceOversampling>false</ForceOversampling>
+          <ArrayLength>0</ArrayLength>
+          <TimeOffset>0</TimeOffset>
+          <RawUnit>
+            <Unit>
+              <BaseUnitValue>0</BaseUnitValue>
+              <Prefix>none</Prefix>
+              <ScaleFactor>1</ScaleFactor>
+              <Offset>0</Offset>
+              <Symbol></Symbol>
+              <ReturnText> (None) </ReturnText>
+              <BaseUnitString />
+              <NameExtension />
+            </Unit>
+            <Transformation>
+              <BaseUnitValue>0</BaseUnitValue>
+              <TargetUnitValue>0</TargetUnitValue>
+              <ScaleFactor>1</ScaleFactor>
+              <Name>None</Name>
+              <SourceUnitString />
+              <TargetUnitString />
+              <SourceUnitPrefix>none</SourceUnitPrefix>
+              <Symbol>1</Symbol>
+            </Transformation>
+            <UserUnit>
+              <BaseUnitValue>0</BaseUnitValue>
+              <Prefix>none</Prefix>
+              <ScaleFactor>1</ScaleFactor>
+              <Offset>0</Offset>
+              <Name>None</Name>
+              <BaseName>UnitOfOne</BaseName>
+              <NameExtension />
+              <Symbol></Symbol>
+              <BaseUnitString />
+              <UserPrefix>none</UserPrefix>
+            </UserUnit>
+            <UnitScaleResult>1</UnitScaleResult>
+            <UnitOffsetResult>0</UnitOffsetResult>
+          </RawUnit>
+          <Title>AdsAcquisition_107</Title>
+          <Comment></Comment>
+          <DisplayColor>Black</DisplayColor>
+          <IsFileBased>false</IsFileBased>
+          <Suffix>.svacq</Suffix>
+        </AdsAcquisition>
+      </SubMember>
+      <Guid>fa1dd181-9cb1-4964-9ea7-e1516dc0bf2e</Guid>
+      <Title>DataPool_85</Title>
+      <Name>DataPool</Name>
+      <Comment />
+      <DisplayColor>Black</DisplayColor>
+      <SortPriority>0</SortPriority>
+      <IsFileBased>false</IsFileBased>
+      <Suffix>.svdp</Suffix>
+    </DataPool>
+    <TriggerModule AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+      <SubMember />
+      <Guid>f17b151c-d9a4-4742-b5f0-cb75050a11b7</Guid>
+      <Title>TriggerModule_95</Title>
+      <Name>Trigger</Name>
+      <Comment />
+      <DisplayColor>Black</DisplayColor>
+      <SortPriority>100</SortPriority>
+      <IsFileBased>false</IsFileBased>
+      <Suffix>.svtm</Suffix>
+    </TriggerModule>
+  </SubMember>
+  <Title>NcScopeConfiguration</Title>
+  <Name>Scope YT NC Project</Name>
+  <SortPriority>-1</SortPriority>
+  <IsFileBased>true</IsFileBased>
+  <Layout>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;Layout&gt;
+  &lt;Window Guid="0df4d2ef-65c1-45b6-8b34-ba2dc7f63253" LastFocused="132370058705886884" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="35adb821-528c-4ee5-95e4-0f2e0a9943e6" DocumentIndexInWindowGroup="0" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
+  &lt;DocumentContainer Dock="5"&gt;
+    &lt;SplitLayoutSystem WorkingSize="250, 400" SplitMode="0"&gt;
+      &lt;ControlLayoutSystem WorkingSize="250, 400" Guid="35adb821-528c-4ee5-95e4-0f2e0a9943e6" Collapsed="0" SelectedControl="0df4d2ef-65c1-45b6-8b34-ba2dc7f63253"&gt;
+        &lt;Controls&gt;
+          &lt;Control Guid="0df4d2ef-65c1-45b6-8b34-ba2dc7f63253" /&gt;
+        &lt;/Controls&gt;
+      &lt;/ControlLayoutSystem&gt;
+    &lt;/SplitLayoutSystem&gt;
+  &lt;/DocumentContainer&gt;
+&lt;/Layout&gt;</Layout>
+  <StopMode>AutoStop</StopMode>
+  <AutoRestartRecord>false</AutoRestartRecord>
+  <MainServer>127.0.0.1.1.1</MainServer>
+  <HeadlessServerConnectionId>00000000-0000-0000-0000-000000000000</HeadlessServerConnectionId>
+  <TargetConnectionIds />
+  <HeadlessServer />
+  <ViewDetailLevel>Default</ViewDetailLevel>
+  <UseAutoSave>false</UseAutoSave>
+  <AutoSavePath>$ScopeProject$\AutoSave</AutoSavePath>
+  <AutoSaveFileNameMask>{SCOPE}_AutoSave_{HH_mm_ss}</AutoSaveFileNameMask>
+  <AutoDeleteMode>Disabled</AutoDeleteMode>
+  <AutoDeleteOlderThan>0</AutoDeleteOlderThan>
+  <AutoDeleteCapacity>0</AutoDeleteCapacity>
+  <UseFileStore>true</UseFileStore>
+  <RecordTime>6000000000</RecordTime>
+  <IsTemplate>false</IsTemplate>
+  <UseUserSettings>true</UseUserSettings>
+  <Guid>4c3677e1-b6b9-45c4-a6fd-2d4c50628bff</Guid>
+  <Comment />
+  <DisplayColor>Black</DisplayColor>
+  <Suffix>.tcscopex</Suffix>
+</ScopeProject>

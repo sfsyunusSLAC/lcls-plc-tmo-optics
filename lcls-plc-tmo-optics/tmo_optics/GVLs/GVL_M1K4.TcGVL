@@ -5,8 +5,8 @@
 VAR_GLOBAL
 	// Pitch Mechanism:
 	{attribute 'TcLinkTo' := '.diEncCnt:=TIIB[EL5042_M1K4_PitchBender]^FB Inputs Channel 1^Position'}
-	M1K4_Pitch : HOMS_PitchMechanism := (ReqPosLimHi := 21700,
-		                                 ReqPosLimLo := 17400,
+	M1K4_Pitch : HOMS_PitchMechanism := (ReqPosLimHi := -2136.3,
+		                                 ReqPosLimLo := 2371.9,
 		                                 diEncPosLimHi := 11132100,
 		                                 diEncPosLimLo := 8926200);
 END_VAR]]></Declaration>

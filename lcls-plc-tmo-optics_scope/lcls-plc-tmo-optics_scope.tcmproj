@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{f76da610-f06f-462a-8a6e-f0e93a3a7726}</ProjectGuid>
+    <AssemblyName>lcls-plc-tmo-optics_scope</AssemblyName>
+    <Name>lcls-plc-tmo-optics_scope</Name>
+    <RootNamespace>lcls-plc-tmo-optics_scope</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Scope YT NC Project.tcscopex">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+</Project>
