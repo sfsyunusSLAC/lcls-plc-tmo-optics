@@ -70,7 +70,7 @@
           <Suffix>.svstyle</Suffix>
         </ChartStyle>
         <AxisGroup AssemblyName="TwinCAT.Measurement.Scope.API.Model">
-          <Enabled>false</Enabled>
+          <Enabled>true</Enabled>
           <SubMember>
             <TimeAxis AssemblyName="TwinCAT.Measurement.Scope.API.Model">
               <Orientation>X</Orientation>
@@ -408,7 +408,7 @@
           <Suffix>.svagroup</Suffix>
         </AxisGroup>
         <AxisGroup AssemblyName="TwinCAT.Measurement.Scope.API.Model">
-          <Enabled>false</Enabled>
+          <Enabled>true</Enabled>
           <SubMember>
             <RefGuid-TimeAxis>35bd72d7-a672-4fc4-8a77-9fd465931190</RefGuid-TimeAxis>
             <ValueAxis AssemblyName="TwinCAT.Measurement.Scope.API.Model">
@@ -1311,7 +1311,7 @@
           <Suffix>.svagroup</Suffix>
         </AxisGroup>
         <AxisGroup AssemblyName="TwinCAT.Measurement.Scope.API.Model">
-          <Enabled>true</Enabled>
+          <Enabled>false</Enabled>
           <SubMember>
             <RefGuid-TimeAxis>35bd72d7-a672-4fc4-8a77-9fd465931190</RefGuid-TimeAxis>
             <ValueAxis AssemblyName="TwinCAT.Measurement.Scope.API.Model">
@@ -1653,7 +1653,7 @@
           <SortPriority>10</SortPriority>
           <Enabled>true</Enabled>
           <UseLocalServer>true</UseLocalServer>
-          <FileHandle>11</FileHandle>
+          <FileHandle>31</FileHandle>
           <ServerHandle>0</ServerHandle>
           <BaseSampleTime>20000</BaseSampleTime>
           <Oversample>0</Oversample>
@@ -1733,7 +1733,7 @@
           <SortPriority>10</SortPriority>
           <Enabled>true</Enabled>
           <UseLocalServer>true</UseLocalServer>
-          <FileHandle>12</FileHandle>
+          <FileHandle>32</FileHandle>
           <ServerHandle>0</ServerHandle>
           <BaseSampleTime>20000</BaseSampleTime>
           <Oversample>0</Oversample>
@@ -1813,7 +1813,7 @@
           <SortPriority>10</SortPriority>
           <Enabled>true</Enabled>
           <UseLocalServer>true</UseLocalServer>
-          <FileHandle>13</FileHandle>
+          <FileHandle>33</FileHandle>
           <ServerHandle>0</ServerHandle>
           <BaseSampleTime>20000</BaseSampleTime>
           <Oversample>0</Oversample>
@@ -1893,7 +1893,7 @@
           <SortPriority>10</SortPriority>
           <Enabled>true</Enabled>
           <UseLocalServer>true</UseLocalServer>
-          <FileHandle>14</FileHandle>
+          <FileHandle>34</FileHandle>
           <ServerHandle>0</ServerHandle>
           <BaseSampleTime>20000</BaseSampleTime>
           <Oversample>0</Oversample>
@@ -1973,7 +1973,7 @@
           <SortPriority>10</SortPriority>
           <Enabled>true</Enabled>
           <UseLocalServer>true</UseLocalServer>
-          <FileHandle>15</FileHandle>
+          <FileHandle>35</FileHandle>
           <ServerHandle>0</ServerHandle>
           <BaseSampleTime>20000</BaseSampleTime>
           <Oversample>0</Oversample>
@@ -2053,7 +2053,7 @@
           <SortPriority>10</SortPriority>
           <Enabled>true</Enabled>
           <UseLocalServer>true</UseLocalServer>
-          <FileHandle>16</FileHandle>
+          <FileHandle>36</FileHandle>
           <ServerHandle>0</ServerHandle>
           <BaseSampleTime>20000</BaseSampleTime>
           <Oversample>0</Oversample>
@@ -2133,7 +2133,7 @@
           <SortPriority>10</SortPriority>
           <Enabled>true</Enabled>
           <UseLocalServer>true</UseLocalServer>
-          <FileHandle>17</FileHandle>
+          <FileHandle>37</FileHandle>
           <ServerHandle>0</ServerHandle>
           <BaseSampleTime>20000</BaseSampleTime>
           <Oversample>0</Oversample>
@@ -2213,7 +2213,7 @@
           <SortPriority>10</SortPriority>
           <Enabled>true</Enabled>
           <UseLocalServer>true</UseLocalServer>
-          <FileHandle>18</FileHandle>
+          <FileHandle>38</FileHandle>
           <ServerHandle>0</ServerHandle>
           <BaseSampleTime>20000</BaseSampleTime>
           <Oversample>0</Oversample>
@@ -2293,7 +2293,7 @@
           <SortPriority>10</SortPriority>
           <Enabled>true</Enabled>
           <UseLocalServer>true</UseLocalServer>
-          <FileHandle>19</FileHandle>
+          <FileHandle>39</FileHandle>
           <ServerHandle>0</ServerHandle>
           <BaseSampleTime>20000</BaseSampleTime>
           <Oversample>0</Oversample>
@@ -2373,7 +2373,7 @@
           <SortPriority>10</SortPriority>
           <Enabled>true</Enabled>
           <UseLocalServer>true</UseLocalServer>
-          <FileHandle>20</FileHandle>
+          <FileHandle>40</FileHandle>
           <ServerHandle>0</ServerHandle>
           <BaseSampleTime>20000</BaseSampleTime>
           <Oversample>0</Oversample>
@@ -2451,7 +2451,7 @@
   <IsFileBased>true</IsFileBased>
   <Layout>&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;Layout&gt;
-  &lt;Window Guid="0df4d2ef-65c1-45b6-8b34-ba2dc7f63253" LastFocused="132372396817443005" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="35adb821-528c-4ee5-95e4-0f2e0a9943e6" DocumentIndexInWindowGroup="0" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
+  &lt;Window Guid="0df4d2ef-65c1-45b6-8b34-ba2dc7f63253" LastFocused="132372540013582758" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="35adb821-528c-4ee5-95e4-0f2e0a9943e6" DocumentIndexInWindowGroup="0" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
   &lt;DocumentContainer Dock="5"&gt;
     &lt;SplitLayoutSystem WorkingSize="250, 400" SplitMode="0"&gt;
       &lt;ControlLayoutSystem WorkingSize="250, 400" Guid="35adb821-528c-4ee5-95e4-0f2e0a9943e6" Collapsed="0" SelectedControl="0df4d2ef-65c1-45b6-8b34-ba2dc7f63253"&gt;
