@@ -709,14 +709,14 @@
           <Suffix>.svagroup</Suffix>
         </AxisGroup>
         <AxisGroup AssemblyName="TwinCAT.Measurement.Scope.API.Model">
-          <Enabled>true</Enabled>
+          <Enabled>false</Enabled>
           <SubMember>
             <RefGuid-TimeAxis>35bd72d7-a672-4fc4-8a77-9fd465931190</RefGuid-TimeAxis>
             <ValueAxis AssemblyName="TwinCAT.Measurement.Scope.API.Model">
               <Orientation>Y</Orientation>
               <ManualMin>-0.5</ManualMin>
               <ManualMax>0.5</ManualMax>
-              <ScalingMode>AutoGrowOnly</ScalingMode>
+              <ScalingMode>AutoGrowNShrink</ScalingMode>
               <Inverted>false</Inverted>
               <Logarithmic>false</Logarithmic>
               <SubMember>
@@ -728,7 +728,7 @@
                   <GridLineWidth>1</GridLineWidth>
                   <GridColor>DarkSlateGray</GridColor>
                   <Precision>6</Precision>
-                  <ShowName>false</ShowName>
+                  <ShowName>true</ShowName>
                   <LineWidth>1</LineWidth>
                   <Visible>true</Visible>
                   <Guid>ae74d61c-6795-42fc-b88d-269d72fa6707</Guid>
@@ -742,7 +742,7 @@
                 </AxisStyle>
               </SubMember>
               <Guid>5e7ffa25-bd33-4e77-b7d6-54eac67e09b4</Guid>
-              <Title>Value Axis</Title>
+              <Title>M1K4 Xup Position</Title>
               <Name>Value Axis (2)</Name>
               <Comment />
               <DisplayColor>Black</DisplayColor>
@@ -1010,7 +1010,7 @@
           <Suffix>.svagroup</Suffix>
         </AxisGroup>
         <AxisGroup AssemblyName="TwinCAT.Measurement.Scope.API.Model">
-          <Enabled>true</Enabled>
+          <Enabled>false</Enabled>
           <SubMember>
             <RefGuid-TimeAxis>35bd72d7-a672-4fc4-8a77-9fd465931190</RefGuid-TimeAxis>
             <ValueAxis AssemblyName="TwinCAT.Measurement.Scope.API.Model">
@@ -1311,7 +1311,7 @@
           <Suffix>.svagroup</Suffix>
         </AxisGroup>
         <AxisGroup AssemblyName="TwinCAT.Measurement.Scope.API.Model">
-          <Enabled>false</Enabled>
+          <Enabled>true</Enabled>
           <SubMember>
             <RefGuid-TimeAxis>35bd72d7-a672-4fc4-8a77-9fd465931190</RefGuid-TimeAxis>
             <ValueAxis AssemblyName="TwinCAT.Measurement.Scope.API.Model">
@@ -1653,7 +1653,7 @@
           <SortPriority>10</SortPriority>
           <Enabled>true</Enabled>
           <UseLocalServer>true</UseLocalServer>
-          <FileHandle>51</FileHandle>
+          <FileHandle>11</FileHandle>
           <ServerHandle>0</ServerHandle>
           <BaseSampleTime>20000</BaseSampleTime>
           <Oversample>0</Oversample>
@@ -1733,7 +1733,7 @@
           <SortPriority>10</SortPriority>
           <Enabled>true</Enabled>
           <UseLocalServer>true</UseLocalServer>
-          <FileHandle>52</FileHandle>
+          <FileHandle>12</FileHandle>
           <ServerHandle>0</ServerHandle>
           <BaseSampleTime>20000</BaseSampleTime>
           <Oversample>0</Oversample>
@@ -1813,7 +1813,7 @@
           <SortPriority>10</SortPriority>
           <Enabled>true</Enabled>
           <UseLocalServer>true</UseLocalServer>
-          <FileHandle>53</FileHandle>
+          <FileHandle>13</FileHandle>
           <ServerHandle>0</ServerHandle>
           <BaseSampleTime>20000</BaseSampleTime>
           <Oversample>0</Oversample>
@@ -1893,7 +1893,7 @@
           <SortPriority>10</SortPriority>
           <Enabled>true</Enabled>
           <UseLocalServer>true</UseLocalServer>
-          <FileHandle>54</FileHandle>
+          <FileHandle>14</FileHandle>
           <ServerHandle>0</ServerHandle>
           <BaseSampleTime>20000</BaseSampleTime>
           <Oversample>0</Oversample>
@@ -1973,7 +1973,7 @@
           <SortPriority>10</SortPriority>
           <Enabled>true</Enabled>
           <UseLocalServer>true</UseLocalServer>
-          <FileHandle>55</FileHandle>
+          <FileHandle>15</FileHandle>
           <ServerHandle>0</ServerHandle>
           <BaseSampleTime>20000</BaseSampleTime>
           <Oversample>0</Oversample>
@@ -2053,7 +2053,7 @@
           <SortPriority>10</SortPriority>
           <Enabled>true</Enabled>
           <UseLocalServer>true</UseLocalServer>
-          <FileHandle>56</FileHandle>
+          <FileHandle>16</FileHandle>
           <ServerHandle>0</ServerHandle>
           <BaseSampleTime>20000</BaseSampleTime>
           <Oversample>0</Oversample>
@@ -2133,7 +2133,7 @@
           <SortPriority>10</SortPriority>
           <Enabled>true</Enabled>
           <UseLocalServer>true</UseLocalServer>
-          <FileHandle>57</FileHandle>
+          <FileHandle>17</FileHandle>
           <ServerHandle>0</ServerHandle>
           <BaseSampleTime>20000</BaseSampleTime>
           <Oversample>0</Oversample>
@@ -2213,7 +2213,7 @@
           <SortPriority>10</SortPriority>
           <Enabled>true</Enabled>
           <UseLocalServer>true</UseLocalServer>
-          <FileHandle>58</FileHandle>
+          <FileHandle>18</FileHandle>
           <ServerHandle>0</ServerHandle>
           <BaseSampleTime>20000</BaseSampleTime>
           <Oversample>0</Oversample>
@@ -2293,7 +2293,7 @@
           <SortPriority>10</SortPriority>
           <Enabled>true</Enabled>
           <UseLocalServer>true</UseLocalServer>
-          <FileHandle>59</FileHandle>
+          <FileHandle>19</FileHandle>
           <ServerHandle>0</ServerHandle>
           <BaseSampleTime>20000</BaseSampleTime>
           <Oversample>0</Oversample>
@@ -2373,7 +2373,7 @@
           <SortPriority>10</SortPriority>
           <Enabled>true</Enabled>
           <UseLocalServer>true</UseLocalServer>
-          <FileHandle>60</FileHandle>
+          <FileHandle>20</FileHandle>
           <ServerHandle>0</ServerHandle>
           <BaseSampleTime>20000</BaseSampleTime>
           <Oversample>0</Oversample>
@@ -2451,7 +2451,7 @@
   <IsFileBased>true</IsFileBased>
   <Layout>&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;Layout&gt;
-  &lt;Window Guid="0df4d2ef-65c1-45b6-8b34-ba2dc7f63253" LastFocused="132370081787781076" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="35adb821-528c-4ee5-95e4-0f2e0a9943e6" DocumentIndexInWindowGroup="0" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
+  &lt;Window Guid="0df4d2ef-65c1-45b6-8b34-ba2dc7f63253" LastFocused="132372396817443005" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="35adb821-528c-4ee5-95e4-0f2e0a9943e6" DocumentIndexInWindowGroup="0" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
   &lt;DocumentContainer Dock="5"&gt;
     &lt;SplitLayoutSystem WorkingSize="250, 400" SplitMode="0"&gt;
       &lt;ControlLayoutSystem WorkingSize="250, 400" Guid="35adb821-528c-4ee5-95e4-0f2e0a9943e6" Collapsed="0" SelectedControl="0df4d2ef-65c1-45b6-8b34-ba2dc7f63253"&gt;
