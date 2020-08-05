@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
+  <GVL Name="GVL_PMPS" Id="{84ee0124-cb77-4ec5-a065-7899e334a73f}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+VAR_GLOBAL
+	// Implementation of the FFO
+	{attribute 'pytmc' := '
+		pv: PLC:TMO:OPTICS:FFO:01
+	'}
+	{attribute 'TcLinkTo' := '.q_xFastFaultOut:=TIIB[PMPS_FFO]^Channel 1^Output'}
+	g_FastFaultOutput1 : FB_HardwareFFOutput := (bAutoReset:=TRUE);
+
+	g_fbArbiter1 : FB_Arbiter(1);
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>

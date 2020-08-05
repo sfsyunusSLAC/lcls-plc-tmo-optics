@@ -99,6 +99,9 @@ VAR
 
 	// Bender Control
 	fbBenderM1K4 : FB_Bender;
+
+	// Logging
+//	fbLogHandler : FB_LogHandler;
 END_VAR
 ]]></Declaration>
     <Implementation>
@@ -161,7 +164,13 @@ fbM1K4PitchControl(Pitch:=GVL_M1K4.M1K4_Pitch,
 // When STO hit, need to reset SP
 IF NOT M5.bHardwareEnable THEN
 	M5.fPosition := M5.stAxisStatus.fActPosition;
-END_IF]]></ST>
+END_IF
+
+// Logging
+//fbLogHandler();
+
+// PMPS
+GVL_PMPS.g_FastFaultOutput1.Execute(i_xVeto:=);]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>
