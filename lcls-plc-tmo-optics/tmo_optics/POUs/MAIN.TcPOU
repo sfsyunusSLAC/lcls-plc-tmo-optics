@@ -102,7 +102,7 @@ VAR
 
 	// Raw Encoder Counts
 	{attribute 'pytmc' := '
-		pv: MR1L0:HOMS:ENC:YUP:CNT
+		pv: MR1K4:SOMS:ENC:YUP:CNT
 		field: EGU cnt
 		io: i
 	'}
