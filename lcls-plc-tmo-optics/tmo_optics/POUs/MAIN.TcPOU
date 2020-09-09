@@ -100,8 +100,77 @@ VAR
 	// Bender Control
 	fbBenderM1K4 : FB_Bender;
 
+	// Raw Encoder Counts
+	{attribute 'pytmc' := '
+		pv: MR1L0:HOMS:ENC:YUP:CNT
+		field: EGU cnt
+		io: i
+	'}
+	nEncCntYupM1K4 : UDINT;
+	{attribute 'pytmc' := '
+		pv: MR1K4:SOMS:ENC:YDWN:CNT
+		field: EGU cnt
+		io: i
+	'}
+	nEncCntYdwnM1K4 : UDINT;
+	{attribute 'pytmc' := '
+		pv: MR1K4:SOMS:ENC:XUP:CNT
+		field: EGU cnt
+		io: i
+	'}
+	nEncCntXupM1K4 : UDINT;
+	{attribute 'pytmc' := '
+		pv: MR1K4:SOMS:ENC:XDWN:CNT
+		field: EGU cnt
+		io: i
+	'}
+	nEncCntXdwnM1K4 : UDINT;
+	{attribute 'pytmc' := '
+		pv: MR1K4:SOMS:ENC:PITCH:CNT
+		field: EGU cnt
+		io: i
+	'}
+	nEncCntPitchM1K4 : UDINT;
+
+	// Encoder Reference Values
+	{attribute 'pytmc' := '
+		pv: MR1K4:SOMS:ENC:YUP:REF
+		field: EGU cnt
+		io: i
+	'}
+	nEncRefYupM1K4 : UDINT;
+	{attribute 'pytmc' := '
+		pv: MR1K4:SOMS:ENC:YDWN:REF
+		field: EGU cnt
+		io: i
+	'}
+	nEncRefYdwnM1K4 : UDINT;
+	{attribute 'pytmc' := '
+		pv: MR1K4:SOMS:ENC:XUP:REF
+		field: EGU cnt
+		io: i
+	'}
+	nEncRefXupM1K4 : UDINT;
+	{attribute 'pytmc' := '
+		pv: MR1K4:SOMS:ENC:XDWN:REF
+		field: EGU cnt
+		io: i
+	'}
+	nEncRefXdwnM1K4 : UDINT;
+	{attribute 'pytmc' := '
+		pv: MR1K4:SOMS:ENC:PITCH:REF
+		field: EGU cnt
+		io: i
+	'}
+	nEncRefPitchM1K4 : UDINT;
+	mcReadParameterPitchM1K4 : MC_ReadParameter;
+	fEncRefPitchM1K4_urad : LREAL; // Current Pitch encoder offset in urad
+
+	// Common
+	fEncLeverArm_mm : LREAL := 513.0;
+
 	// Logging
-//	fbLogHandler : FB_LogHandler;
+	fbLogHandler : FB_LogHandler;
 END_VAR
 ]]></Declaration>
     <Implementation>
@@ -126,6 +195,9 @@ M1K4.fbRunHOMS(stYup:=M1,
 fbBenderM1K4(stBender:=M6,
 	         bSTOEnable1:=M1K4.fbRunHOMS.bSTOEnable1,
 			 bSTOEnable2:=M1K4.fbRunHOMS.bSTOEnable2);
+// No slave motion through Epics
+M2.bExecute := FALSE; // M1K4-Ydwn
+M4.bExecute := FALSE; // M1K4-Xdwn
 
 // Convert nCurrGantry to um (smaller number) to read out in epics
 M1K4.fCurrGantryY_um := LINT_TO_REAL(M1K4.nCurrGantryY) / 1000.0;
@@ -166,8 +238,28 @@ IF NOT M5.bHardwareEnable THEN
 	M5.fPosition := M5.stAxisStatus.fActPosition;
 END_IF
 
+// Raw Encoder Counts For Epics
+nEncCntYupM1K4 := ULINT_TO_UDINT(M1K4.fbRunHOMS.stYupEnc.Count);
+nEncCntYdwnM1K4 := ULINT_TO_UDINT(M1K4.fbRunHOMS.stYdwnEnc.Count);
+nEncCntXupM1K4 := ULINT_TO_UDINT(M1K4.fbRunHOMS.stXupEnc.Count);
+nEncCntXdwnM1K4 := ULINT_TO_UDINT(M1K4.fbRunHOMS.stXdwnEnc.Count);
+nEncCntPitchM1K4 := LINT_TO_UDINT(GVL_M1K4.M1K4_Pitch.diEncCnt);
+
+// Encoder Reference Values For Epics
+nEncRefYupM1K4 := ULINT_TO_UDINT(GVL_M1K4_Constants.nYUP_ENC_REF);
+nEncRefYdwnM1K4 := ULINT_TO_UDINT(GVL_M1K4_Constants.nYDWN_ENC_REF);
+nEncRefXupM1K4 := ULINT_TO_UDINT(GVL_M1K4_Constants.nXUP_ENC_REF);
+nEncRefXdwnM1K4 := ULINT_TO_UDINT(GVL_M1K4_Constants.nXDWN_ENC_REF);
+mcReadParameterPitchM1K4(Axis:=M5.Axis,
+	                     Enable:=TRUE,
+				         ParameterNumber:=MC_AxisParameter.AxisEncoderOffset,
+				         ReadMode:=READMODE_CYCLIC,
+				         Value=>fEncRefPitchM1K4_urad);
+
+nEncRefPitchM1K4 := LREAL_TO_UDINT(ABS(fEncRefPitchM1K4_urad) * fEncLeverArm_mm);
+
 // Logging
-//fbLogHandler();
+fbLogHandler();
 
 // PMPS
 GVL_PMPS.g_FastFaultOutput1.Execute(i_xVeto:=);]]></ST>
