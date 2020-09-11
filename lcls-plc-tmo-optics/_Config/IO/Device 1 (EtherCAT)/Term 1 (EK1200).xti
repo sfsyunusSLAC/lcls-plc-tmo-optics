@@ -7,7 +7,7 @@
 		<Name>__FILENAME__</Name>
 		<ImageId>1000</ImageId>
 		<EtherCAT PdiType="#x0100" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x04b02c52" RevisionNo="#x00001388" InfoDataState="false" PortPhys="49" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1200-5000 EtherCAT Power supply (2A E-Bus)" Desc="EK1200"/>
-		<Box File="Term 2 (EL2202).xti" Id="2">
+		<Box File="PMPS_FFO.xti" Id="2">
 			<EtherCAT PortABoxInfo="#x01000001"/>
 		</Box>
 		<Box File="Term 3 (EL6070).xti" Id="3">
