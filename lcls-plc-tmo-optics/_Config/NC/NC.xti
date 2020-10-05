@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmItem" TcSmVersion="1.0" TcVersion="3.1.4022.30" ClassName="CNcSafTaskDef" SubType="0">
+<?xml version="1.0"?>
+<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.4" ClassName="CNcSafTaskDef" SubType="0">
 	<NC>
 		<SafTask Priority="4" CycleTime="20000" AmsPort="501" IoAtBegin="true">
 			<Name>NC-Task 1 SAF</Name>
@@ -17,11 +17,23 @@
 			<Name>NC-Task 1 SVB</Name>
 		</SvbTask>
 		<AxisFolder Name="M1K4"/>
+		<AxisFolder Name="M2K4"/>
+		<AxisFolder Name="M3K4"/>
 		<Axis File="M1K4-Yup.xti" Id="1"/>
 		<Axis File="M1K4-Ydwn.xti" Id="2"/>
 		<Axis File="M1K4-Xup.xti" Id="3"/>
 		<Axis File="M1K4-Xdwn.xti" Id="4"/>
 		<Axis File="M1K4-Pitch.xti" Id="5"/>
 		<Axis File="M1K4-Bender.xti" Id="6"/>
+		<Axis File="M2K4-X.xti" Id="7"/>
+		<Axis File="M2K4-Y.xti" Id="8"/>
+		<Axis File="M2K4-rY.xti" Id="9"/>
+		<Axis File="M2K4-BEND-US.xti" Id="14"/>
+		<Axis File="M2K4-BEND-DS.xti" Id="15"/>
+		<Axis File="M3K4-X.xti" Id="10"/>
+		<Axis File="M3K4-Y.xti" Id="11"/>
+		<Axis File="M3K4-rX.xti" Id="12"/>
+		<Axis File="M3K4-BEND-US.xti" Id="16"/>
+		<Axis File="M3K4-BEND-DS.xti" Id="13"/>
 	</NC>
 </TcSmItem>
