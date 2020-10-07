@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
+  <GVL Name="GVL_M2K4_Constants" Id="{793737a2-f5b6-42c1-ab9a-3f381d451e63}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+VAR_GLOBAL CONSTANT
+	// Encoder reference values in counts = nm
+	nM2K4X_ENC_REF : ULINT := 5973570;
+	nM2K4Y_ENC_REF : ULINT := 6099450;
+	nM2K4rY_ENC_REF : ULINT := 39050722;
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>
