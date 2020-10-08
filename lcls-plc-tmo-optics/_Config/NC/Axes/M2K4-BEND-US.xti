@@ -1347,7 +1347,7 @@ External Setpoint Generation:
 			</Relations>
 		</DataType>
 	</DataTypes>
-	<Axis Id="14" CreateSymbols="true" AxisType="1" AxisFolder="M2K4">
+	<Axis Id="10" CreateSymbols="true" AxisType="1" AxisFolder="M2K4">
 		<Name>__FILENAME__</Name>
 		<AxisPara>
 			<Dynamic AccelerationMaximum="0.6" DecelerationMaximum="0.6" Acceleration="0.6" Deceleration="0.6" Jerk="1.2" DelayTime="0.008"/>
