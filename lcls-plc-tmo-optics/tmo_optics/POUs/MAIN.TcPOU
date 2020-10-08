@@ -169,6 +169,7 @@ VAR
 	// Common
 	fEncLeverArm_mm : LREAL := 513.0;
 	
+	// LAMP KB Motors
 	//MR2K4 X
 	{attribute 'TcLinkTo' := '.bLimitForwardEnable :=TIIB[EL7041-0052_M2K4X]^STM Status^Status^Digital input 1;
                               .bLimitBackwardEnable:=TIIB[EL7041-0052_M2K4X]^STM Status^Status^Digital input 2;
@@ -196,6 +197,24 @@ VAR
 	'}
 	M9 : DUT_MotionStage := (nEnableMode:=ENUM_StageEnableMode.ALWAYS);
 	fbMotionStage_m9 : FB_MotionStage;
+	//MR2K4 US BEND
+	{attribute 'TcLinkTo' := '.bLimitForwardEnable :=TIIB[EL7041_M2K4_BEND_US]^STM Status^Status^Digital input 1;
+                              .bLimitBackwardEnable:=TIIB[EL7041_M2K4_BEND_US]^STM Status^Status^Digital input 2;
+							  .nRawEncoderULINT    := TIIB[EL5042_M2K4_BEND_USDS]^FB Inputs Channel 1^Position'}
+	{attribute 'pytmc' := '
+	pv: MR2K4:KBO_BEND:MMS:US
+	'}
+	M10 : DUT_MotionStage := (nEnableMode:=ENUM_StageEnableMode.ALWAYS);
+	fbMotionStage_m10 : FB_MotionStage;
+	//MR2K4 DS BEND
+	{attribute 'TcLinkTo' := '.bLimitForwardEnable :=TIIB[EL7041_M2K4_BEND_DS]^STM Status^Status^Digital input 1;
+                              .bLimitBackwardEnable:=TIIB[EL7041_M2K4_BEND_DS]^STM Status^Status^Digital input 2;
+							  .nRawEncoderULINT    := TIIB[EL5042_M2K4_BEND_USDS]^FB Inputs Channel 2^Position'}
+	{attribute 'pytmc' := '
+	pv: MR2K4:KBO_BEND:MMS:DS
+	'}
+	M11 : DUT_MotionStage := (nEnableMode:=ENUM_StageEnableMode.ALWAYS);
+	fbMotionStage_m11 : FB_MotionStage;
 	//MR3K4 X
 	{attribute 'TcLinkTo' := '.bLimitForwardEnable :=TIIB[EL7041-0052_M3K4X]^STM Status^Status^Digital input 1;
                               .bLimitBackwardEnable:=TIIB[EL7041-0052_M3K4X]^STM Status^Status^Digital input 2;
@@ -203,8 +222,8 @@ VAR
 	{attribute 'pytmc' := '
 	pv: MR3K4:KBO:MMS:X
 	'}
-	M10 : DUT_MotionStage := (nEnableMode:=ENUM_StageEnableMode.ALWAYS);
-	fbMotionStage_m10 : FB_MotionStage;
+	M12 : DUT_MotionStage := (nEnableMode:=ENUM_StageEnableMode.ALWAYS);
+	fbMotionStage_m12 : FB_MotionStage;
 	//MR3K4 Y
 	{attribute 'TcLinkTo' := '.bLimitForwardEnable :=TIIB[EL7041-0052_M3K4Y]^STM Status^Status^Digital input 1;
                               .bLimitBackwardEnable:=TIIB[EL7041-0052_M3K4Y]^STM Status^Status^Digital input 2;
@@ -212,32 +231,14 @@ VAR
 	{attribute 'pytmc' := '
 	pv: MR3K4:KBO:MMS:Y
 	'}
-	M11 : DUT_MotionStage := (nEnableMode:=ENUM_StageEnableMode.ALWAYS);
-	fbMotionStage_m11 : FB_MotionStage;
+	M13 : DUT_MotionStage := (nEnableMode:=ENUM_StageEnableMode.ALWAYS);
+	fbMotionStage_m13 : FB_MotionStage;
 	//MR3K4 rX
 	{attribute 'TcLinkTo' := '.bLimitForwardEnable :=TIIB[EL7041-0052_M3K4rX]^STM Status^Status^Digital input 1;
                               .bLimitBackwardEnable:=TIIB[EL7041-0052_M3K4rX]^STM Status^Status^Digital input 2;
 							  .nRawEncoderULINT    := TIIB[EL5042_M3K4Y_M3K4rX]^FB Inputs Channel 2^Position'}
 	{attribute 'pytmc' := '
 	pv: MR3K4:KBO:MMS:rX
-	'}
-	M12 : DUT_MotionStage := (nEnableMode:=ENUM_StageEnableMode.ALWAYS);
-	fbMotionStage_m12 : FB_MotionStage;
-	//MR2K4 US BEND
-	{attribute 'TcLinkTo' := '.bLimitForwardEnable :=TIIB[EL7041_M2K4_BEND_US]^STM Status^Status^Digital input 1;
-							  .bLimitBackwardEnable:=TIIB[EL7041_M2K4_BEND_US]^STM Status^Status^Digital input 2;
-							  .nRawEncoderULINT    := TIIB[EL5042_M2K4_BEND_USDS]^FB Inputs Channel 1^Position'}
-	{attribute 'pytmc' := '
-	pv: MR2K4:KBO_BEND:MMS:US
-	'}
-	M13 : DUT_MotionStage := (nEnableMode:=ENUM_StageEnableMode.ALWAYS);
-	fbMotionStage_m13 : FB_MotionStage;
-	//MR2K4 DS BEND
-	{attribute 'TcLinkTo' := '.bLimitForwardEnable :=TIIB[EL7041_M2K4_BEND_DS]^STM Status^Status^Digital input 1;
-                              .bLimitBackwardEnable:=TIIB[EL7041_M2K4_BEND_DS]^STM Status^Status^Digital input 2;
-							  .nRawEncoderULINT    := TIIB[EL5042_M2K4_BEND_USDS]^FB Inputs Channel 2^Position'}
-	{attribute 'pytmc' := '
-	pv: MR2K4:KBO_BEND:MMS:DS
 	'}
 	M14 : DUT_MotionStage := (nEnableMode:=ENUM_StageEnableMode.ALWAYS);
 	fbMotionStage_m14 : FB_MotionStage;
@@ -404,11 +405,11 @@ nEncRefPitchM1K4 := LREAL_TO_UDINT(ABS(fEncRefPitchM1K4_urad) * fEncLeverArm_mm)
 fbMotionStage_m7(stMotionStage:=M7);
 fbMotionStage_m8(stMotionStage:=M8);
 fbMotionStage_m9(stMotionStage:=M9);
-//MR3K4
+//MR2K4 BEND
 fbMotionStage_m10(stMotionStage:=M10);
 fbMotionStage_m11(stMotionStage:=M11);
+//MR3K4
 fbMotionStage_m12(stMotionStage:=M12);
-//MR2K4 BEND
 fbMotionStage_m13(stMotionStage:=M13);
 fbMotionStage_m14(stMotionStage:=M14);
 //MR3K4 BEND
@@ -420,11 +421,11 @@ fbMotionStage_m16(stMotionStage:=M16);
 M7.bHardwareEnable := LAMPbSTOEnable1 AND LAMPbSTOEnable2;
 M8.bHardwareEnable := LAMPbSTOEnable1 AND LAMPbSTOEnable2;
 M9.bHardwareEnable := LAMPbSTOEnable1 AND LAMPbSTOEnable2;
-//MR3K4
+//MR2K4 BEND
 M10.bHardwareEnable := LAMPbSTOEnable1 AND LAMPbSTOEnable2;
 M11.bHardwareEnable := LAMPbSTOEnable1 AND LAMPbSTOEnable2;
+//MR3K4
 M12.bHardwareEnable := LAMPbSTOEnable1 AND LAMPbSTOEnable2;
-//MR2K4 BEND
 M13.bHardwareEnable := LAMPbSTOEnable1 AND LAMPbSTOEnable2;
 M14.bHardwareEnable := LAMPbSTOEnable1 AND LAMPbSTOEnable2;
 //MR3K4 BEND
