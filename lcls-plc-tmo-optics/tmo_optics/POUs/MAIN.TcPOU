@@ -168,7 +168,148 @@ VAR
 
 	// Common
 	fEncLeverArm_mm : LREAL := 513.0;
+	
+	//MR2K4 X
+	{attribute 'TcLinkTo' := '.bLimitForwardEnable :=TIIB[EL7041-0052_M2K4X]^STM Status^Status^Digital input 1;
+                              .bLimitBackwardEnable:=TIIB[EL7041-0052_M2K4X]^STM Status^Status^Digital input 2;
+							  .nRawEncoderULINT    := TIIB[EL5042_M2K4X_M2K4Y]^FB Inputs Channel 1^Position'}
+	{attribute 'pytmc' := '
+	pv: MR2K4:KBO:MMS:X
+	'}
+	M7 : DUT_MotionStage := (nEnableMode:=ENUM_StageEnableMode.ALWAYS);
+	fbMotionStage_m7 : FB_MotionStage;
+	//MR2K4 Y
+	{attribute 'TcLinkTo' := '.bLimitForwardEnable :=TIIB[EL7041-0052_M2K4Y]^STM Status^Status^Digital input 1;
+                              .bLimitBackwardEnable:=TIIB[EL7041-0052_M2K4Y]^STM Status^Status^Digital input 2;
+							  .nRawEncoderULINT    := TIIB[EL5042_M2K4X_M2K4Y]^FB Inputs Channel 2^Position'}
+	{attribute 'pytmc' := '
+	pv: MR2K4:KBO:MMS:Y
+	'}
+	M8 : DUT_MotionStage := (nEnableMode:=ENUM_StageEnableMode.ALWAYS);
+	fbMotionStage_m8 : FB_MotionStage;
+	//MR2K4 rY
+	{attribute 'TcLinkTo' := '.bLimitForwardEnable :=TIIB[EL7041-0052_M2K4rY]^STM Status^Status^Digital input 1;
+                              .bLimitBackwardEnable:=TIIB[EL7041-0052_M2K4rY]^STM Status^Status^Digital input 2;
+							  .nRawEncoderULINT    := TIIB[EL5042_M2K4rY_M3K4X]^FB Inputs Channel 1^Position'}
+	{attribute 'pytmc' := '
+	pv: MR2K4:KBO:MMS:rY
+	'}
+	M9 : DUT_MotionStage := (nEnableMode:=ENUM_StageEnableMode.ALWAYS);
+	fbMotionStage_m9 : FB_MotionStage;
+	//MR3K4 X
+	{attribute 'TcLinkTo' := '.bLimitForwardEnable :=TIIB[EL7041-0052_M3K4X]^STM Status^Status^Digital input 1;
+                              .bLimitBackwardEnable:=TIIB[EL7041-0052_M3K4X]^STM Status^Status^Digital input 2;
+							  .nRawEncoderULINT    := TIIB[EL5042_M2K4rY_M3K4X]^FB Inputs Channel 2^Position'}
+	{attribute 'pytmc' := '
+	pv: MR3K4:KBO:MMS:X
+	'}
+	M10 : DUT_MotionStage := (nEnableMode:=ENUM_StageEnableMode.ALWAYS);
+	fbMotionStage_m10 : FB_MotionStage;
+	//MR3K4 Y
+	{attribute 'TcLinkTo' := '.bLimitForwardEnable :=TIIB[EL7041-0052_M3K4Y]^STM Status^Status^Digital input 1;
+                              .bLimitBackwardEnable:=TIIB[EL7041-0052_M3K4Y]^STM Status^Status^Digital input 2;
+							  .nRawEncoderULINT    := TIIB[EL5042_M3K4Y_M3K4rX]^FB Inputs Channel 1^Position'}
+	{attribute 'pytmc' := '
+	pv: MR3K4:KBO:MMS:Y
+	'}
+	M11 : DUT_MotionStage := (nEnableMode:=ENUM_StageEnableMode.ALWAYS);
+	fbMotionStage_m11 : FB_MotionStage;
+	//MR3K4 rX
+	{attribute 'TcLinkTo' := '.bLimitForwardEnable :=TIIB[EL7041-0052_M3K4rX]^STM Status^Status^Digital input 1;
+                              .bLimitBackwardEnable:=TIIB[EL7041-0052_M3K4rX]^STM Status^Status^Digital input 2;
+							  .nRawEncoderULINT    := TIIB[EL5042_M3K4Y_M3K4rX]^FB Inputs Channel 2^Position'}
+	{attribute 'pytmc' := '
+	pv: MR3K4:KBO:MMS:rX
+	'}
+	M12 : DUT_MotionStage := (nEnableMode:=ENUM_StageEnableMode.ALWAYS);
+	fbMotionStage_m12 : FB_MotionStage;
+	//MR2K4 US BEND
+	{attribute 'TcLinkTo' := '.bLimitForwardEnable :=TIIB[EL7041_M2K4_BEND_US]^STM Status^Status^Digital input 1;
+							  .bLimitBackwardEnable:=TIIB[EL7041_M2K4_BEND_US]^STM Status^Status^Digital input 2;
+							  .nRawEncoderULINT    := TIIB[EL5042_M2K4_BEND_USDS]^FB Inputs Channel 1^Position'}
+	{attribute 'pytmc' := '
+	pv: MR2K4:KBO_BEND:MMS:US
+	'}
+	M13 : DUT_MotionStage := (nEnableMode:=ENUM_StageEnableMode.ALWAYS);
+	fbMotionStage_m13 : FB_MotionStage;
+	//MR2K4 DS BEND
+	{attribute 'TcLinkTo' := '.bLimitForwardEnable :=TIIB[EL7041_M2K4_BEND_DS]^STM Status^Status^Digital input 1;
+                              .bLimitBackwardEnable:=TIIB[EL7041_M2K4_BEND_DS]^STM Status^Status^Digital input 2;
+							  .nRawEncoderULINT    := TIIB[EL5042_M2K4_BEND_USDS]^FB Inputs Channel 2^Position'}
+	{attribute 'pytmc' := '
+	pv: MR2K4:KBO_BEND:MMS:DS
+	'}
+	M14 : DUT_MotionStage := (nEnableMode:=ENUM_StageEnableMode.ALWAYS);
+	fbMotionStage_m14 : FB_MotionStage;
+	//MR3K4 US BEND
+	{attribute 'TcLinkTo' := '.bLimitForwardEnable :=TIIB[EL7041_M3K4_BEND_US]^STM Status^Status^Digital input 1;
+                              .bLimitBackwardEnable:=TIIB[EL7041_M3K4_BEND_US]^STM Status^Status^Digital input 2;
+							  .nRawEncoderULINT    := TIIB[EL5042_M3K4_BEND_USDS]^FB Inputs Channel 1^Position'}
+	{attribute 'pytmc' := '
+	pv: MR3K4:KBO_BEND:MMS:US
+	'}
+	M15 : DUT_MotionStage := (nEnableMode:=ENUM_StageEnableMode.ALWAYS);
+	fbMotionStage_m15 : FB_MotionStage;
+	//MR3K4 DS BEND
+	{attribute 'TcLinkTo' := '.bLimitForwardEnable :=TIIB[EL7041_M3K4_BEND_DS]^STM Status^Status^Digital input 1;
+                              .bLimitBackwardEnable:=TIIB[EL7041_M3K4_BEND_DS]^STM Status^Status^Digital input 2;
+							  .nRawEncoderULINT    := TIIB[EL5042_M2K4_BEND_USDS]^FB Inputs Channel 2^Position'}
+	{attribute 'pytmc' := '
+	pv: MR3K4:KBO_BEND:MMS:DS
+	'}
+	M16 : DUT_MotionStage := (nEnableMode:=ENUM_StageEnableMode.ALWAYS);
+	fbMotionStage_m16 : FB_MotionStage;
+	
 
+	// Encoder Reference Values
+	//MR2K4 X ENC REF
+	{attribute 'pytmc' := '
+		pv: MR2K4:KBO:ENC:X:REF
+		field: EGU cnt
+		io: i
+	'}
+	nEncRefXM2K4 : UDINT;
+	//MR2K4 Y ENC REF
+	{attribute 'pytmc' := '
+		pv: MR2K4:KBO:ENC:Y:REF
+		field: EGU cnt
+		io: i
+	'}
+	nEncRefYM2K4 : UDINT;
+	//MR2K4 rY ENC REF
+	{attribute 'pytmc' := '
+		pv: MR2K4:KBO:ENC:rY:REF
+		field: EGU cnt
+		io: i
+	'}
+	nEncRefrYM2K4 : UDINT;
+	//MR3K4 X ENC REF
+	{attribute 'pytmc' := '
+		pv: MR3K4:KBO:ENC:X:REF
+		field: EGU cnt
+		io: i
+	'}
+	nEncRefXM3K4 : UDINT;
+	//MR3K4 Y ENC REF
+	{attribute 'pytmc' := '
+		pv: MR3K4:KBO:ENC:Y:REF
+		field: EGU cnt
+		io: i
+	'}
+	nEncRefYM3K4 : UDINT;
+	//MR3K4 rX ENC REF
+	{attribute 'pytmc' := '
+		pv: MR3K4:KBO:ENC:rX:REF
+		field: EGU cnt
+		io: i
+	'}
+	nEncRefrXM3K4 : UDINT;
+
+	
+	//Emergency Stop for LAMP KBs (M2K4 and M3K4)
+	LAMPbSTOEnable1 AT %I* : BOOL;
+	LAMPbSTOEnable2 AT %I* : BOOL;
+	
 	// Logging
 	fbLogHandler : FB_LogHandler;
 END_VAR
@@ -258,11 +399,52 @@ mcReadParameterPitchM1K4(Axis:=M5.Axis,
 
 nEncRefPitchM1K4 := LREAL_TO_UDINT(ABS(fEncRefPitchM1K4_urad) * fEncLeverArm_mm);
 
+//FB_Motion stages for LAMP KBs
+//MR2K4
+fbMotionStage_m7(stMotionStage:=M7);
+fbMotionStage_m8(stMotionStage:=M8);
+fbMotionStage_m9(stMotionStage:=M9);
+//MR3K4
+fbMotionStage_m10(stMotionStage:=M10);
+fbMotionStage_m11(stMotionStage:=M11);
+fbMotionStage_m12(stMotionStage:=M12);
+//MR2K4 BEND
+fbMotionStage_m13(stMotionStage:=M13);
+fbMotionStage_m14(stMotionStage:=M14);
+//MR3K4 BEND
+fbMotionStage_m15(stMotionStage:=M15);
+fbMotionStage_m16(stMotionStage:=M16);
+
+//STO for LAMP KBs
+//MR2K4
+M7.bHardwareEnable := LAMPbSTOEnable1 AND LAMPbSTOEnable2;
+M8.bHardwareEnable := LAMPbSTOEnable1 AND LAMPbSTOEnable2;
+M9.bHardwareEnable := LAMPbSTOEnable1 AND LAMPbSTOEnable2;
+//MR3K4
+M10.bHardwareEnable := LAMPbSTOEnable1 AND LAMPbSTOEnable2;
+M11.bHardwareEnable := LAMPbSTOEnable1 AND LAMPbSTOEnable2;
+M12.bHardwareEnable := LAMPbSTOEnable1 AND LAMPbSTOEnable2;
+//MR2K4 BEND
+M13.bHardwareEnable := LAMPbSTOEnable1 AND LAMPbSTOEnable2;
+M14.bHardwareEnable := LAMPbSTOEnable1 AND LAMPbSTOEnable2;
+//MR3K4 BEND
+M15.bHardwareEnable := LAMPbSTOEnable1 AND LAMPbSTOEnable2;
+M16.bHardwareEnable := LAMPbSTOEnable1 AND LAMPbSTOEnable2;
+
+// LAMP KB Encoder Reference Values For Epics
+nEncRefXM2K4  := ULINT_TO_UDINT(GVL_M2K4_Constants.nM2K4X_ENC_REF);
+nEncRefYM2K4  := ULINT_TO_UDINT(GVL_M2K4_Constants.nM2K4Y_ENC_REF);
+nEncRefrYM2K4 := ULINT_TO_UDINT(GVL_M2K4_Constants.nM2K4rY_ENC_REF);
+nEncRefXM3K4  := ULINT_TO_UDINT(GVL_M3K4_Constants.nM3K4X_ENC_REF);
+nEncRefYM3K4  := ULINT_TO_UDINT(GVL_M3K4_Constants.nM3K4Y_ENC_REF);
+nEncRefrXM3K4 := ULINT_TO_UDINT(GVL_M3K4_Constants.nM3K4rX_ENC_REF);
+
 // Logging
 fbLogHandler();
 
 // PMPS
-GVL_PMPS.g_FastFaultOutput1.Execute(i_xVeto:=);]]></ST>
+GVL_PMPS.g_FastFaultOutput1.Execute(i_xVeto:=);
+GVL_PMPS.g_FastFaultOutput2.Execute(i_xVeto:=);]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>
