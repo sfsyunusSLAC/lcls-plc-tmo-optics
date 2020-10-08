@@ -28,12 +28,12 @@
 		<Axis File="M2K4-X.xti" Id="7"/>
 		<Axis File="M2K4-Y.xti" Id="8"/>
 		<Axis File="M2K4-rY.xti" Id="9"/>
-		<Axis File="M2K4-BEND-US.xti" Id="14"/>
-		<Axis File="M2K4-BEND-DS.xti" Id="15"/>
-		<Axis File="M3K4-X.xti" Id="10"/>
-		<Axis File="M3K4-Y.xti" Id="11"/>
-		<Axis File="M3K4-rX.xti" Id="12"/>
-		<Axis File="M3K4-BEND-US.xti" Id="16"/>
-		<Axis File="M3K4-BEND-DS.xti" Id="13"/>
+		<Axis File="M2K4-BEND-US.xti" Id="10"/>
+		<Axis File="M2K4-BEND-DS.xti" Id="11"/>
+		<Axis File="M3K4-X.xti" Id="12"/>
+		<Axis File="M3K4-Y.xti" Id="13"/>
+		<Axis File="M3K4-rX.xti" Id="14"/>
+		<Axis File="M3K4-BEND-US.xti" Id="15"/>
+		<Axis File="M3K4-BEND-DS.xti" Id="16"/>
 	</NC>
 </TcSmItem>
