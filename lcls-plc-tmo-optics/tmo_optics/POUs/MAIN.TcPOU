@@ -311,6 +311,122 @@ VAR
 	LAMPbSTOEnable1 AT %I* : BOOL;
 	LAMPbSTOEnable2 AT %I* : BOOL;
 	
+	
+	//LAMP KB BENDER RTDs and Sensors
+	// M2K4 US RTDs
+	{attribute 'TcLinkTo' := '	.Temp:=	TIIB[EL3202-0010_M2K4US1_M2K4US2]^RTD Inputs Channel 1^Value;}
+	{attribute 'pytmc' := '
+		pv: MR2K4:KBO_BEND:RTD:US:1
+		field: EGU cnt
+		io: i
+	'}
+	nM2K4US_RTD_1 AT %I* : INT;
+	{attribute 'TcLinkTo' := '	.Temp:=	TIIB[EL3202-0010_M2K4US1_M2K4US2]^RTD Inputs Channel 2^Value;}
+	{attribute 'pytmc' := '
+		pv: MR2K4:KBO_BEND:RTD:US:2
+		field: EGU cnt
+		io: i
+	'}
+	nM2K4US_RTD_2 AT %I* : INT;
+	{attribute 'TcLinkTo' := '	.Temp:=	TIIB[EL3202-0010_M2K4US3_M2K4DS1]^RTD Inputs Channel 1^Value;}
+	{attribute 'pytmc' := '
+		pv: MR2K4:KBO_BEND:RTD:US:3
+		field: EGU cnt
+		io: i
+	'}
+	nM2K4US_RTD_3 AT %I* : INT;
+	// M2K4 DS RTDs
+	{attribute 'TcLinkTo' := '	.Temp:=	TIIB[EL3202-0010_M2K4US3_M2K4DS1]^RTD Inputs Channel 2^Value;}
+	{attribute 'pytmc' := '
+		pv: MR2K4:KBO_BEND:RTD:DS:1
+		field: EGU cnt
+		io: i
+	'}
+	nM2K4DS_RTD_1 AT %I* : INT;
+	{attribute 'TcLinkTo' := '	.Temp:=	TIIB[EL3202-0010_M2K4DS2_M2K4DS3]^RTD Inputs Channel 1^Value;}
+	{attribute 'pytmc' := '
+		pv: MR2K4:KBO_BEND:RTD:DS:2
+		field: EGU cnt
+		io: i
+	'}
+	nM2K4DS_RTD_2 AT %I* : INT;
+	{attribute 'TcLinkTo' := '	.Temp:=	TIIB[EL3202-0010_M2K4DS2_M2K4DS3]^RTD Inputs Channel 2^Value;}
+	{attribute 'pytmc' := '
+		pv: MR2K4:KBO_BEND:RTD:DS:3
+		field: EGU cnt
+		io: i
+	'}
+	nM2K4DS_RTD_3 AT %I* : INT;	
+
+
+	// M3K4 US RTDs
+	{attribute 'TcLinkTo' := '	.Temp:=	TIIB[EL3202-0010_M3K4US1_M3K4US2]^RTD Inputs Channel 1^Value;}
+	{attribute 'pytmc' := '
+		pv: MR3K4:KBO_BEND:RTD:US:1
+		field: EGU cnt
+		io: i
+	'}
+	nM3K4US_RTD_1 AT %I* : INT;
+	{attribute 'TcLinkTo' := '	.Temp:=	TIIB[EL3202-0010_M3K4US1_M3K4US2]^RTD Inputs Channel 2^Value;}
+	{attribute 'pytmc' := '
+		pv: MR3K4:KBO_BEND:RTD:US:2
+		field: EGU cnt
+		io: i
+	'}
+	nM3K4US_RTD_2 AT %I* : INT;
+	{attribute 'TcLinkTo' := '	.Temp:=	TIIB[EL3202-0010_M3K4US3_M3K4DS1]^RTD Inputs Channel 1^Value;}
+	{attribute 'pytmc' := '
+		pv: MR2K4:KBO_BEND:RTD:US:3
+		field: EGU cnt
+		io: i
+	'}
+	nM3K4US_RTD_3 AT %I* : INT;
+	// M3K4 DS RTDs
+	{attribute 'TcLinkTo' := '	.Temp:=	TIIB[EL3202-0010_M3K4US3_M3K4DS1]^RTD Inputs Channel 2^Value;}
+	{attribute 'pytmc' := '
+		pv: MR3K4:KBO_BEND:RTD:DS:1
+		field: EGU cnt
+		io: i
+	'}
+	nM3K4DS_RTD_1 AT %I* : INT;
+	{attribute 'TcLinkTo' := '	.Temp:=	TIIB[EL3202-0010_M3K4DS2_M3K4DS3]^RTD Inputs Channel 1^Value;}
+	{attribute 'pytmc' := '
+		pv: MR3K4:KBO_BEND:RTD:DS:2
+		field: EGU cnt
+		io: i
+	'}
+	nM3K4DS_RTD_2 AT %I* : INT;
+	{attribute 'TcLinkTo' := '	.Temp:=	TIIB[EL3202-0010_M3K4DS2_M3K4DS3]^RTD Inputs Channel 2^Value;}
+	{attribute 'pytmc' := '
+		pv: MR3K4:KBO_BEND:RTD:DS:3
+		field: EGU cnt
+		io: i
+	'}
+	nM3K4DS_RTD_3 AT %I* : INT;
+	//LAMB KB flow meter
+	{attribute 'TcLinkTo' := '	.Temp:=	TIIB[EL3054_FLOW_PRESS]^AI Standard Channel 1^Value;}
+	{attribute 'pytmc' := '
+		pv: TMO:KBO_01:FLOW:1
+		field: EGU cnt
+		io: i
+	'}
+	nKBO1_FLOW_1 AT %I*: INT;
+	{attribute 'TcLinkTo' := '	.Temp:=	TIIB[EL3054_FLOW_PRESS]^AI Standard Channel 2^Value;}
+	{attribute 'pytmc' := '
+		pv: TMO:KBO_01:FLOW:2
+		field: EGU cnt
+		io: i
+	'}
+	nKBO1_FLOW_2 AT %I*: INT;
+	//LAMB KB pressure sensor
+	{attribute 'TcLinkTo' := '	.Temp:=	TIIB[EL3054_FLOW_PRESS]^AI Standard Channel 3^Value;}
+	{attribute 'pytmc' := '
+		pv: TMO:KBO_01:PRES:1
+		field: EGU cnt
+		io: i
+	'}
+	nKBO1_PRES_1 AT %I*: INT;
+	
 	// Logging
 	fbLogHandler : FB_LogHandler;
 END_VAR
