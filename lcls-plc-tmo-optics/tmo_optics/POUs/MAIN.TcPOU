@@ -435,6 +435,20 @@ VAR
 	'}
 	nKBO1_PRES_1 AT %I*: INT;
 	
+	// RTD error bit
+	bM2K4US_RTD_1_Err AT %I*: BOOL;
+	bM2K4US_RTD_2_Err AT %I*: BOOL;
+	bM2K4US_RTD_3_Err AT %I*: BOOL;
+	bM2K4DS_RTD_1_Err AT %I*: BOOL;
+	bM2K4DS_RTD_2_Err AT %I*: BOOL;
+	bM2K4DS_RTD_3_Err AT %I*: BOOL;
+	bM3K4US_RTD_1_Err AT %I*: BOOL;
+	bM3K4US_RTD_2_Err AT %I*: BOOL;
+	bM3K4US_RTD_3_Err AT %I*: BOOL;
+	bM3K4DS_RTD_1_Err AT %I*: BOOL;
+	bM3K4DS_RTD_2_Err AT %I*: BOOL;
+	bM3K4DS_RTD_3_Err AT %I*: BOOL;
+
 	// Logging
 	fbLogHandler : FB_LogHandler;
 END_VAR
@@ -565,10 +579,24 @@ nEncRefYM3K4  := ULINT_TO_UDINT(GVL_M3K4_Constants.nM3K4Y_ENC_REF);
 nEncRefrXM3K4 := ULINT_TO_UDINT(GVL_M3K4_Constants.nM3K4rX_ENC_REF);
 
 // LAMP KB Bender RTD interlocks
-M10.bHardwareEnable := nM2K4US_RTD_1 < 1000;
-M11.bHardwareEnable := nM2K4DS_RTD_1 < 1000;
-M15.bHardwareEnable := nM3K4US_RTD_1 < 1000;
-M16.bHardwareEnable := nM3K4DS_RTD_1 < 1000;
+M10.bHardwareEnable R= nM2K4US_RTD_1 > 1000 ;
+M11.bHardwareEnable R= nM2K4DS_RTD_1 > 1000;
+M15.bHardwareEnable R= nM3K4US_RTD_1 > 1000;
+M16.bHardwareEnable R= nM3K4DS_RTD_1 > 1000;
+
+// RTD not connected if T=8500
+bM2K4US_RTD_1_Err := nM2K4US_RTD_1 = 8500;
+bM2K4US_RTD_2_Err := nM2K4US_RTD_2 = 8500;
+bM2K4US_RTD_3_Err := nM2K4US_RTD_3 = 8500;
+bM2K4DS_RTD_1_Err := nM2K4DS_RTD_1 = 8500;
+bM2K4DS_RTD_2_Err := nM2K4DS_RTD_2 = 8500;
+bM2K4DS_RTD_3_Err := nM2K4DS_RTD_3 = 8500;
+bM3K4US_RTD_1_Err := nM3K4US_RTD_1 = 8500;
+bM3K4US_RTD_2_Err := nM3K4US_RTD_2 = 8500;
+bM3K4US_RTD_3_Err := nM3K4US_RTD_3 = 8500;
+bM3K4DS_RTD_1_Err := nM3K4DS_RTD_1 = 8500;
+bM3K4DS_RTD_2_Err := nM3K4DS_RTD_2 = 8500;
+bM3K4DS_RTD_3_Err := nM3K4DS_RTD_3 = 8500;
 
 // Logging
 fbLogHandler();

@@ -3621,6 +3621,57 @@ External Setpoint Generation:
 					</Comment>
 					<Type>LINT</Type>
 				</Var>
+				<Var>
+					<Name>Main.bM2K4US_RTD_1_Err</Name>
+					<Comment>
+						<![CDATA[ RTD error bit]]>
+					</Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>Main.bM2K4US_RTD_2_Err</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>Main.bM2K4US_RTD_3_Err</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>Main.bM2K4DS_RTD_1_Err</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>Main.bM2K4DS_RTD_2_Err</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>Main.bM2K4DS_RTD_3_Err</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>Main.bM3K4US_RTD_1_Err</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>Main.bM3K4US_RTD_2_Err</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>Main.bM3K4US_RTD_3_Err</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>Main.bM3K4DS_RTD_1_Err</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>Main.bM3K4DS_RTD_2_Err</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>Main.bM3K4DS_RTD_3_Err</Name>
+					<Type>BOOL</Type>
+				</Var>
 			</Vars>
 			<Vars VarGrpType="2">
 				<Name>PlcTask Outputs</Name>
