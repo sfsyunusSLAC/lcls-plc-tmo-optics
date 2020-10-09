@@ -202,7 +202,7 @@ VAR
                               .bLimitBackwardEnable:=TIIB[EL7041_M2K4_BEND_US]^STM Status^Status^Digital input 2;
 							  .nRawEncoderULINT    := TIIB[EL5042_M2K4_BEND_USDS]^FB Inputs Channel 1^Position'}
 	{attribute 'pytmc' := '
-	pv: MR2K4:KBO_BEND:MMS:US
+	pv: MR2K4:KBO:MMS:BEND:US
 	'}
 	M10 : DUT_MotionStage := (nEnableMode:=ENUM_StageEnableMode.ALWAYS);
 	fbMotionStage_m10 : FB_MotionStage;
@@ -211,7 +211,7 @@ VAR
                               .bLimitBackwardEnable:=TIIB[EL7041_M2K4_BEND_DS]^STM Status^Status^Digital input 2;
 							  .nRawEncoderULINT    := TIIB[EL5042_M2K4_BEND_USDS]^FB Inputs Channel 2^Position'}
 	{attribute 'pytmc' := '
-	pv: MR2K4:KBO_BEND:MMS:DS
+	pv: MR2K4:KBO:MMS:BEND:DS
 	'}
 	M11 : DUT_MotionStage := (nEnableMode:=ENUM_StageEnableMode.ALWAYS);
 	fbMotionStage_m11 : FB_MotionStage;
@@ -247,7 +247,7 @@ VAR
                               .bLimitBackwardEnable:=TIIB[EL7041_M3K4_BEND_US]^STM Status^Status^Digital input 2;
 							  .nRawEncoderULINT    := TIIB[EL5042_M3K4_BEND_USDS]^FB Inputs Channel 1^Position'}
 	{attribute 'pytmc' := '
-	pv: MR3K4:KBO_BEND:MMS:US
+	pv: MR3K4:KBO:MMS:BEND:US
 	'}
 	M15 : DUT_MotionStage := (nEnableMode:=ENUM_StageEnableMode.ALWAYS);
 	fbMotionStage_m15 : FB_MotionStage;
@@ -256,7 +256,7 @@ VAR
                               .bLimitBackwardEnable:=TIIB[EL7041_M3K4_BEND_DS]^STM Status^Status^Digital input 2;
 							  .nRawEncoderULINT    := TIIB[EL5042_M2K4_BEND_USDS]^FB Inputs Channel 2^Position'}
 	{attribute 'pytmc' := '
-	pv: MR3K4:KBO_BEND:MMS:DS
+	pv: MR3K4:KBO:MMS:BEND:DS
 	'}
 	M16 : DUT_MotionStage := (nEnableMode:=ENUM_StageEnableMode.ALWAYS);
 	fbMotionStage_m16 : FB_MotionStage;
@@ -316,7 +316,7 @@ VAR
 	// M2K4 US RTDs
 	{attribute 'TcLinkTo' := 'TIIB[EL3202-0010_M2K4US1_M2K4US2]^RTD Inputs Channel 1^Value'}
 	{attribute 'pytmc' := '
-		pv: MR2K4:KBO_BEND:RTD:US:1
+		pv: MR2K4:KBO:RTD:BEND:US:1
 		field: ESLO 0.1
 		field: EGU C
 		io: i
@@ -324,7 +324,7 @@ VAR
 	nM2K4US_RTD_1 AT %I* : INT;
 	{attribute 'TcLinkTo' := 'TIIB[EL3202-0010_M2K4US1_M2K4US2]^RTD Inputs Channel 2^Value'}
 	{attribute 'pytmc' := '
-		pv: MR2K4:KBO_BEND:RTD:US:2
+		pv: MR2K4:KBO:RTD:BEND:US:2
 		field: ESLO 0.1
 		field: EGU C
 		io: i
@@ -332,7 +332,7 @@ VAR
 	nM2K4US_RTD_2 AT %I* : INT;
 	{attribute 'TcLinkTo' := 'TIIB[EL3202-0010_M2K4US3_M2K4DS1]^RTD Inputs Channel 1^Value'}
 	{attribute 'pytmc' := '
-		pv: MR2K4:KBO_BEND:RTD:US:3
+		pv: MR2K4:KBO:RTD:BEND:US:3
 		field: ESLO 0.1
 		field: EGU C
 		io: i
@@ -341,7 +341,7 @@ VAR
 	// M2K4 DS RTDs
 	{attribute 'TcLinkTo' := 'TIIB[EL3202-0010_M2K4US3_M2K4DS1]^RTD Inputs Channel 2^Value'}
 	{attribute 'pytmc' := '
-		pv: MR2K4:KBO_BEND:RTD:DS:1
+		pv: MR2K4:KBO:RTD:BEND:DS:1
 		field: ESLO 0.1
 		field: EGU C
 		io: i
@@ -349,7 +349,7 @@ VAR
 	nM2K4DS_RTD_1 AT %I* : INT;
 	{attribute 'TcLinkTo' := 'TIIB[EL3202-0010_M2K4DS2_M2K4DS3]^RTD Inputs Channel 1^Value'}
 	{attribute 'pytmc' := '
-		pv: MR2K4:KBO_BEND:RTD:DS:2
+		pv: MR2K4:KBO:RTD:BEND:DS:2
 		field: ESLO 0.1
 		field: EGU C
 		io: i
@@ -357,7 +357,7 @@ VAR
 	nM2K4DS_RTD_2 AT %I* : INT;
 	{attribute 'TcLinkTo' := 'TIIB[EL3202-0010_M2K4DS2_M2K4DS3]^RTD Inputs Channel 2^Value'}
 	{attribute 'pytmc' := '
-		pv: MR2K4:KBO_BEND:RTD:DS:3
+		pv: MR2K4:KBO:RTD:BEND:DS:3
 		field: ESLO 0.1
 		field: EGU C
 		io: i
@@ -368,7 +368,7 @@ VAR
 	// M3K4 US RTDs
 	{attribute 'TcLinkTo' := 'TIIB[EL3202-0010_M3K4US1_M3K4US2]^RTD Inputs Channel 1^Value'}
 	{attribute 'pytmc' := '
-		pv: MR3K4:KBO_BEND:RTD:US:1
+		pv: MR3K4:KBO:RTD:BEND:US:1
 		field: ESLO 0.1
 		field: EGU C
 		io: i
@@ -376,7 +376,7 @@ VAR
 	nM3K4US_RTD_1 AT %I* : INT;
 	{attribute 'TcLinkTo' := 'TIIB[EL3202-0010_M3K4US1_M3K4US2]^RTD Inputs Channel 2^Value'}
 	{attribute 'pytmc' := '
-		pv: MR3K4:KBO_BEND:RTD:US:2
+		pv: MR3K4:KBO:RTD:BEND:US:2
 		field: ESLO 0.1
 		field: EGU C
 		io: i
@@ -384,7 +384,7 @@ VAR
 	nM3K4US_RTD_2 AT %I* : INT;
 	{attribute 'TcLinkTo' := 'TIIB[EL3202-0010_M3K4US3_M3K4DS1]^RTD Inputs Channel 1^Value'}
 	{attribute 'pytmc' := '
-		pv: MR3K4:KBO_BEND:RTD:US:3
+		pv: MR3K4:KBO:RTD:BEND:US:3
 		field: ESLO 0.1
 		field: EGU C
 		io: i
@@ -393,7 +393,7 @@ VAR
 	// M3K4 DS RTDs
 	{attribute 'TcLinkTo' := 'TIIB[EL3202-0010_M3K4US3_M3K4DS1]^RTD Inputs Channel 2^Value'}
 	{attribute 'pytmc' := '
-		pv: MR3K4:KBO_BEND:RTD:DS:1
+		pv: MR3K4:KBO:RTD:BEND:DS:1
 		field: ESLO 0.1
 		field: EGU C
 		io: i
@@ -401,7 +401,7 @@ VAR
 	nM3K4DS_RTD_1 AT %I* : INT;
 	{attribute 'TcLinkTo' := 'TIIB[EL3202-0010_M3K4DS2_M3K4DS3]^RTD Inputs Channel 1^Value'}
 	{attribute 'pytmc' := '
-		pv: MR3K4:KBO_BEND:RTD:DS:2
+		pv: MR3K4:KBO:RTD:BEND:DS:2
 		field: ESLO 0.1
 		field: EGU C
 		io: i
@@ -409,7 +409,7 @@ VAR
 	nM3K4DS_RTD_2 AT %I* : INT;
 	{attribute 'TcLinkTo' := 'TIIB[EL3202-0010_M3K4DS2_M3K4DS3]^RTD Inputs Channel 2^Value'}
 	{attribute 'pytmc' := '
-		pv: MR3K4:KBO_BEND:RTD:DS:3
+		pv: MR3K4:KBO:RTD:BEND:DS:3
 		field: EGU cnt
 		io: i
 	'}
