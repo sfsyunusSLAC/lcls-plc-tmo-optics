@@ -775,15 +775,15 @@ External Setpoint Generation:
 			</Relations>
 		</DataType>
 		<DataType>
-			<Name GUID="{A85E0770-147E-4B11-A60C-1E493B009AA3}" Namespace="lcls_twincat_motion" AutoDeleteType="true">EL5042_Status</Name>
+			<Name GUID="{A1873B4D-7710-4F00-ADB3-A44A2ECDEDAD}" Namespace="lcls_twincat_motion" AutoDeleteType="true">EL5042_Status</Name>
 			<BitSize>0</BitSize>
 			<BaseType GUID="{FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF}"/>
 			<Hides>
-				<Hide GUID="{1712FA6F-8378-4F06-AABD-D9478B998B13}"/>
+				<Hide GUID="{BC79610D-221E-424A-878B-8A16E468F04A}"/>
 			</Hides>
 		</DataType>
 		<DataType>
-			<Name GUID="{A0154C53-99AC-416F-87A2-9E26D196F621}" Namespace="lcls_twincat_motion" AutoDeleteType="true">ST_RenishawAbsEnc</Name>
+			<Name GUID="{98DC0D37-488E-4043-91CA-6619CAE672BA}" Namespace="lcls_twincat_motion" AutoDeleteType="true">ST_RenishawAbsEnc</Name>
 			<Comment>
 				<![CDATA[ Renishaw BiSS-C absolute encoder used with an EL5042]]>
 			</Comment>
@@ -805,7 +805,7 @@ External Setpoint Generation:
 			</SubItem>
 			<SubItem>
 				<Name>Status</Name>
-				<Type GUID="{A85E0770-147E-4B11-A60C-1E493B009AA3}" Namespace="lcls_twincat_motion">EL5042_Status</Type>
+				<Type GUID="{A1873B4D-7710-4F00-ADB3-A44A2ECDEDAD}" Namespace="lcls_twincat_motion">EL5042_Status</Type>
 				<Comment>
 					<![CDATA[ Status struct placeholder]]>
 				</Comment>
@@ -822,7 +822,7 @@ External Setpoint Generation:
 				<BitOffs>64</BitOffs>
 			</SubItem>
 			<Hides>
-				<Hide GUID="{91A4B41B-F7E4-46AC-A8F8-463E64A63684}"/>
+				<Hide GUID="{95E2417B-7D06-4969-B798-2B75E715E181}"/>
 			</Hides>
 		</DataType>
 		<DataType>
@@ -1891,7 +1891,7 @@ External Setpoint Generation:
 					<Comment>
 						<![CDATA[ Encoders]]>
 					</Comment>
-					<Type GUID="{A0154C53-99AC-416F-87A2-9E26D196F621}" Namespace="lcls_twincat_motion">ST_RenishawAbsEnc</Type>
+					<Type GUID="{98DC0D37-488E-4043-91CA-6619CAE672BA}" Namespace="lcls_twincat_motion">ST_RenishawAbsEnc</Type>
 					<SubVar>
 						<Name>Count</Name>
 						<Comment>
@@ -1913,7 +1913,7 @@ External Setpoint Generation:
 				</Var>
 				<Var>
 					<Name>Main.M1K4.fbRunHOMS.stYdwnEnc</Name>
-					<Type GUID="{A0154C53-99AC-416F-87A2-9E26D196F621}" Namespace="lcls_twincat_motion">ST_RenishawAbsEnc</Type>
+					<Type GUID="{98DC0D37-488E-4043-91CA-6619CAE672BA}" Namespace="lcls_twincat_motion">ST_RenishawAbsEnc</Type>
 					<SubVar>
 						<Name>Count</Name>
 						<Comment>
@@ -1935,7 +1935,7 @@ External Setpoint Generation:
 				</Var>
 				<Var>
 					<Name>Main.M1K4.fbRunHOMS.stXupEnc</Name>
-					<Type GUID="{A0154C53-99AC-416F-87A2-9E26D196F621}" Namespace="lcls_twincat_motion">ST_RenishawAbsEnc</Type>
+					<Type GUID="{98DC0D37-488E-4043-91CA-6619CAE672BA}" Namespace="lcls_twincat_motion">ST_RenishawAbsEnc</Type>
 					<SubVar>
 						<Name>Count</Name>
 						<Comment>
@@ -1957,7 +1957,7 @@ External Setpoint Generation:
 				</Var>
 				<Var>
 					<Name>Main.M1K4.fbRunHOMS.stXdwnEnc</Name>
-					<Type GUID="{A0154C53-99AC-416F-87A2-9E26D196F621}" Namespace="lcls_twincat_motion">ST_RenishawAbsEnc</Type>
+					<Type GUID="{98DC0D37-488E-4043-91CA-6619CAE672BA}" Namespace="lcls_twincat_motion">ST_RenishawAbsEnc</Type>
 					<SubVar>
 						<Name>Count</Name>
 						<Comment>
@@ -3536,6 +3536,136 @@ External Setpoint Generation:
 					<Type>BOOL</Type>
 				</Var>
 				<Var>
+					<Name>Main.nM2K4US_RTD_1</Name>
+					<Comment>
+						<![CDATA[LAMP KB BENDER RTDs and Sensors
+ M2K4 US RTDs]]>
+					</Comment>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>Main.nM2K4US_RTD_2</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>Main.nM2K4US_RTD_3</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>Main.nM2K4DS_RTD_1</Name>
+					<Comment>
+						<![CDATA[ M2K4 DS RTDs]]>
+					</Comment>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>Main.nM2K4DS_RTD_2</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>Main.nM2K4DS_RTD_3</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>Main.nM3K4US_RTD_1</Name>
+					<Comment>
+						<![CDATA[ M3K4 US RTDs]]>
+					</Comment>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>Main.nM3K4US_RTD_2</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>Main.nM3K4US_RTD_3</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>Main.nM3K4DS_RTD_1</Name>
+					<Comment>
+						<![CDATA[ M3K4 DS RTDs]]>
+					</Comment>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>Main.nM3K4DS_RTD_2</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>Main.nM3K4DS_RTD_3</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>Main.nKBO1_FLOW_1</Name>
+					<Comment>
+						<![CDATA[LAMB KB flow meter]]>
+					</Comment>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>Main.nKBO1_FLOW_2</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>Main.nKBO1_PRES_1</Name>
+					<Comment>
+						<![CDATA[LAMB KB pressure sensor]]>
+					</Comment>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>Main.bM2K4US_RTD_1_Err</Name>
+					<Comment>
+						<![CDATA[ RTD error bit]]>
+					</Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>Main.bM2K4US_RTD_2_Err</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>Main.bM2K4US_RTD_3_Err</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>Main.bM2K4DS_RTD_1_Err</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>Main.bM2K4DS_RTD_2_Err</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>Main.bM2K4DS_RTD_3_Err</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>Main.bM3K4US_RTD_1_Err</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>Main.bM3K4US_RTD_2_Err</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>Main.bM3K4US_RTD_3_Err</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>Main.bM3K4DS_RTD_1_Err</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>Main.bM3K4DS_RTD_2_Err</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>Main.bM3K4DS_RTD_3_Err</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
 					<Name>GVL_M1K4.M1K4_Pitch.diEncCnt</Name>
 					<Comment>
 						<![CDATA[Raw encoder count]]>
@@ -3812,6 +3942,22 @@ External Setpoint Generation:
 					<Type>UDINT</Type>
 					<InOut>7</InOut>
 				</Var>
+				<Var>
+					<Name>PMPS_GVL.SuccessfulPreemption</Name>
+					<Comment>
+						<![CDATA[ Any time BPTM applies a new BP request which is confirmed]]>
+					</Comment>
+					<Type>UDINT</Type>
+					<InOut>7</InOut>
+				</Var>
+				<Var>
+					<Name>PMPS_GVL.AccumulatedFF</Name>
+					<Comment>
+						<![CDATA[ Any time a FF occurs]]>
+					</Comment>
+					<Type>UDINT</Type>
+					<InOut>7</InOut>
+				</Var>
 			</Vars>
 			<TaskPouOids>
 				<TaskPouOid Prio="1" OTCID="#x08502001"/>
@@ -3889,6 +4035,35 @@ External Setpoint Generation:
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 5 (EK1122)^Term 20 (EK1100)^EL7041_M3K4_BEND_US">
 				<Link VarA="PlcTask Inputs^Main.M15.bLimitBackwardEnable" VarB="STM Status^Status^Digital input 2" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^Main.M15.bLimitForwardEnable" VarB="STM Status^Status^Digital input 1" AutoLink="true"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 5 (EK1122)^Term 40 (EK1100)^EL3054_FLOW_PRESS">
+				<Link VarA="PlcTask Inputs^Main.nKBO1_FLOW_1" VarB="AI Standard Channel 1^Value" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^Main.nKBO1_FLOW_2" VarB="AI Standard Channel 2^Value" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^Main.nKBO1_PRES_1" VarB="AI Standard Channel 3^Value" AutoLink="true"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 5 (EK1122)^Term 40 (EK1100)^EL3202-0010_M2K4DS2_M2K4DS3">
+				<Link VarA="PlcTask Inputs^Main.nM2K4DS_RTD_2" VarB="RTD Inputs Channel 1^Value" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^Main.nM2K4DS_RTD_3" VarB="RTD Inputs Channel 2^Value" AutoLink="true"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 5 (EK1122)^Term 40 (EK1100)^EL3202-0010_M2K4US1_M2K4US2">
+				<Link VarA="PlcTask Inputs^Main.nM2K4US_RTD_1" VarB="RTD Inputs Channel 1^Value" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^Main.nM2K4US_RTD_2" VarB="RTD Inputs Channel 2^Value" AutoLink="true"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 5 (EK1122)^Term 40 (EK1100)^EL3202-0010_M2K4US3_M2K4DS1">
+				<Link VarA="PlcTask Inputs^Main.nM2K4DS_RTD_1" VarB="RTD Inputs Channel 2^Value" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^Main.nM2K4US_RTD_3" VarB="RTD Inputs Channel 1^Value" AutoLink="true"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 5 (EK1122)^Term 40 (EK1100)^EL3202-0010_M3K4DS2_M3K4DS3">
+				<Link VarA="PlcTask Inputs^Main.nM3K4DS_RTD_2" VarB="RTD Inputs Channel 1^Value" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^Main.nM3K4DS_RTD_3" VarB="RTD Inputs Channel 2^Value" AutoLink="true"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 5 (EK1122)^Term 40 (EK1100)^EL3202-0010_M3K4US1_M3K4US2">
+				<Link VarA="PlcTask Inputs^Main.nM3K4US_RTD_1" VarB="RTD Inputs Channel 1^Value" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^Main.nM3K4US_RTD_2" VarB="RTD Inputs Channel 2^Value" AutoLink="true"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 5 (EK1122)^Term 40 (EK1100)^EL3202-0010_M3K4US3_M3K4DS1">
+				<Link VarA="PlcTask Inputs^Main.nM3K4DS_RTD_1" VarB="RTD Inputs Channel 2^Value" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^Main.nM3K4US_RTD_3" VarB="RTD Inputs Channel 1^Value" AutoLink="true"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 5 (EK1122)^Term 6 (EK1100)^EL1004_M1K4_STO">
 				<Link VarA="PlcTask Inputs^Main.M1K4.fbRunHOMS.bSTOEnable1" VarB="Channel 1^Input" AutoLink="true"/>

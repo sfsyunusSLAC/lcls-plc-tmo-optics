@@ -311,6 +311,144 @@ VAR
 	LAMPbSTOEnable1 AT %I* : BOOL;
 	LAMPbSTOEnable2 AT %I* : BOOL;
 	
+	
+	//LAMP KB BENDER RTDs and Sensors
+	// M2K4 US RTDs
+	{attribute 'TcLinkTo' := 'TIIB[EL3202-0010_M2K4US1_M2K4US2]^RTD Inputs Channel 1^Value'}
+	{attribute 'pytmc' := '
+		pv: MR2K4:KBO_BEND:RTD:US:1
+		field: ESLO 0.1
+		field: EGU C
+		io: i
+	'}
+	nM2K4US_RTD_1 AT %I* : INT;
+	{attribute 'TcLinkTo' := 'TIIB[EL3202-0010_M2K4US1_M2K4US2]^RTD Inputs Channel 2^Value'}
+	{attribute 'pytmc' := '
+		pv: MR2K4:KBO_BEND:RTD:US:2
+		field: ESLO 0.1
+		field: EGU C
+		io: i
+	'}
+	nM2K4US_RTD_2 AT %I* : INT;
+	{attribute 'TcLinkTo' := 'TIIB[EL3202-0010_M2K4US3_M2K4DS1]^RTD Inputs Channel 1^Value'}
+	{attribute 'pytmc' := '
+		pv: MR2K4:KBO_BEND:RTD:US:3
+		field: ESLO 0.1
+		field: EGU C
+		io: i
+	'}
+	nM2K4US_RTD_3 AT %I* : INT;
+	// M2K4 DS RTDs
+	{attribute 'TcLinkTo' := 'TIIB[EL3202-0010_M2K4US3_M2K4DS1]^RTD Inputs Channel 2^Value'}
+	{attribute 'pytmc' := '
+		pv: MR2K4:KBO_BEND:RTD:DS:1
+		field: ESLO 0.1
+		field: EGU C
+		io: i
+	'}
+	nM2K4DS_RTD_1 AT %I* : INT;
+	{attribute 'TcLinkTo' := 'TIIB[EL3202-0010_M2K4DS2_M2K4DS3]^RTD Inputs Channel 1^Value'}
+	{attribute 'pytmc' := '
+		pv: MR2K4:KBO_BEND:RTD:DS:2
+		field: ESLO 0.1
+		field: EGU C
+		io: i
+	'}
+	nM2K4DS_RTD_2 AT %I* : INT;
+	{attribute 'TcLinkTo' := 'TIIB[EL3202-0010_M2K4DS2_M2K4DS3]^RTD Inputs Channel 2^Value'}
+	{attribute 'pytmc' := '
+		pv: MR2K4:KBO_BEND:RTD:DS:3
+		field: ESLO 0.1
+		field: EGU C
+		io: i
+	'}
+	nM2K4DS_RTD_3 AT %I* : INT;	
+
+
+	// M3K4 US RTDs
+	{attribute 'TcLinkTo' := 'TIIB[EL3202-0010_M3K4US1_M3K4US2]^RTD Inputs Channel 1^Value'}
+	{attribute 'pytmc' := '
+		pv: MR3K4:KBO_BEND:RTD:US:1
+		field: ESLO 0.1
+		field: EGU C
+		io: i
+	'}
+	nM3K4US_RTD_1 AT %I* : INT;
+	{attribute 'TcLinkTo' := 'TIIB[EL3202-0010_M3K4US1_M3K4US2]^RTD Inputs Channel 2^Value'}
+	{attribute 'pytmc' := '
+		pv: MR3K4:KBO_BEND:RTD:US:2
+		field: ESLO 0.1
+		field: EGU C
+		io: i
+	'}
+	nM3K4US_RTD_2 AT %I* : INT;
+	{attribute 'TcLinkTo' := 'TIIB[EL3202-0010_M3K4US3_M3K4DS1]^RTD Inputs Channel 1^Value'}
+	{attribute 'pytmc' := '
+		pv: MR2K4:KBO_BEND:RTD:US:3
+		field: ESLO 0.1
+		field: EGU C
+		io: i
+	'}
+	nM3K4US_RTD_3 AT %I* : INT;
+	// M3K4 DS RTDs
+	{attribute 'TcLinkTo' := 'TIIB[EL3202-0010_M3K4US3_M3K4DS1]^RTD Inputs Channel 2^Value'}
+	{attribute 'pytmc' := '
+		pv: MR3K4:KBO_BEND:RTD:DS:1
+		field: ESLO 0.1
+		field: EGU C
+		io: i
+	'}
+	nM3K4DS_RTD_1 AT %I* : INT;
+	{attribute 'TcLinkTo' := 'TIIB[EL3202-0010_M3K4DS2_M3K4DS3]^RTD Inputs Channel 1^Value'}
+	{attribute 'pytmc' := '
+		pv: MR3K4:KBO_BEND:RTD:DS:2
+		field: ESLO 0.1
+		field: EGU C
+		io: i
+	'}
+	nM3K4DS_RTD_2 AT %I* : INT;
+	{attribute 'TcLinkTo' := 'TIIB[EL3202-0010_M3K4DS2_M3K4DS3]^RTD Inputs Channel 2^Value'}
+	{attribute 'pytmc' := '
+		pv: MR3K4:KBO_BEND:RTD:DS:3
+		field: EGU cnt
+		io: i
+	'}
+	nM3K4DS_RTD_3 AT %I* : INT;
+	//LAMB KB flow meter
+	{attribute 'TcLinkTo' := 'TIIB[EL3054_FLOW_PRESS]^AI Standard Channel 1^Value'}
+	{attribute 'pytmc' := '
+		pv: TMO:KBO_01:FLOW:1
+		io: i
+	'}
+	nKBO1_FLOW_1 AT %I*: INT;
+	{attribute 'TcLinkTo' := 'TIIB[EL3054_FLOW_PRESS]^AI Standard Channel 2^Value'}
+	{attribute 'pytmc' := '
+		pv: TMO:KBO_01:FLOW:2
+		io: i
+	'}
+	nKBO1_FLOW_2 AT %I*: INT;
+	//LAMB KB pressure sensor
+	{attribute 'TcLinkTo' := 'TIIB[EL3054_FLOW_PRESS]^AI Standard Channel 3^Value'}
+	{attribute 'pytmc' := '
+		pv: TMO:KBO_01:PRES:1
+		io: i
+	'}
+	nKBO1_PRES_1 AT %I*: INT;
+	
+	// RTD error bit
+	bM2K4US_RTD_1_Err AT %I*: BOOL;
+	bM2K4US_RTD_2_Err AT %I*: BOOL;
+	bM2K4US_RTD_3_Err AT %I*: BOOL;
+	bM2K4DS_RTD_1_Err AT %I*: BOOL;
+	bM2K4DS_RTD_2_Err AT %I*: BOOL;
+	bM2K4DS_RTD_3_Err AT %I*: BOOL;
+	bM3K4US_RTD_1_Err AT %I*: BOOL;
+	bM3K4US_RTD_2_Err AT %I*: BOOL;
+	bM3K4US_RTD_3_Err AT %I*: BOOL;
+	bM3K4DS_RTD_1_Err AT %I*: BOOL;
+	bM3K4DS_RTD_2_Err AT %I*: BOOL;
+	bM3K4DS_RTD_3_Err AT %I*: BOOL;
+
 	// Logging
 	fbLogHandler : FB_LogHandler;
 END_VAR
@@ -439,6 +577,26 @@ nEncRefrYM2K4 := ULINT_TO_UDINT(GVL_M2K4_Constants.nM2K4rY_ENC_REF);
 nEncRefXM3K4  := ULINT_TO_UDINT(GVL_M3K4_Constants.nM3K4X_ENC_REF);
 nEncRefYM3K4  := ULINT_TO_UDINT(GVL_M3K4_Constants.nM3K4Y_ENC_REF);
 nEncRefrXM3K4 := ULINT_TO_UDINT(GVL_M3K4_Constants.nM3K4rX_ENC_REF);
+
+// LAMP KB Bender RTD interlocks
+M10.bHardwareEnable R= nM2K4US_RTD_1 > 1000 ;
+M11.bHardwareEnable R= nM2K4DS_RTD_1 > 1000;
+M15.bHardwareEnable R= nM3K4US_RTD_1 > 1000;
+M16.bHardwareEnable R= nM3K4DS_RTD_1 > 1000;
+
+// RTD not connected if T=8500
+bM2K4US_RTD_1_Err := nM2K4US_RTD_1 = 0;
+bM2K4US_RTD_2_Err := nM2K4US_RTD_2 = 0;
+bM2K4US_RTD_3_Err := nM2K4US_RTD_3 = 0;
+bM2K4DS_RTD_1_Err := nM2K4DS_RTD_1 = 0;
+bM2K4DS_RTD_2_Err := nM2K4DS_RTD_2 = 0;
+bM2K4DS_RTD_3_Err := nM2K4DS_RTD_3 = 0;
+bM3K4US_RTD_1_Err := nM3K4US_RTD_1 = 0;
+bM3K4US_RTD_2_Err := nM3K4US_RTD_2 = 0;
+bM3K4US_RTD_3_Err := nM3K4US_RTD_3 = 0;
+bM3K4DS_RTD_1_Err := nM3K4DS_RTD_1 = 0;
+bM3K4DS_RTD_2_Err := nM3K4DS_RTD_2 = 0;
+bM3K4DS_RTD_3_Err := nM3K4DS_RTD_3 = 0;
 
 // Logging
 fbLogHandler();
