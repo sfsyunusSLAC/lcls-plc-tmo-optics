@@ -1,5 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ScopeProject AssemblyName="TwinCAT.Measurement.Scope.API.Model">
+  <Layout>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;Layout&gt;
+  &lt;Window Guid="0df4d2ef-65c1-45b6-8b34-ba2dc7f63253" LastFocused="132372540013582758" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="35adb821-528c-4ee5-95e4-0f2e0a9943e6" DocumentIndexInWindowGroup="0" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
+  &lt;DocumentContainer Dock="5"&gt;
+    &lt;SplitLayoutSystem WorkingSize="250, 400" SplitMode="0"&gt;
+      &lt;ControlLayoutSystem WorkingSize="250, 400" Guid="35adb821-528c-4ee5-95e4-0f2e0a9943e6" Collapsed="0" SelectedControl="0df4d2ef-65c1-45b6-8b34-ba2dc7f63253"&gt;
+        &lt;Controls&gt;
+          &lt;Control Guid="0df4d2ef-65c1-45b6-8b34-ba2dc7f63253" /&gt;
+        &lt;/Controls&gt;
+      &lt;/ControlLayoutSystem&gt;
+    &lt;/SplitLayoutSystem&gt;
+  &lt;/DocumentContainer&gt;
+&lt;/Layout&gt;</Layout>
+  <StopMode>AutoStop</StopMode>
+  <AutoRestartRecord>false</AutoRestartRecord>
+  <MainServer>127.0.0.1.1.1</MainServer>
+  <HeadlessServerConnectionId>00000000-0000-0000-0000-000000000000</HeadlessServerConnectionId>
+  <TargetConnectionIds />
+  <HeadlessServer />
+  <ViewDetailLevel>Default</ViewDetailLevel>
+  <UseAutoSave>false</UseAutoSave>
+  <AutoSavePath>$ScopeProject$\AutoSave</AutoSavePath>
+  <AutoSaveFileNameMask>{SCOPE}_AutoSave_{HH_mm_ss}</AutoSaveFileNameMask>
+  <AutoDeleteMode>Disabled</AutoDeleteMode>
+  <AutoDeleteOlderThan>0</AutoDeleteOlderThan>
+  <AutoDeleteCapacity>0</AutoDeleteCapacity>
+  <UseFileStore>true</UseFileStore>
+  <RecordTime>6000000000</RecordTime>
+  <IsTemplate>false</IsTemplate>
+  <UseUserSettings>true</UseUserSettings>
   <Version>1.0.0.0</Version>
   <SubMember>
     <YTChart AssemblyName="TwinCAT.Measurement.Scope.API.Model">
@@ -1629,11 +1659,21 @@
           <SymbolName>Axes.M1K4-Yup.ActPos</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>501</TargetPort>
-          <IsHistorical>false</IsHistorical>
-          <AmsNetId>172.21.92.63.1.1</AmsNetId>
-          <DataType>REAL64</DataType>
-          <UseTaskSampleTime>true</UseTaskSampleTime>
           <ContextMask>0</ContextMask>
+          <IsHistorical>false</IsHistorical>
+          <FileHandle>0</FileHandle>
+          <ServerHandle>0</ServerHandle>
+          <ChannelStyleInformation />
+          <Enabled>true</Enabled>
+          <AmsNetId>172.21.92.63.1.1</AmsNetId>
+          <UseLocalServer>true</UseLocalServer>
+          <DataType>REAL64</DataType>
+          <BaseSampleTime>20000</BaseSampleTime>
+          <UseTaskSampleTime>true</UseTaskSampleTime>
+          <Oversample>0</Oversample>
+          <ForceOversampling>false</ForceOversampling>
+          <ArrayLength>0</ArrayLength>
+          <TimeOffset>0</TimeOffset>
           <VariableSize>8</VariableSize>
           <DataAccess>
             <DataAccessMode>
@@ -1647,19 +1687,6 @@
               </TimeTangeInfo>
             </DataAccessMode>
           </DataAccess>
-          <Area>Local</Area>
-          <Guid>38985c30-fe86-433d-b476-ea7c4da7a9e1</Guid>
-          <Name>M1K4YupActPos</Name>
-          <SortPriority>10</SortPriority>
-          <Enabled>true</Enabled>
-          <UseLocalServer>true</UseLocalServer>
-          <FileHandle>0</FileHandle>
-          <ServerHandle>0</ServerHandle>
-          <BaseSampleTime>20000</BaseSampleTime>
-          <Oversample>0</Oversample>
-          <ForceOversampling>false</ForceOversampling>
-          <ArrayLength>0</ArrayLength>
-          <TimeOffset>0</TimeOffset>
           <RawUnit>
             <Unit>
               <BaseUnitValue>0</BaseUnitValue>
@@ -1696,12 +1723,15 @@
             <UnitScaleResult>1</UnitScaleResult>
             <UnitOffsetResult>0</UnitOffsetResult>
           </RawUnit>
+          <Area>Local</Area>
+          <Guid>38985c30-fe86-433d-b476-ea7c4da7a9e1</Guid>
           <Title>AdsAcquisition_107</Title>
+          <Name>M1K4YupActPos</Name>
           <Comment></Comment>
           <DisplayColor>Black</DisplayColor>
+          <SortPriority>10</SortPriority>
           <IsFileBased>false</IsFileBased>
           <Suffix>.svacq</Suffix>
-          <ChannelStyleInformation />
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>16641</IndexGroup>
@@ -1709,11 +1739,21 @@
           <SymbolName>Axes.M1K4-Yup.SetPos</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>501</TargetPort>
-          <IsHistorical>false</IsHistorical>
-          <AmsNetId>172.21.92.63.1.1</AmsNetId>
-          <DataType>REAL64</DataType>
-          <UseTaskSampleTime>true</UseTaskSampleTime>
           <ContextMask>0</ContextMask>
+          <IsHistorical>false</IsHistorical>
+          <FileHandle>0</FileHandle>
+          <ServerHandle>0</ServerHandle>
+          <ChannelStyleInformation />
+          <Enabled>true</Enabled>
+          <AmsNetId>172.21.92.63.1.1</AmsNetId>
+          <UseLocalServer>true</UseLocalServer>
+          <DataType>REAL64</DataType>
+          <BaseSampleTime>20000</BaseSampleTime>
+          <UseTaskSampleTime>true</UseTaskSampleTime>
+          <Oversample>0</Oversample>
+          <ForceOversampling>false</ForceOversampling>
+          <ArrayLength>0</ArrayLength>
+          <TimeOffset>0</TimeOffset>
           <VariableSize>8</VariableSize>
           <DataAccess>
             <DataAccessMode>
@@ -1727,19 +1767,6 @@
               </TimeTangeInfo>
             </DataAccessMode>
           </DataAccess>
-          <Area>Local</Area>
-          <Guid>4381e43e-49cb-47d0-bcd9-edd38d328014</Guid>
-          <Name>M1K4YupSetPos</Name>
-          <SortPriority>10</SortPriority>
-          <Enabled>true</Enabled>
-          <UseLocalServer>true</UseLocalServer>
-          <FileHandle>0</FileHandle>
-          <ServerHandle>0</ServerHandle>
-          <BaseSampleTime>20000</BaseSampleTime>
-          <Oversample>0</Oversample>
-          <ForceOversampling>false</ForceOversampling>
-          <ArrayLength>0</ArrayLength>
-          <TimeOffset>0</TimeOffset>
           <RawUnit>
             <Unit>
               <BaseUnitValue>0</BaseUnitValue>
@@ -1776,12 +1803,15 @@
             <UnitScaleResult>1</UnitScaleResult>
             <UnitOffsetResult>0</UnitOffsetResult>
           </RawUnit>
+          <Area>Local</Area>
+          <Guid>4381e43e-49cb-47d0-bcd9-edd38d328014</Guid>
           <Title>AdsAcquisition_107</Title>
+          <Name>M1K4YupSetPos</Name>
           <Comment></Comment>
           <DisplayColor>Black</DisplayColor>
+          <SortPriority>10</SortPriority>
           <IsFileBased>false</IsFileBased>
           <Suffix>.svacq</Suffix>
-          <ChannelStyleInformation />
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>16642</IndexGroup>
@@ -1789,11 +1819,21 @@
           <SymbolName>Axes.M1K4-Ydwn.ActPos</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>501</TargetPort>
-          <IsHistorical>false</IsHistorical>
-          <AmsNetId>172.21.92.63.1.1</AmsNetId>
-          <DataType>REAL64</DataType>
-          <UseTaskSampleTime>true</UseTaskSampleTime>
           <ContextMask>0</ContextMask>
+          <IsHistorical>false</IsHistorical>
+          <FileHandle>0</FileHandle>
+          <ServerHandle>0</ServerHandle>
+          <ChannelStyleInformation />
+          <Enabled>true</Enabled>
+          <AmsNetId>172.21.92.63.1.1</AmsNetId>
+          <UseLocalServer>true</UseLocalServer>
+          <DataType>REAL64</DataType>
+          <BaseSampleTime>20000</BaseSampleTime>
+          <UseTaskSampleTime>true</UseTaskSampleTime>
+          <Oversample>0</Oversample>
+          <ForceOversampling>false</ForceOversampling>
+          <ArrayLength>0</ArrayLength>
+          <TimeOffset>0</TimeOffset>
           <VariableSize>8</VariableSize>
           <DataAccess>
             <DataAccessMode>
@@ -1807,19 +1847,6 @@
               </TimeTangeInfo>
             </DataAccessMode>
           </DataAccess>
-          <Area>Local</Area>
-          <Guid>3cad69ef-2fa5-4eab-9899-971ac787185b</Guid>
-          <Name>M1K4YdwnActPos</Name>
-          <SortPriority>10</SortPriority>
-          <Enabled>true</Enabled>
-          <UseLocalServer>true</UseLocalServer>
-          <FileHandle>0</FileHandle>
-          <ServerHandle>0</ServerHandle>
-          <BaseSampleTime>20000</BaseSampleTime>
-          <Oversample>0</Oversample>
-          <ForceOversampling>false</ForceOversampling>
-          <ArrayLength>0</ArrayLength>
-          <TimeOffset>0</TimeOffset>
           <RawUnit>
             <Unit>
               <BaseUnitValue>0</BaseUnitValue>
@@ -1856,12 +1883,15 @@
             <UnitScaleResult>1</UnitScaleResult>
             <UnitOffsetResult>0</UnitOffsetResult>
           </RawUnit>
+          <Area>Local</Area>
+          <Guid>3cad69ef-2fa5-4eab-9899-971ac787185b</Guid>
           <Title>AdsAcquisition_107</Title>
+          <Name>M1K4YdwnActPos</Name>
           <Comment></Comment>
           <DisplayColor>Black</DisplayColor>
+          <SortPriority>10</SortPriority>
           <IsFileBased>false</IsFileBased>
           <Suffix>.svacq</Suffix>
-          <ChannelStyleInformation />
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>16642</IndexGroup>
@@ -1869,11 +1899,21 @@
           <SymbolName>Axes.M1K4-Ydwn.SetPos</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>501</TargetPort>
-          <IsHistorical>false</IsHistorical>
-          <AmsNetId>172.21.92.63.1.1</AmsNetId>
-          <DataType>REAL64</DataType>
-          <UseTaskSampleTime>true</UseTaskSampleTime>
           <ContextMask>0</ContextMask>
+          <IsHistorical>false</IsHistorical>
+          <FileHandle>0</FileHandle>
+          <ServerHandle>0</ServerHandle>
+          <ChannelStyleInformation />
+          <Enabled>true</Enabled>
+          <AmsNetId>172.21.92.63.1.1</AmsNetId>
+          <UseLocalServer>true</UseLocalServer>
+          <DataType>REAL64</DataType>
+          <BaseSampleTime>20000</BaseSampleTime>
+          <UseTaskSampleTime>true</UseTaskSampleTime>
+          <Oversample>0</Oversample>
+          <ForceOversampling>false</ForceOversampling>
+          <ArrayLength>0</ArrayLength>
+          <TimeOffset>0</TimeOffset>
           <VariableSize>8</VariableSize>
           <DataAccess>
             <DataAccessMode>
@@ -1887,19 +1927,6 @@
               </TimeTangeInfo>
             </DataAccessMode>
           </DataAccess>
-          <Area>Local</Area>
-          <Guid>2b155ab9-8e03-4a3f-8531-2cd1ebb5570e</Guid>
-          <Name>M1K4YdwnSetPos</Name>
-          <SortPriority>10</SortPriority>
-          <Enabled>true</Enabled>
-          <UseLocalServer>true</UseLocalServer>
-          <FileHandle>0</FileHandle>
-          <ServerHandle>0</ServerHandle>
-          <BaseSampleTime>20000</BaseSampleTime>
-          <Oversample>0</Oversample>
-          <ForceOversampling>false</ForceOversampling>
-          <ArrayLength>0</ArrayLength>
-          <TimeOffset>0</TimeOffset>
           <RawUnit>
             <Unit>
               <BaseUnitValue>0</BaseUnitValue>
@@ -1936,12 +1963,15 @@
             <UnitScaleResult>1</UnitScaleResult>
             <UnitOffsetResult>0</UnitOffsetResult>
           </RawUnit>
+          <Area>Local</Area>
+          <Guid>2b155ab9-8e03-4a3f-8531-2cd1ebb5570e</Guid>
           <Title>AdsAcquisition_107</Title>
+          <Name>M1K4YdwnSetPos</Name>
           <Comment></Comment>
           <DisplayColor>Black</DisplayColor>
+          <SortPriority>10</SortPriority>
           <IsFileBased>false</IsFileBased>
           <Suffix>.svacq</Suffix>
-          <ChannelStyleInformation />
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>16643</IndexGroup>
@@ -1949,11 +1979,21 @@
           <SymbolName>Axes.M1K4-Xup.ActPos</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>501</TargetPort>
-          <IsHistorical>false</IsHistorical>
-          <AmsNetId>172.21.92.63.1.1</AmsNetId>
-          <DataType>REAL64</DataType>
-          <UseTaskSampleTime>true</UseTaskSampleTime>
           <ContextMask>0</ContextMask>
+          <IsHistorical>false</IsHistorical>
+          <FileHandle>0</FileHandle>
+          <ServerHandle>0</ServerHandle>
+          <ChannelStyleInformation />
+          <Enabled>true</Enabled>
+          <AmsNetId>172.21.92.63.1.1</AmsNetId>
+          <UseLocalServer>true</UseLocalServer>
+          <DataType>REAL64</DataType>
+          <BaseSampleTime>20000</BaseSampleTime>
+          <UseTaskSampleTime>true</UseTaskSampleTime>
+          <Oversample>0</Oversample>
+          <ForceOversampling>false</ForceOversampling>
+          <ArrayLength>0</ArrayLength>
+          <TimeOffset>0</TimeOffset>
           <VariableSize>8</VariableSize>
           <DataAccess>
             <DataAccessMode>
@@ -1967,19 +2007,6 @@
               </TimeTangeInfo>
             </DataAccessMode>
           </DataAccess>
-          <Area>Local</Area>
-          <Guid>c7f449ef-9cb5-4d65-8ad5-f53ea20d243c</Guid>
-          <Name>M1K4XupActPos</Name>
-          <SortPriority>10</SortPriority>
-          <Enabled>true</Enabled>
-          <UseLocalServer>true</UseLocalServer>
-          <FileHandle>0</FileHandle>
-          <ServerHandle>0</ServerHandle>
-          <BaseSampleTime>20000</BaseSampleTime>
-          <Oversample>0</Oversample>
-          <ForceOversampling>false</ForceOversampling>
-          <ArrayLength>0</ArrayLength>
-          <TimeOffset>0</TimeOffset>
           <RawUnit>
             <Unit>
               <BaseUnitValue>0</BaseUnitValue>
@@ -2016,12 +2043,15 @@
             <UnitScaleResult>1</UnitScaleResult>
             <UnitOffsetResult>0</UnitOffsetResult>
           </RawUnit>
+          <Area>Local</Area>
+          <Guid>c7f449ef-9cb5-4d65-8ad5-f53ea20d243c</Guid>
           <Title>AdsAcquisition_107</Title>
+          <Name>M1K4XupActPos</Name>
           <Comment></Comment>
           <DisplayColor>Black</DisplayColor>
+          <SortPriority>10</SortPriority>
           <IsFileBased>false</IsFileBased>
           <Suffix>.svacq</Suffix>
-          <ChannelStyleInformation />
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>16643</IndexGroup>
@@ -2029,11 +2059,21 @@
           <SymbolName>Axes.M1K4-Xup.SetPos</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>501</TargetPort>
-          <IsHistorical>false</IsHistorical>
-          <AmsNetId>172.21.92.63.1.1</AmsNetId>
-          <DataType>REAL64</DataType>
-          <UseTaskSampleTime>true</UseTaskSampleTime>
           <ContextMask>0</ContextMask>
+          <IsHistorical>false</IsHistorical>
+          <FileHandle>0</FileHandle>
+          <ServerHandle>0</ServerHandle>
+          <ChannelStyleInformation />
+          <Enabled>true</Enabled>
+          <AmsNetId>172.21.92.63.1.1</AmsNetId>
+          <UseLocalServer>true</UseLocalServer>
+          <DataType>REAL64</DataType>
+          <BaseSampleTime>20000</BaseSampleTime>
+          <UseTaskSampleTime>true</UseTaskSampleTime>
+          <Oversample>0</Oversample>
+          <ForceOversampling>false</ForceOversampling>
+          <ArrayLength>0</ArrayLength>
+          <TimeOffset>0</TimeOffset>
           <VariableSize>8</VariableSize>
           <DataAccess>
             <DataAccessMode>
@@ -2047,19 +2087,6 @@
               </TimeTangeInfo>
             </DataAccessMode>
           </DataAccess>
-          <Area>Local</Area>
-          <Guid>fb2a0a62-81a5-42ee-ba1c-e3e19182d32d</Guid>
-          <Name>M1K4XupSetPos</Name>
-          <SortPriority>10</SortPriority>
-          <Enabled>true</Enabled>
-          <UseLocalServer>true</UseLocalServer>
-          <FileHandle>0</FileHandle>
-          <ServerHandle>0</ServerHandle>
-          <BaseSampleTime>20000</BaseSampleTime>
-          <Oversample>0</Oversample>
-          <ForceOversampling>false</ForceOversampling>
-          <ArrayLength>0</ArrayLength>
-          <TimeOffset>0</TimeOffset>
           <RawUnit>
             <Unit>
               <BaseUnitValue>0</BaseUnitValue>
@@ -2096,12 +2123,15 @@
             <UnitScaleResult>1</UnitScaleResult>
             <UnitOffsetResult>0</UnitOffsetResult>
           </RawUnit>
+          <Area>Local</Area>
+          <Guid>fb2a0a62-81a5-42ee-ba1c-e3e19182d32d</Guid>
           <Title>AdsAcquisition_107</Title>
+          <Name>M1K4XupSetPos</Name>
           <Comment></Comment>
           <DisplayColor>Black</DisplayColor>
+          <SortPriority>10</SortPriority>
           <IsFileBased>false</IsFileBased>
           <Suffix>.svacq</Suffix>
-          <ChannelStyleInformation />
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>16644</IndexGroup>
@@ -2109,11 +2139,21 @@
           <SymbolName>Axes.M1K4-Xdwn.ActPos</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>501</TargetPort>
-          <IsHistorical>false</IsHistorical>
-          <AmsNetId>172.21.92.63.1.1</AmsNetId>
-          <DataType>REAL64</DataType>
-          <UseTaskSampleTime>true</UseTaskSampleTime>
           <ContextMask>0</ContextMask>
+          <IsHistorical>false</IsHistorical>
+          <FileHandle>0</FileHandle>
+          <ServerHandle>0</ServerHandle>
+          <ChannelStyleInformation />
+          <Enabled>true</Enabled>
+          <AmsNetId>172.21.92.63.1.1</AmsNetId>
+          <UseLocalServer>true</UseLocalServer>
+          <DataType>REAL64</DataType>
+          <BaseSampleTime>20000</BaseSampleTime>
+          <UseTaskSampleTime>true</UseTaskSampleTime>
+          <Oversample>0</Oversample>
+          <ForceOversampling>false</ForceOversampling>
+          <ArrayLength>0</ArrayLength>
+          <TimeOffset>0</TimeOffset>
           <VariableSize>8</VariableSize>
           <DataAccess>
             <DataAccessMode>
@@ -2127,19 +2167,6 @@
               </TimeTangeInfo>
             </DataAccessMode>
           </DataAccess>
-          <Area>Local</Area>
-          <Guid>4bde2ee0-8c33-489f-940d-2674103800f1</Guid>
-          <Name>M1K4XdwnActPos</Name>
-          <SortPriority>10</SortPriority>
-          <Enabled>true</Enabled>
-          <UseLocalServer>true</UseLocalServer>
-          <FileHandle>0</FileHandle>
-          <ServerHandle>0</ServerHandle>
-          <BaseSampleTime>20000</BaseSampleTime>
-          <Oversample>0</Oversample>
-          <ForceOversampling>false</ForceOversampling>
-          <ArrayLength>0</ArrayLength>
-          <TimeOffset>0</TimeOffset>
           <RawUnit>
             <Unit>
               <BaseUnitValue>0</BaseUnitValue>
@@ -2176,12 +2203,15 @@
             <UnitScaleResult>1</UnitScaleResult>
             <UnitOffsetResult>0</UnitOffsetResult>
           </RawUnit>
+          <Area>Local</Area>
+          <Guid>4bde2ee0-8c33-489f-940d-2674103800f1</Guid>
           <Title>AdsAcquisition_107</Title>
+          <Name>M1K4XdwnActPos</Name>
           <Comment></Comment>
           <DisplayColor>Black</DisplayColor>
+          <SortPriority>10</SortPriority>
           <IsFileBased>false</IsFileBased>
           <Suffix>.svacq</Suffix>
-          <ChannelStyleInformation />
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>16644</IndexGroup>
@@ -2189,11 +2219,21 @@
           <SymbolName>Axes.M1K4-Xdwn.SetPos</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>501</TargetPort>
-          <IsHistorical>false</IsHistorical>
-          <AmsNetId>172.21.92.63.1.1</AmsNetId>
-          <DataType>REAL64</DataType>
-          <UseTaskSampleTime>true</UseTaskSampleTime>
           <ContextMask>0</ContextMask>
+          <IsHistorical>false</IsHistorical>
+          <FileHandle>0</FileHandle>
+          <ServerHandle>0</ServerHandle>
+          <ChannelStyleInformation />
+          <Enabled>true</Enabled>
+          <AmsNetId>172.21.92.63.1.1</AmsNetId>
+          <UseLocalServer>true</UseLocalServer>
+          <DataType>REAL64</DataType>
+          <BaseSampleTime>20000</BaseSampleTime>
+          <UseTaskSampleTime>true</UseTaskSampleTime>
+          <Oversample>0</Oversample>
+          <ForceOversampling>false</ForceOversampling>
+          <ArrayLength>0</ArrayLength>
+          <TimeOffset>0</TimeOffset>
           <VariableSize>8</VariableSize>
           <DataAccess>
             <DataAccessMode>
@@ -2207,19 +2247,6 @@
               </TimeTangeInfo>
             </DataAccessMode>
           </DataAccess>
-          <Area>Local</Area>
-          <Guid>b2641d1d-dc80-47cf-8ec0-560346af7e1e</Guid>
-          <Name>M1K4XdwnSetPos</Name>
-          <SortPriority>10</SortPriority>
-          <Enabled>true</Enabled>
-          <UseLocalServer>true</UseLocalServer>
-          <FileHandle>0</FileHandle>
-          <ServerHandle>0</ServerHandle>
-          <BaseSampleTime>20000</BaseSampleTime>
-          <Oversample>0</Oversample>
-          <ForceOversampling>false</ForceOversampling>
-          <ArrayLength>0</ArrayLength>
-          <TimeOffset>0</TimeOffset>
           <RawUnit>
             <Unit>
               <BaseUnitValue>0</BaseUnitValue>
@@ -2256,12 +2283,15 @@
             <UnitScaleResult>1</UnitScaleResult>
             <UnitOffsetResult>0</UnitOffsetResult>
           </RawUnit>
+          <Area>Local</Area>
+          <Guid>b2641d1d-dc80-47cf-8ec0-560346af7e1e</Guid>
           <Title>AdsAcquisition_107</Title>
+          <Name>M1K4XdwnSetPos</Name>
           <Comment></Comment>
           <DisplayColor>Black</DisplayColor>
+          <SortPriority>10</SortPriority>
           <IsFileBased>false</IsFileBased>
           <Suffix>.svacq</Suffix>
-          <ChannelStyleInformation />
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>16645</IndexGroup>
@@ -2269,11 +2299,21 @@
           <SymbolName>Axes.M1K4-Pitch.ActPos</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>501</TargetPort>
-          <IsHistorical>false</IsHistorical>
-          <AmsNetId>172.21.92.63.1.1</AmsNetId>
-          <DataType>REAL64</DataType>
-          <UseTaskSampleTime>true</UseTaskSampleTime>
           <ContextMask>0</ContextMask>
+          <IsHistorical>false</IsHistorical>
+          <FileHandle>0</FileHandle>
+          <ServerHandle>0</ServerHandle>
+          <ChannelStyleInformation />
+          <Enabled>true</Enabled>
+          <AmsNetId>172.21.92.63.1.1</AmsNetId>
+          <UseLocalServer>true</UseLocalServer>
+          <DataType>REAL64</DataType>
+          <BaseSampleTime>20000</BaseSampleTime>
+          <UseTaskSampleTime>true</UseTaskSampleTime>
+          <Oversample>0</Oversample>
+          <ForceOversampling>false</ForceOversampling>
+          <ArrayLength>0</ArrayLength>
+          <TimeOffset>0</TimeOffset>
           <VariableSize>8</VariableSize>
           <DataAccess>
             <DataAccessMode>
@@ -2287,19 +2327,6 @@
               </TimeTangeInfo>
             </DataAccessMode>
           </DataAccess>
-          <Area>Local</Area>
-          <Guid>8f9d16bb-3fd4-4408-898f-8a23052583dd</Guid>
-          <Name>M1K4PitchActPos</Name>
-          <SortPriority>10</SortPriority>
-          <Enabled>true</Enabled>
-          <UseLocalServer>true</UseLocalServer>
-          <FileHandle>0</FileHandle>
-          <ServerHandle>0</ServerHandle>
-          <BaseSampleTime>20000</BaseSampleTime>
-          <Oversample>0</Oversample>
-          <ForceOversampling>false</ForceOversampling>
-          <ArrayLength>0</ArrayLength>
-          <TimeOffset>0</TimeOffset>
           <RawUnit>
             <Unit>
               <BaseUnitValue>0</BaseUnitValue>
@@ -2336,12 +2363,15 @@
             <UnitScaleResult>1</UnitScaleResult>
             <UnitOffsetResult>0</UnitOffsetResult>
           </RawUnit>
+          <Area>Local</Area>
+          <Guid>8f9d16bb-3fd4-4408-898f-8a23052583dd</Guid>
           <Title>AdsAcquisition_107</Title>
+          <Name>M1K4PitchActPos</Name>
           <Comment></Comment>
           <DisplayColor>Black</DisplayColor>
+          <SortPriority>10</SortPriority>
           <IsFileBased>false</IsFileBased>
           <Suffix>.svacq</Suffix>
-          <ChannelStyleInformation />
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <IndexGroup>16645</IndexGroup>
@@ -2349,11 +2379,21 @@
           <SymbolName>Axes.M1K4-Pitch.SetPos</SymbolName>
           <SymbolBased>true</SymbolBased>
           <TargetPort>501</TargetPort>
-          <IsHistorical>false</IsHistorical>
-          <AmsNetId>172.21.92.63.1.1</AmsNetId>
-          <DataType>REAL64</DataType>
-          <UseTaskSampleTime>true</UseTaskSampleTime>
           <ContextMask>0</ContextMask>
+          <IsHistorical>false</IsHistorical>
+          <FileHandle>0</FileHandle>
+          <ServerHandle>0</ServerHandle>
+          <ChannelStyleInformation />
+          <Enabled>true</Enabled>
+          <AmsNetId>172.21.92.63.1.1</AmsNetId>
+          <UseLocalServer>true</UseLocalServer>
+          <DataType>REAL64</DataType>
+          <BaseSampleTime>20000</BaseSampleTime>
+          <UseTaskSampleTime>true</UseTaskSampleTime>
+          <Oversample>0</Oversample>
+          <ForceOversampling>false</ForceOversampling>
+          <ArrayLength>0</ArrayLength>
+          <TimeOffset>0</TimeOffset>
           <VariableSize>8</VariableSize>
           <DataAccess>
             <DataAccessMode>
@@ -2367,19 +2407,6 @@
               </TimeTangeInfo>
             </DataAccessMode>
           </DataAccess>
-          <Area>Local</Area>
-          <Guid>ff1efce0-5781-452d-b72c-e5a4871ee2a1</Guid>
-          <Name>M1K4PitchSetPos</Name>
-          <SortPriority>10</SortPriority>
-          <Enabled>true</Enabled>
-          <UseLocalServer>true</UseLocalServer>
-          <FileHandle>0</FileHandle>
-          <ServerHandle>0</ServerHandle>
-          <BaseSampleTime>20000</BaseSampleTime>
-          <Oversample>0</Oversample>
-          <ForceOversampling>false</ForceOversampling>
-          <ArrayLength>0</ArrayLength>
-          <TimeOffset>0</TimeOffset>
           <RawUnit>
             <Unit>
               <BaseUnitValue>0</BaseUnitValue>
@@ -2416,12 +2443,15 @@
             <UnitScaleResult>1</UnitScaleResult>
             <UnitOffsetResult>0</UnitOffsetResult>
           </RawUnit>
+          <Area>Local</Area>
+          <Guid>ff1efce0-5781-452d-b72c-e5a4871ee2a1</Guid>
           <Title>AdsAcquisition_107</Title>
+          <Name>M1K4PitchSetPos</Name>
           <Comment></Comment>
           <DisplayColor>Black</DisplayColor>
+          <SortPriority>10</SortPriority>
           <IsFileBased>false</IsFileBased>
           <Suffix>.svacq</Suffix>
-          <ChannelStyleInformation />
         </AdsAcquisition>
       </SubMember>
       <Guid>fa1dd181-9cb1-4964-9ea7-e1516dc0bf2e</Guid>
@@ -2445,42 +2475,12 @@
       <Suffix>.svtm</Suffix>
     </TriggerModule>
   </SubMember>
+  <Guid>4c3677e1-b6b9-45c4-a6fd-2d4c50628bff</Guid>
   <Title>NcScopeConfiguration</Title>
   <Name>Scope YT NC Project</Name>
+  <Comment />
+  <DisplayColor>Black</DisplayColor>
   <SortPriority>-1</SortPriority>
   <IsFileBased>true</IsFileBased>
-  <Layout>&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;Layout&gt;
-  &lt;Window Guid="0df4d2ef-65c1-45b6-8b34-ba2dc7f63253" LastFocused="132372540013582758" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="35adb821-528c-4ee5-95e4-0f2e0a9943e6" DocumentIndexInWindowGroup="0" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
-  &lt;DocumentContainer Dock="5"&gt;
-    &lt;SplitLayoutSystem WorkingSize="250, 400" SplitMode="0"&gt;
-      &lt;ControlLayoutSystem WorkingSize="250, 400" Guid="35adb821-528c-4ee5-95e4-0f2e0a9943e6" Collapsed="0" SelectedControl="0df4d2ef-65c1-45b6-8b34-ba2dc7f63253"&gt;
-        &lt;Controls&gt;
-          &lt;Control Guid="0df4d2ef-65c1-45b6-8b34-ba2dc7f63253" /&gt;
-        &lt;/Controls&gt;
-      &lt;/ControlLayoutSystem&gt;
-    &lt;/SplitLayoutSystem&gt;
-  &lt;/DocumentContainer&gt;
-&lt;/Layout&gt;</Layout>
-  <StopMode>AutoStop</StopMode>
-  <AutoRestartRecord>false</AutoRestartRecord>
-  <MainServer>127.0.0.1.1.1</MainServer>
-  <HeadlessServerConnectionId>00000000-0000-0000-0000-000000000000</HeadlessServerConnectionId>
-  <ViewDetailLevel>Default</ViewDetailLevel>
-  <UseAutoSave>false</UseAutoSave>
-  <AutoSavePath>$ScopeProject$\AutoSave</AutoSavePath>
-  <AutoSaveFileNameMask>{SCOPE}_AutoSave_{HH_mm_ss}</AutoSaveFileNameMask>
-  <AutoDeleteMode>Disabled</AutoDeleteMode>
-  <AutoDeleteOlderThan>0</AutoDeleteOlderThan>
-  <AutoDeleteCapacity>0</AutoDeleteCapacity>
-  <UseFileStore>true</UseFileStore>
-  <RecordTime>6000000000</RecordTime>
-  <IsTemplate>false</IsTemplate>
-  <UseUserSettings>true</UseUserSettings>
-  <Guid>4c3677e1-b6b9-45c4-a6fd-2d4c50628bff</Guid>
-  <DisplayColor>Black</DisplayColor>
   <Suffix>.tcscopex</Suffix>
-  <TargetConnectionIds />
-  <HeadlessServer />
-  <Comment />
 </ScopeProject>
