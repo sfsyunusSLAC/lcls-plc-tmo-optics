@@ -384,7 +384,7 @@ VAR
 	nM3K4US_RTD_2 AT %I* : INT;
 	{attribute 'TcLinkTo' := 'TIIB[EL3202-0010_M3K4US3_M3K4DS1]^RTD Inputs Channel 1^Value'}
 	{attribute 'pytmc' := '
-		pv: MR2K4:KBO_BEND:RTD:US:3
+		pv: MR3K4:KBO_BEND:RTD:US:3
 		field: ESLO 0.1
 		field: EGU C
 		io: i
