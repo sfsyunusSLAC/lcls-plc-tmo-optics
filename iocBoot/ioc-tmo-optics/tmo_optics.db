@@ -1,173 +1,13 @@
-record(longin, "MR2K4:KBO:RTD:BEND:US:1_RBV") {
-  field(DESC, "Main.nM2K4US_RTD_1")
+record(ai, "MR3K4:KBO:RTD:BEND:DS:3_RBV") {
+  field(DESC, "Main.fM3K4DS_RTD_3")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
-  field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.nM2K4US_RTD_1?")
-  field(EGU, "C")
-  field(ESLO, "0.1")
-  info(archive, "VAL")
-}
-
-record(longin, "MR2K4:KBO:RTD:BEND:US:2_RBV") {
-  field(DESC, "Main.nM2K4US_RTD_2")
-  field(SCAN, "I/O Intr")
-  field(PINI, "1")
-  field(TSE, "-2")
-  field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.nM2K4US_RTD_2?")
-  field(EGU, "C")
-  field(ESLO, "0.1")
-  info(archive, "VAL")
-}
-
-record(longin, "MR2K4:KBO:RTD:BEND:US:3_RBV") {
-  field(DESC, "Main.nM2K4US_RTD_3")
-  field(SCAN, "I/O Intr")
-  field(PINI, "1")
-  field(TSE, "-2")
-  field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.nM2K4US_RTD_3?")
-  field(EGU, "C")
-  field(ESLO, "0.1")
-  info(archive, "VAL")
-}
-
-record(longin, "MR2K4:KBO:RTD:BEND:DS:1_RBV") {
-  field(DESC, "Main.nM2K4DS_RTD_1")
-  field(SCAN, "I/O Intr")
-  field(PINI, "1")
-  field(TSE, "-2")
-  field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.nM2K4DS_RTD_1?")
-  field(EGU, "C")
-  field(ESLO, "0.1")
-  info(archive, "VAL")
-}
-
-record(longin, "MR2K4:KBO:RTD:BEND:DS:2_RBV") {
-  field(DESC, "Main.nM2K4DS_RTD_2")
-  field(SCAN, "I/O Intr")
-  field(PINI, "1")
-  field(TSE, "-2")
-  field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.nM2K4DS_RTD_2?")
-  field(EGU, "C")
-  field(ESLO, "0.1")
-  info(archive, "VAL")
-}
-
-record(longin, "MR2K4:KBO:RTD:BEND:DS:3_RBV") {
-  field(DESC, "Main.nM2K4DS_RTD_3")
-  field(SCAN, "I/O Intr")
-  field(PINI, "1")
-  field(TSE, "-2")
-  field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.nM2K4DS_RTD_3?")
-  field(EGU, "C")
-  field(ESLO, "0.1")
-  info(archive, "VAL")
-}
-
-record(longin, "MR3K4:KBO:RTD:BEND:US:1_RBV") {
-  field(DESC, "Main.nM3K4US_RTD_1")
-  field(SCAN, "I/O Intr")
-  field(PINI, "1")
-  field(TSE, "-2")
-  field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.nM3K4US_RTD_1?")
-  field(EGU, "C")
-  field(ESLO, "0.1")
-  info(archive, "VAL")
-}
-
-record(longin, "MR3K4:KBO:RTD:BEND:US:2_RBV") {
-  field(DESC, "Main.nM3K4US_RTD_2")
-  field(SCAN, "I/O Intr")
-  field(PINI, "1")
-  field(TSE, "-2")
-  field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.nM3K4US_RTD_2?")
-  field(EGU, "C")
-  field(ESLO, "0.1")
-  info(archive, "VAL")
-}
-
-record(longin, "MR3K4:KBO:RTD:BEND:US:3_RBV") {
-  field(DESC, "Main.nM3K4US_RTD_3")
-  field(SCAN, "I/O Intr")
-  field(PINI, "1")
-  field(TSE, "-2")
-  field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.nM3K4US_RTD_3?")
-  field(EGU, "C")
-  field(ESLO, "0.1")
-  info(archive, "VAL")
-}
-
-record(longin, "MR3K4:KBO:RTD:BEND:DS:1_RBV") {
-  field(DESC, "Main.nM3K4DS_RTD_1")
-  field(SCAN, "I/O Intr")
-  field(PINI, "1")
-  field(TSE, "-2")
-  field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.nM3K4DS_RTD_1?")
-  field(EGU, "C")
-  field(ESLO, "0.1")
-  info(archive, "VAL")
-}
-
-record(longin, "MR3K4:KBO:RTD:BEND:DS:2_RBV") {
-  field(DESC, "Main.nM3K4DS_RTD_2")
-  field(SCAN, "I/O Intr")
-  field(PINI, "1")
-  field(TSE, "-2")
-  field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.nM3K4DS_RTD_2?")
-  field(EGU, "C")
-  field(ESLO, "0.1")
-  info(archive, "VAL")
-}
-
-record(longin, "MR3K4:KBO:RTD:BEND:DS:3_RBV") {
-  field(DESC, "Main.nM3K4DS_RTD_3")
-  field(SCAN, "I/O Intr")
-  field(PINI, "1")
-  field(TSE, "-2")
-  field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.nM3K4DS_RTD_3?")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fM3K4DS_RTD_3?")
+  field(PREC, "3")
   field(EGU, "cnt")
-  info(archive, "VAL")
-}
-
-record(longin, "TMO:KBO_01:FLOW:1_RBV") {
-  field(DESC, "Main.nKBO1_FLOW_1")
-  field(SCAN, "I/O Intr")
-  field(PINI, "1")
-  field(TSE, "-2")
-  field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.nKBO1_FLOW_1?")
-  info(archive, "VAL")
-}
-
-record(longin, "TMO:KBO_01:FLOW:2_RBV") {
-  field(DESC, "Main.nKBO1_FLOW_2")
-  field(SCAN, "I/O Intr")
-  field(PINI, "1")
-  field(TSE, "-2")
-  field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.nKBO1_FLOW_2?")
-  info(archive, "VAL")
-}
-
-record(longin, "TMO:KBO_01:PRES:1_RBV") {
-  field(DESC, "Main.nKBO1_PRES_1")
-  field(SCAN, "I/O Intr")
-  field(PINI, "1")
-  field(TSE, "-2")
-  field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.nKBO1_PRES_1?")
+  info(autosaveFields_pass0, "PREC")
   info(archive, "VAL")
 }
 
@@ -9881,6 +9721,160 @@ record(longin, "MR3K4:KBO:ENC:PITCH:REF_RBV") {
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.nEncRefrXM3K4?")
   field(EGU, "cnt")
+  info(archive, "VAL")
+}
+
+record(ai, "MR2K4:KBO:RTD:BEND:US:1_RBV") {
+  field(DESC, "Main.fM2K4US_RTD_1")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fM2K4US_RTD_1?")
+  field(PREC, "3")
+  field(EGU, "C")
+  field(ESLO, "0.1")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(ai, "MR2K4:KBO:RTD:BEND:US:2_RBV") {
+  field(DESC, "Main.fM2K4US_RTD_2")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fM2K4US_RTD_2?")
+  field(PREC, "3")
+  field(EGU, "C")
+  field(ESLO, "0.1")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(ai, "MR2K4:KBO:RTD:BEND:US:3_RBV") {
+  field(DESC, "Main.fM2K4US_RTD_3")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fM2K4US_RTD_3?")
+  field(PREC, "3")
+  field(EGU, "C")
+  field(ESLO, "0.1")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(ai, "MR2K4:KBO:RTD:BEND:DS:1_RBV") {
+  field(DESC, "Main.fM2K4DS_RTD_1")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fM2K4DS_RTD_1?")
+  field(PREC, "3")
+  field(EGU, "C")
+  field(ESLO, "0.1")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(ai, "MR2K4:KBO:RTD:BEND:DS:2_RBV") {
+  field(DESC, "Main.fM2K4DS_RTD_2")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fM2K4DS_RTD_2?")
+  field(PREC, "3")
+  field(EGU, "C")
+  field(ESLO, "0.1")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(ai, "MR2K4:KBO:RTD:BEND:DS:3_RBV") {
+  field(DESC, "Main.fM2K4DS_RTD_3")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fM2K4DS_RTD_3?")
+  field(PREC, "3")
+  field(EGU, "C")
+  field(ESLO, "0.1")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(ai, "MR3K4:KBO:RTD:BEND:US:1_RBV") {
+  field(DESC, "Main.fM3K4US_RTD_1")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fM3K4US_RTD_1?")
+  field(PREC, "3")
+  field(EGU, "C")
+  field(ESLO, "0.1")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(ai, "MR3K4:KBO:RTD:BEND:US:2_RBV") {
+  field(DESC, "Main.fM3K4US_RTD_2")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fM3K4US_RTD_2?")
+  field(PREC, "3")
+  field(EGU, "C")
+  field(ESLO, "0.1")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(ai, "MR3K4:KBO:RTD:BEND:US:3_RBV") {
+  field(DESC, "Main.fM3K4US_RTD_3")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fM3K4US_RTD_3?")
+  field(PREC, "3")
+  field(EGU, "C")
+  field(ESLO, "0.1")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(ai, "MR3K4:KBO:RTD:BEND:DS:1_RBV") {
+  field(DESC, "Main.fM3K4DS_RTD_1")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fM3K4DS_RTD_1?")
+  field(PREC, "3")
+  field(EGU, "C")
+  field(ESLO, "0.1")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(ai, "MR3K4:KBO:RTD:BEND:DS:2_RBV") {
+  field(DESC, "Main.fM3K4DS_RTD_2")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fM3K4DS_RTD_2?")
+  field(PREC, "3")
+  field(EGU, "C")
+  field(ESLO, "0.1")
+  info(autosaveFields_pass0, "PREC")
   info(archive, "VAL")
 }
 
