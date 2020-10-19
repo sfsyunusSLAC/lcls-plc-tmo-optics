@@ -193,7 +193,7 @@ VAR
                               .bLimitBackwardEnable:=TIIB[EL7041-0052_M2K4rY]^STM Status^Status^Digital input 2;
 							  .nRawEncoderULINT    := TIIB[EL5042_M2K4rY_M3K4X]^FB Inputs Channel 1^Position'}
 	{attribute 'pytmc' := '
-	pv: MR2K4:KBO:MMS:rY
+	pv: MR2K4:KBO:MMS:PITCH
 	'}
 	M9 : DUT_MotionStage := (nEnableMode:=ENUM_StageEnableMode.ALWAYS);
 	fbMotionStage_m9 : FB_MotionStage;
@@ -202,7 +202,7 @@ VAR
                               .bLimitBackwardEnable:=TIIB[EL7041_M2K4_BEND_US]^STM Status^Status^Digital input 2;
 							  .nRawEncoderULINT    := TIIB[EL5042_M2K4_BEND_USDS]^FB Inputs Channel 1^Position'}
 	{attribute 'pytmc' := '
-	pv: MR2K4:KBO_BEND:MMS:US
+	pv: MR2K4:KBO:MMS:BEND:US
 	'}
 	M10 : DUT_MotionStage := (nEnableMode:=ENUM_StageEnableMode.ALWAYS);
 	fbMotionStage_m10 : FB_MotionStage;
@@ -211,7 +211,7 @@ VAR
                               .bLimitBackwardEnable:=TIIB[EL7041_M2K4_BEND_DS]^STM Status^Status^Digital input 2;
 							  .nRawEncoderULINT    := TIIB[EL5042_M2K4_BEND_USDS]^FB Inputs Channel 2^Position'}
 	{attribute 'pytmc' := '
-	pv: MR2K4:KBO_BEND:MMS:DS
+	pv: MR2K4:KBO:MMS:BEND:DS
 	'}
 	M11 : DUT_MotionStage := (nEnableMode:=ENUM_StageEnableMode.ALWAYS);
 	fbMotionStage_m11 : FB_MotionStage;
@@ -238,7 +238,7 @@ VAR
                               .bLimitBackwardEnable:=TIIB[EL7041-0052_M3K4rX]^STM Status^Status^Digital input 2;
 							  .nRawEncoderULINT    := TIIB[EL5042_M3K4Y_M3K4rX]^FB Inputs Channel 2^Position'}
 	{attribute 'pytmc' := '
-	pv: MR3K4:KBO:MMS:rX
+	pv: MR3K4:KBO:MMS:PITCH
 	'}
 	M14 : DUT_MotionStage := (nEnableMode:=ENUM_StageEnableMode.ALWAYS);
 	fbMotionStage_m14 : FB_MotionStage;
@@ -247,7 +247,7 @@ VAR
                               .bLimitBackwardEnable:=TIIB[EL7041_M3K4_BEND_US]^STM Status^Status^Digital input 2;
 							  .nRawEncoderULINT    := TIIB[EL5042_M3K4_BEND_USDS]^FB Inputs Channel 1^Position'}
 	{attribute 'pytmc' := '
-	pv: MR3K4:KBO_BEND:MMS:US
+	pv: MR3K4:KBO:MMS:BEND:US
 	'}
 	M15 : DUT_MotionStage := (nEnableMode:=ENUM_StageEnableMode.ALWAYS);
 	fbMotionStage_m15 : FB_MotionStage;
@@ -256,7 +256,7 @@ VAR
                               .bLimitBackwardEnable:=TIIB[EL7041_M3K4_BEND_DS]^STM Status^Status^Digital input 2;
 							  .nRawEncoderULINT    := TIIB[EL5042_M2K4_BEND_USDS]^FB Inputs Channel 2^Position'}
 	{attribute 'pytmc' := '
-	pv: MR3K4:KBO_BEND:MMS:DS
+	pv: MR3K4:KBO:MMS:BEND:DS
 	'}
 	M16 : DUT_MotionStage := (nEnableMode:=ENUM_StageEnableMode.ALWAYS);
 	fbMotionStage_m16 : FB_MotionStage;
@@ -279,7 +279,7 @@ VAR
 	nEncRefYM2K4 : UDINT;
 	//MR2K4 rY ENC REF
 	{attribute 'pytmc' := '
-		pv: MR2K4:KBO:ENC:rY:REF
+		pv: MR2K4:KBO:ENC:PITCH:REF
 		field: EGU cnt
 		io: i
 	'}
@@ -300,7 +300,7 @@ VAR
 	nEncRefYM3K4 : UDINT;
 	//MR3K4 rX ENC REF
 	{attribute 'pytmc' := '
-		pv: MR3K4:KBO:ENC:rX:REF
+		pv: MR3K4:KBO:ENC:PITCH:REF
 		field: EGU cnt
 		io: i
 	'}
@@ -310,9 +310,114 @@ VAR
 	//Emergency Stop for LAMP KBs (M2K4 and M3K4)
 	LAMPbSTOEnable1 AT %I* : BOOL;
 	LAMPbSTOEnable2 AT %I* : BOOL;
+
+	// LAMP KB BENDER RTDs
+	// M2K4 US RTDs
+	{attribute 'pytmc' := '
+		pv: MR2K4:KBO:RTD:BEND:US:1
+		field: ESLO 0.1
+		field: EGU C
+		io: i
+	'}
+	fM2K4US_RTD_1 : REAL;
+	{attribute 'pytmc' := '
+		pv: MR2K4:KBO:RTD:BEND:US:2
+		field: ESLO 0.1
+		field: EGU C
+		io: i
+	'}
+	fM2K4US_RTD_2 : REAL;
+	{attribute 'pytmc' := '
+		pv: MR2K4:KBO:RTD:BEND:US:3
+		field: ESLO 0.1
+		field: EGU C
+		io: i
+	'}
+	fM2K4US_RTD_3 : REAL;
+
+	// M2K4 DS RTDs
+	{attribute 'pytmc' := '
+		pv: MR2K4:KBO:RTD:BEND:DS:1
+		field: ESLO 0.1
+		field: EGU C
+		io: i
+	'}
+	fM2K4DS_RTD_1 : REAL;
+	{attribute 'pytmc' := '
+		pv: MR2K4:KBO:RTD:BEND:DS:2
+		field: ESLO 0.1
+		field: EGU C
+		io: i
+	'}
+	fM2K4DS_RTD_2 : REAL;
+	{attribute 'pytmc' := '
+		pv: MR2K4:KBO:RTD:BEND:DS:3
+		field: ESLO 0.1
+		field: EGU C
+		io: i
+	'}
+	fM2K4DS_RTD_3 : REAL;
+	// M3K4 US RTDs
+	{attribute 'pytmc' := '
+		pv: MR3K4:KBO:RTD:BEND:US:1
+		field: ESLO 0.1
+		field: EGU C
+		io: i
+	'}
+	fM3K4US_RTD_1 : REAL;
+	{attribute 'pytmc' := '
+		pv: MR3K4:KBO:RTD:BEND:US:2
+		field: ESLO 0.1
+		field: EGU C
+		io: i
+	'}
+	fM3K4US_RTD_2 : REAL;
+	{attribute 'pytmc' := '
+		pv: MR3K4:KBO:RTD:BEND:US:3
+		field: ESLO 0.1
+		field: EGU C
+		io: i
+	'}
+	fM3K4US_RTD_3 : REAL;
+	// M3K4 DS RTDs
+	{attribute 'pytmc' := '
+		pv: MR3K4:KBO:RTD:BEND:DS:1
+		field: ESLO 0.1
+		field: EGU C
+		io: i
+	'}
+	fM3K4DS_RTD_1 : REAL;
+	{attribute 'pytmc' := '
+		pv: MR3K4:KBO:RTD:BEND:DS:2
+		field: ESLO 0.1
+		field: EGU C
+		io: i
+	'}
+	fM3K4DS_RTD_2 : REAL;
+	{attribute 'pytmc' := '
+		pv: MR3K4:KBO:RTD:BEND:DS:3
+		field: EGU cnt
+		io: i
+	'}
+	fM3K4DS_RTD_3 AT %I* : REAL;
 	
+	// RTD error bit
+	bM2K4US_RTD_1_Err AT %I*: BOOL;
+	bM2K4US_RTD_2_Err AT %I*: BOOL;
+	bM2K4US_RTD_3_Err AT %I*: BOOL;
+	bM2K4DS_RTD_1_Err AT %I*: BOOL;
+	bM2K4DS_RTD_2_Err AT %I*: BOOL;
+	bM2K4DS_RTD_3_Err AT %I*: BOOL;
+	bM3K4US_RTD_1_Err AT %I*: BOOL;
+	bM3K4US_RTD_2_Err AT %I*: BOOL;
+	bM3K4US_RTD_3_Err AT %I*: BOOL;
+	bM3K4DS_RTD_1_Err AT %I*: BOOL;
+	bM3K4DS_RTD_2_Err AT %I*: BOOL;
+	bM3K4DS_RTD_3_Err AT %I*: BOOL;
+
 	// Logging
 	fbLogHandler : FB_LogHandler;
+	nM3K4DS_RTD_3: INT;
 END_VAR
 ]]></Declaration>
     <Implementation>
@@ -439,6 +544,43 @@ nEncRefrYM2K4 := ULINT_TO_UDINT(GVL_M2K4_Constants.nM2K4rY_ENC_REF);
 nEncRefXM3K4  := ULINT_TO_UDINT(GVL_M3K4_Constants.nM3K4X_ENC_REF);
 nEncRefYM3K4  := ULINT_TO_UDINT(GVL_M3K4_Constants.nM3K4Y_ENC_REF);
 nEncRefrXM3K4 := ULINT_TO_UDINT(GVL_M3K4_Constants.nM3K4rX_ENC_REF);
+
+// LAMP KB Bender RTDs
+fM2K4US_RTD_1 := INT_TO_REAL(GVL_M2K4_RTD.nM2K4US_RTD_1);
+fM2K4US_RTD_2 := INT_TO_REAL(GVL_M2K4_RTD.nM2K4US_RTD_2);
+fM2K4US_RTD_3 := INT_TO_REAL(GVL_M2K4_RTD.nM2K4US_RTD_3);
+
+fM2K4DS_RTD_1 := INT_TO_REAL(GVL_M2K4_RTD.nM2K4DS_RTD_1);
+fM2K4DS_RTD_2 := INT_TO_REAL(GVL_M2K4_RTD.nM2K4DS_RTD_2);
+fM2K4DS_RTD_3 := INT_TO_REAL(GVL_M2K4_RTD.nM2K4DS_RTD_3);
+
+fM3K4US_RTD_1 := INT_TO_REAL(GVL_M3K4_RTD.nM3K4US_RTD_1);
+fM3K4US_RTD_2 := INT_TO_REAL(GVL_M3K4_RTD.nM3K4US_RTD_2);
+fM3K4US_RTD_3 := INT_TO_REAL(GVL_M3K4_RTD.nM3K4US_RTD_3);
+
+fM3K4DS_RTD_1 := INT_TO_REAL(GVL_M3K4_RTD.nM3K4DS_RTD_1);
+fM3K4DS_RTD_2 := INT_TO_REAL(GVL_M3K4_RTD.nM3K4DS_RTD_2);
+fM3K4DS_RTD_3 := INT_TO_REAL(GVL_M3K4_RTD.nM3K4DS_RTD_3);
+
+// LAMP KB Bender RTD interlocks
+M10.bHardwareEnable R= fM2K4US_RTD_1 > 1000 OR bM2K4US_RTD_1_Err;
+M11.bHardwareEnable R= fM2K4DS_RTD_1 > 1000 OR bM2K4DS_RTD_1_Err;
+M15.bHardwareEnable R= fM3K4US_RTD_1 > 1000 OR bM3K4US_RTD_1_Err;
+M16.bHardwareEnable R= fM3K4DS_RTD_1 > 1000 OR bM3K4DS_RTD_1_Err;
+
+// RTD not connected if T=0
+bM2K4US_RTD_1_Err := fM2K4US_RTD_1 = 0;
+bM2K4US_RTD_2_Err := fM2K4US_RTD_2 = 0;
+bM2K4US_RTD_3_Err := fM2K4US_RTD_3 = 0;
+bM2K4DS_RTD_1_Err := fM2K4DS_RTD_1 = 0;
+bM2K4DS_RTD_2_Err := fM2K4DS_RTD_2 = 0;
+bM2K4DS_RTD_3_Err := fM2K4DS_RTD_3 = 0;
+bM3K4US_RTD_1_Err := fM3K4US_RTD_1 = 0;
+bM3K4US_RTD_2_Err := fM3K4US_RTD_2 = 0;
+bM3K4US_RTD_3_Err := fM3K4US_RTD_3 = 0;
+bM3K4DS_RTD_1_Err := fM3K4DS_RTD_1 = 0;
+bM3K4DS_RTD_2_Err := fM3K4DS_RTD_2 = 0;
+bM3K4DS_RTD_3_Err := fM3K4DS_RTD_3 = 0;
 
 // Logging
 fbLogHandler();
