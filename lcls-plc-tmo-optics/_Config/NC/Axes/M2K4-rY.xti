@@ -1342,7 +1342,7 @@ External Setpoint Generation:
 	<Axis Id="9" CreateSymbols="true" AxisType="1" AxisFolder="M2K4">
 		<Name>__FILENAME__</Name>
 		<AxisPara>
-			<General UnitName="um"/>
+			<General UnitName="urad"/>
 			<Dynamic AccelerationMaximum="400" DecelerationMaximum="400" Acceleration="400" Deceleration="400" Jerk="1200" DelayTime="0.008"/>
 			<Velo Maximum="166.67"/>
 			<OtherSettings AllowMotionCmdToSlave="true"/>
