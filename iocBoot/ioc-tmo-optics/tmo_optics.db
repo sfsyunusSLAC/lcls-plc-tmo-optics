@@ -7,6 +7,7 @@ record(ai, "MR3K4:KBO:RTD:BEND:DS:3_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fM3K4DS_RTD_3?")
   field(PREC, "3")
   field(EGU, "cnt")
+  field(ASLO, "0.1")
   info(autosaveFields_pass0, "PREC")
   info(archive, "VAL")
 }
@@ -130,6 +131,8 @@ record(waveform, "$(PREFIX)RequestedBP:ST_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/PMPS_GVL.stRequestedBeamParameters.aStoppers?")
   field(FTVL, "CHAR")
   field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
   info(archive, "monitor 1: VAL")
 }
 
@@ -213,6 +216,8 @@ record(waveform, "$(PREFIX)CurrentBP:ST_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/PMPS_GVL.stCurrentBeamParameters.aStoppers?")
   field(FTVL, "CHAR")
   field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
   info(archive, "monitor 1: VAL")
 }
 
@@ -248,6 +253,8 @@ record(waveform, "$(PREFIX)eVRangeCnst_RBV") {
   field(FTVL, "FLOAT")
   field(EGU, "eV")
   field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
   info(archive, "monitor 1: VAL")
 }
 
@@ -306,6 +313,8 @@ record(waveform, "$(PREFIX)FullBeamCnst:ST_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/PMPS_GVL.cstFullBeam.aStoppers?")
   field(FTVL, "CHAR")
   field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
   info(archive, "monitor 1: VAL")
 }
 
@@ -386,6 +395,8 @@ record(waveform, "$(PREFIX)0RateBeamCnst:ST_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/PMPS_GVL.cst0RateBeam.aStoppers?")
   field(FTVL, "CHAR")
   field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
   info(archive, "monitor 1: VAL")
 }
 
@@ -466,6 +477,8 @@ record(waveform, "$(PREFIX)SafeBeamCnst:ST_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/PMPS_GVL.cstSafeBeam.aStoppers?")
   field(FTVL, "CHAR")
   field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
   info(archive, "monitor 1: VAL")
 }
 
@@ -514,6 +527,8 @@ record(waveform, "$(PREFIX)L:eVRangeCnst_RBV") {
   field(FTVL, "FLOAT")
   field(EGU, "eV")
   field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
   info(archive, "monitor 1: VAL")
 }
 
@@ -527,6 +542,8 @@ record(waveform, "$(PREFIX)K:eVRangeCnst_RBV") {
   field(FTVL, "FLOAT")
   field(EGU, "eV")
   field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
   info(archive, "monitor 1: VAL")
 }
 
@@ -3964,7 +3981,8 @@ record(waveform, "MR1K4:SOMS:ENC:Y:ACTPOSARRAY_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbYRMSErrorM1K4.aEncActPos?")
   field(FTVL, "DOUBLE")
   field(NELM, "1000")
-  info(archive, "VAL")
+  field(MPST, "On Change")
+  field(APST, "On Change")
 }
 
 record(waveform, "MR1K4:SOMS:ENC:Y:SETPOSARRAY_RBV") {
@@ -3976,7 +3994,8 @@ record(waveform, "MR1K4:SOMS:ENC:Y:SETPOSARRAY_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbYRMSErrorM1K4.aEncSetPos?")
   field(FTVL, "DOUBLE")
   field(NELM, "1000")
-  info(archive, "VAL")
+  field(MPST, "On Change")
+  field(APST, "On Change")
 }
 
 record(ai, "MR1K4:SOMS:ENC:X:MEAN_RBV") {
@@ -4024,7 +4043,8 @@ record(waveform, "MR1K4:SOMS:ENC:X:ACTPOSARRAY_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbXRMSErrorM1K4.aEncActPos?")
   field(FTVL, "DOUBLE")
   field(NELM, "1000")
-  info(archive, "VAL")
+  field(MPST, "On Change")
+  field(APST, "On Change")
 }
 
 record(waveform, "MR1K4:SOMS:ENC:X:SETPOSARRAY_RBV") {
@@ -4036,7 +4056,8 @@ record(waveform, "MR1K4:SOMS:ENC:X:SETPOSARRAY_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbXRMSErrorM1K4.aEncSetPos?")
   field(FTVL, "DOUBLE")
   field(NELM, "1000")
-  info(archive, "VAL")
+  field(MPST, "On Change")
+  field(APST, "On Change")
 }
 
 record(ai, "MR1K4:SOMS:ENC:PITCH:MEAN_RBV") {
@@ -4084,7 +4105,8 @@ record(waveform, "MR1K4:SOMS:ENC:PITCH:ACTPOSARRAY_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbPitchRMSErrorM1K4.aEncActPos?")
   field(FTVL, "DOUBLE")
   field(NELM, "1000")
-  info(archive, "VAL")
+  field(MPST, "On Change")
+  field(APST, "On Change")
 }
 
 record(waveform, "MR1K4:SOMS:ENC:PITCH:SETPOSARRAY_RBV") {
@@ -4096,7 +4118,8 @@ record(waveform, "MR1K4:SOMS:ENC:PITCH:SETPOSARRAY_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbPitchRMSErrorM1K4.aEncSetPos?")
   field(FTVL, "DOUBLE")
   field(NELM, "1000")
-  info(archive, "VAL")
+  field(MPST, "On Change")
+  field(APST, "On Change")
 }
 
 record(ai, "MR1K4:SOMS:ENC:BENDER:MEAN_RBV") {
@@ -4144,7 +4167,8 @@ record(waveform, "MR1K4:SOMS:ENC:BENDER:ACTPOSARRAY_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbBenderRMSErrorM1K4.aEncActPos?")
   field(FTVL, "DOUBLE")
   field(NELM, "1000")
-  info(archive, "VAL")
+  field(MPST, "On Change")
+  field(APST, "On Change")
 }
 
 record(waveform, "MR1K4:SOMS:ENC:BENDER:SETPOSARRAY_RBV") {
@@ -4156,7 +4180,8 @@ record(waveform, "MR1K4:SOMS:ENC:BENDER:SETPOSARRAY_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbBenderRMSErrorM1K4.aEncSetPos?")
   field(FTVL, "DOUBLE")
   field(NELM, "1000")
-  info(archive, "VAL")
+  field(MPST, "On Change")
+  field(APST, "On Change")
 }
 
 record(longin, "MR1K4:SOMS:ENC:YDWN:CNT_RBV") {
@@ -9669,6 +9694,626 @@ record(waveform, "MR3K4:KBO:MMS:BEND:DS:PLC:sErrorMessage_RBV") {
   info(archive, "VAL")
 }
 
+record(ai, "MR2K4:KBO:ENC:X:MEAN_RBV") {
+  field(DESC, "Main.fbXRMSErrorM2K4.fEncMean")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbXRMSErrorM2K4.fEncMean?")
+  field(PREC, "3")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(ai, "MR2K4:KBO:ENC:X:STDEV_RBV") {
+  field(DESC, "Main.fbXRMSErrorM2K4.fEncStDev")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbXRMSErrorM2K4.fEncStDev?")
+  field(PREC, "3")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(ai, "MR2K4:KBO:ENC:X:RMS_RBV") {
+  field(DESC, "Main.fbXRMSErrorM2K4.fCurrRMSError")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbXRMSErrorM2K4.fCurrRMSError?")
+  field(PREC, "3")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(waveform, "MR2K4:KBO:ENC:X:ACTPOSARRAY_RBV") {
+  field(DESC, "Main.fbXRMSErrorM2K4.aEncActPos")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbXRMSErrorM2K4.aEncActPos?")
+  field(FTVL, "DOUBLE")
+  field(NELM, "1000")
+  field(MPST, "On Change")
+  field(APST, "On Change")
+}
+
+record(waveform, "MR2K4:KBO:ENC:X:SETPOSARRAY_RBV") {
+  field(DESC, "Main.fbXRMSErrorM2K4.aEncSetPos")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbXRMSErrorM2K4.aEncSetPos?")
+  field(FTVL, "DOUBLE")
+  field(NELM, "1000")
+  field(MPST, "On Change")
+  field(APST, "On Change")
+}
+
+record(ai, "MR2K4:KBO:ENC:Y:MEAN_RBV") {
+  field(DESC, "Main.fbYRMSErrorM2K4.fEncMean")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbYRMSErrorM2K4.fEncMean?")
+  field(PREC, "3")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(ai, "MR2K4:KBO:ENC:Y:STDEV_RBV") {
+  field(DESC, "Main.fbYRMSErrorM2K4.fEncStDev")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbYRMSErrorM2K4.fEncStDev?")
+  field(PREC, "3")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(ai, "MR2K4:KBO:ENC:Y:RMS_RBV") {
+  field(DESC, "Main.fbYRMSErrorM2K4.fCurrRMSError")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbYRMSErrorM2K4.fCurrRMSError?")
+  field(PREC, "3")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(waveform, "MR2K4:KBO:ENC:Y:ACTPOSARRAY_RBV") {
+  field(DESC, "Main.fbYRMSErrorM2K4.aEncActPos")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbYRMSErrorM2K4.aEncActPos?")
+  field(FTVL, "DOUBLE")
+  field(NELM, "1000")
+  field(MPST, "On Change")
+  field(APST, "On Change")
+}
+
+record(waveform, "MR2K4:KBO:ENC:Y:SETPOSARRAY_RBV") {
+  field(DESC, "Main.fbYRMSErrorM2K4.aEncSetPos")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbYRMSErrorM2K4.aEncSetPos?")
+  field(FTVL, "DOUBLE")
+  field(NELM, "1000")
+  field(MPST, "On Change")
+  field(APST, "On Change")
+}
+
+record(ai, "MR2K4:KBO:ENC:PITCH:MEAN_RBV") {
+  field(DESC, "Main.fbrYRMSErrorM2K4.fEncMean")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbrYRMSErrorM2K4.fEncMean?")
+  field(PREC, "3")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(ai, "MR2K4:KBO:ENC:PITCH:STDEV_RBV") {
+  field(DESC, "Main.fbrYRMSErrorM2K4.fEncStDev")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbrYRMSErrorM2K4.fEncStDev?")
+  field(PREC, "3")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(ai, "MR2K4:KBO:ENC:PITCH:RMS_RBV") {
+  field(DESC, "Main.fbrYRMSErrorM2K4.fCurrRMSError")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbrYRMSErrorM2K4.fCurrRMSError?")
+  field(PREC, "3")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(waveform, "MR2K4:KBO:ENC:PITCH:ACTPOSARRAY_RBV") {
+  field(DESC, "Main.fbrYRMSErrorM2K4.aEncActPos")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbrYRMSErrorM2K4.aEncActPos?")
+  field(FTVL, "DOUBLE")
+  field(NELM, "1000")
+  field(MPST, "On Change")
+  field(APST, "On Change")
+}
+
+record(waveform, "MR2K4:KBO:ENC:PITCH:SETPOSARRAY_RBV") {
+  field(DESC, "Main.fbrYRMSErrorM2K4.aEncSetPos")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbrYRMSErrorM2K4.aEncSetPos?")
+  field(FTVL, "DOUBLE")
+  field(NELM, "1000")
+  field(MPST, "On Change")
+  field(APST, "On Change")
+}
+
+record(ai, "MR2K4:KBO:ENC:BEND:US:MEAN_RBV") {
+  field(DESC, "Main.fbBendUSRMSErrorM2K4.fEncMean")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbBendUSRMSErrorM2K4.fEncMean?")
+  field(PREC, "3")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(ai, "MR2K4:KBO:ENC:BEND:US:STDEV_RBV") {
+  field(DESC, "Main.fbBendUSRMSErrorM2K4.fEncStDev")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbBendUSRMSErrorM2K4.fEncStDev?")
+  field(PREC, "3")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(ai, "MR2K4:KBO:ENC:BEND:US:RMS_RBV") {
+  field(DESC, "Main.fbBendUSRMSErrorM2K4.fCurrRMSError")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbBendUSRMSErrorM2K4.fCurrRMSError?")
+  field(PREC, "3")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(waveform, "MR2K4:KBO:ENC:BEND:US:ACTPOSARRAY_RBV") {
+  field(DESC, "Main.fbBendUSRMSErrorM2K4.aEncActPos")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbBendUSRMSErrorM2K4.aEncActPos?")
+  field(FTVL, "DOUBLE")
+  field(NELM, "1000")
+  field(MPST, "On Change")
+  field(APST, "On Change")
+}
+
+record(waveform, "MR2K4:KBO:ENC:BEND:US:SETPOSARRAY_RBV") {
+  field(DESC, "Main.fbBendUSRMSErrorM2K4.aEncSetPos")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbBendUSRMSErrorM2K4.aEncSetPos?")
+  field(FTVL, "DOUBLE")
+  field(NELM, "1000")
+  field(MPST, "On Change")
+  field(APST, "On Change")
+}
+
+record(ai, "MR2K4:KBO:ENC:BEND:DS:MEAN_RBV") {
+  field(DESC, "Main.fbBendDSRMSErrorM2K4.fEncMean")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbBendDSRMSErrorM2K4.fEncMean?")
+  field(PREC, "3")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(ai, "MR2K4:KBO:ENC:BEND:DS:STDEV_RBV") {
+  field(DESC, "Main.fbBendDSRMSErrorM2K4.fEncStDev")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbBendDSRMSErrorM2K4.fEncStDev?")
+  field(PREC, "3")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(ai, "MR2K4:KBO:ENC:BEND:DS:RMS_RBV") {
+  field(DESC, "Main.fbBendDSRMSErrorM2K4.fCurrRMSError")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbBendDSRMSErrorM2K4.fCurrRMSError?")
+  field(PREC, "3")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(waveform, "MR2K4:KBO:ENC:BEND:DS:ACTPOSARRAY_RBV") {
+  field(DESC, "Main.fbBendDSRMSErrorM2K4.aEncActPos")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbBendDSRMSErrorM2K4.aEncActPos?")
+  field(FTVL, "DOUBLE")
+  field(NELM, "1000")
+  field(MPST, "On Change")
+  field(APST, "On Change")
+}
+
+record(waveform, "MR2K4:KBO:ENC:BEND:DS:SETPOSARRAY_RBV") {
+  field(DESC, "Main.fbBendDSRMSErrorM2K4.aEncSetPos")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbBendDSRMSErrorM2K4.aEncSetPos?")
+  field(FTVL, "DOUBLE")
+  field(NELM, "1000")
+  field(MPST, "On Change")
+  field(APST, "On Change")
+}
+
+record(ai, "MR3K4:KBO:ENC:X:MEAN_RBV") {
+  field(DESC, "Main.fbXRMSErrorM3K4.fEncMean")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbXRMSErrorM3K4.fEncMean?")
+  field(PREC, "3")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(ai, "MR3K4:KBO:ENC:X:STDEV_RBV") {
+  field(DESC, "Main.fbXRMSErrorM3K4.fEncStDev")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbXRMSErrorM3K4.fEncStDev?")
+  field(PREC, "3")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(ai, "MR3K4:KBO:ENC:X:RMS_RBV") {
+  field(DESC, "Main.fbXRMSErrorM3K4.fCurrRMSError")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbXRMSErrorM3K4.fCurrRMSError?")
+  field(PREC, "3")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(waveform, "MR3K4:KBO:ENC:X:ACTPOSARRAY_RBV") {
+  field(DESC, "Main.fbXRMSErrorM3K4.aEncActPos")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbXRMSErrorM3K4.aEncActPos?")
+  field(FTVL, "DOUBLE")
+  field(NELM, "1000")
+  field(MPST, "On Change")
+  field(APST, "On Change")
+}
+
+record(waveform, "MR3K4:KBO:ENC:X:SETPOSARRAY_RBV") {
+  field(DESC, "Main.fbXRMSErrorM3K4.aEncSetPos")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbXRMSErrorM3K4.aEncSetPos?")
+  field(FTVL, "DOUBLE")
+  field(NELM, "1000")
+  field(MPST, "On Change")
+  field(APST, "On Change")
+}
+
+record(ai, "MR3K4:KBO:ENC:Y:MEAN_RBV") {
+  field(DESC, "Main.fbYRMSErrorM3K4.fEncMean")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbYRMSErrorM3K4.fEncMean?")
+  field(PREC, "3")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(ai, "MR3K4:KBO:ENC:Y:STDEV_RBV") {
+  field(DESC, "Main.fbYRMSErrorM3K4.fEncStDev")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbYRMSErrorM3K4.fEncStDev?")
+  field(PREC, "3")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(ai, "MR3K4:KBO:ENC:Y:RMS_RBV") {
+  field(DESC, "Main.fbYRMSErrorM3K4.fCurrRMSError")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbYRMSErrorM3K4.fCurrRMSError?")
+  field(PREC, "3")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(waveform, "MR3K4:KBO:ENC:Y:ACTPOSARRAY_RBV") {
+  field(DESC, "Main.fbYRMSErrorM3K4.aEncActPos")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbYRMSErrorM3K4.aEncActPos?")
+  field(FTVL, "DOUBLE")
+  field(NELM, "1000")
+  field(MPST, "On Change")
+  field(APST, "On Change")
+}
+
+record(waveform, "MR3K4:KBO:ENC:Y:SETPOSARRAY_RBV") {
+  field(DESC, "Main.fbYRMSErrorM3K4.aEncSetPos")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbYRMSErrorM3K4.aEncSetPos?")
+  field(FTVL, "DOUBLE")
+  field(NELM, "1000")
+  field(MPST, "On Change")
+  field(APST, "On Change")
+}
+
+record(ai, "MR3K4:KBO:ENC:PITCH:MEAN_RBV") {
+  field(DESC, "Main.fbrXRMSErrorM3K4.fEncMean")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbrXRMSErrorM3K4.fEncMean?")
+  field(PREC, "3")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(ai, "MR3K4:KBO:ENC:PITCH:STDEV_RBV") {
+  field(DESC, "Main.fbrXRMSErrorM3K4.fEncStDev")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbrXRMSErrorM3K4.fEncStDev?")
+  field(PREC, "3")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(ai, "MR3K4:KBO:ENC:PITCH:RMS_RBV") {
+  field(DESC, "Main.fbrXRMSErrorM3K4.fCurrRMSError")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbrXRMSErrorM3K4.fCurrRMSError?")
+  field(PREC, "3")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(waveform, "MR3K4:KBO:ENC:PITCH:ACTPOSARRAY_RBV") {
+  field(DESC, "Main.fbrXRMSErrorM3K4.aEncActPos")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbrXRMSErrorM3K4.aEncActPos?")
+  field(FTVL, "DOUBLE")
+  field(NELM, "1000")
+  field(MPST, "On Change")
+  field(APST, "On Change")
+}
+
+record(waveform, "MR3K4:KBO:ENC:PITCH:SETPOSARRAY_RBV") {
+  field(DESC, "Main.fbrXRMSErrorM3K4.aEncSetPos")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbrXRMSErrorM3K4.aEncSetPos?")
+  field(FTVL, "DOUBLE")
+  field(NELM, "1000")
+  field(MPST, "On Change")
+  field(APST, "On Change")
+}
+
+record(ai, "MR3K4:KBO:ENC:BEND:US:MEAN_RBV") {
+  field(DESC, "Main.fbBendUSRMSErrorM3K4.fEncMean")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbBendUSRMSErrorM3K4.fEncMean?")
+  field(PREC, "3")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(ai, "MR3K4:KBO:ENC:BEND:US:STDEV_RBV") {
+  field(DESC, "Main.fbBendUSRMSErrorM3K4.fEncStDev")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbBendUSRMSErrorM3K4.fEncStDev?")
+  field(PREC, "3")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(ai, "MR3K4:KBO:ENC:BEND:US:RMS_RBV") {
+  field(DESC, "Main.fbBendUSRMSErrorM3K4.fCurrRMSError")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbBendUSRMSErrorM3K4.fCurrRMSError?")
+  field(PREC, "3")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(waveform, "MR3K4:KBO:ENC:BEND:US:ACTPOSARRAY_RBV") {
+  field(DESC, "Main.fbBendUSRMSErrorM3K4.aEncActPos")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbBendUSRMSErrorM3K4.aEncActPos?")
+  field(FTVL, "DOUBLE")
+  field(NELM, "1000")
+  field(MPST, "On Change")
+  field(APST, "On Change")
+}
+
+record(waveform, "MR3K4:KBO:ENC:BEND:US:SETPOSARRAY_RBV") {
+  field(DESC, "Main.fbBendUSRMSErrorM3K4.aEncSetPos")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbBendUSRMSErrorM3K4.aEncSetPos?")
+  field(FTVL, "DOUBLE")
+  field(NELM, "1000")
+  field(MPST, "On Change")
+  field(APST, "On Change")
+}
+
+record(ai, "MR3K4:KBO:ENC:BEND:DS:MEAN_RBV") {
+  field(DESC, "Main.fbBendDSRMSErrorM3K4.fEncMean")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbBendDSRMSErrorM3K4.fEncMean?")
+  field(PREC, "3")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(ai, "MR3K4:KBO:ENC:BEND:DS:STDEV_RBV") {
+  field(DESC, "Main.fbBendDSRMSErrorM3K4.fEncStDev")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbBendDSRMSErrorM3K4.fEncStDev?")
+  field(PREC, "3")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(ai, "MR3K4:KBO:ENC:BEND:DS:RMS_RBV") {
+  field(DESC, "Main.fbBendDSRMSErrorM3K4.fCurrRMSError")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbBendDSRMSErrorM3K4.fCurrRMSError?")
+  field(PREC, "3")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(waveform, "MR3K4:KBO:ENC:BEND:DS:ACTPOSARRAY_RBV") {
+  field(DESC, "Main.fbBendDSRMSErrorM3K4.aEncActPos")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbBendDSRMSErrorM3K4.aEncActPos?")
+  field(FTVL, "DOUBLE")
+  field(NELM, "1000")
+  field(MPST, "On Change")
+  field(APST, "On Change")
+}
+
+record(waveform, "MR3K4:KBO:ENC:BEND:DS:SETPOSARRAY_RBV") {
+  field(DESC, "Main.fbBendDSRMSErrorM3K4.aEncSetPos")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fbBendDSRMSErrorM3K4.aEncSetPos?")
+  field(FTVL, "DOUBLE")
+  field(NELM, "1000")
+  field(MPST, "On Change")
+  field(APST, "On Change")
+}
+
 record(longin, "MR2K4:KBO:ENC:Y:REF_RBV") {
   field(DESC, "Main.nEncRefYM2K4")
   field(SCAN, "I/O Intr")
@@ -9733,7 +10378,7 @@ record(ai, "MR2K4:KBO:RTD:BEND:US:1_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fM2K4US_RTD_1?")
   field(PREC, "3")
   field(EGU, "C")
-  field(ESLO, "0.1")
+  field(ASLO, "0.1")
   info(autosaveFields_pass0, "PREC")
   info(archive, "VAL")
 }
@@ -9747,7 +10392,7 @@ record(ai, "MR2K4:KBO:RTD:BEND:US:2_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fM2K4US_RTD_2?")
   field(PREC, "3")
   field(EGU, "C")
-  field(ESLO, "0.1")
+  field(ASLO, "0.1")
   info(autosaveFields_pass0, "PREC")
   info(archive, "VAL")
 }
@@ -9761,7 +10406,7 @@ record(ai, "MR2K4:KBO:RTD:BEND:US:3_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fM2K4US_RTD_3?")
   field(PREC, "3")
   field(EGU, "C")
-  field(ESLO, "0.1")
+  field(ASLO, "0.1")
   info(autosaveFields_pass0, "PREC")
   info(archive, "VAL")
 }
@@ -9775,7 +10420,7 @@ record(ai, "MR2K4:KBO:RTD:BEND:DS:1_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fM2K4DS_RTD_1?")
   field(PREC, "3")
   field(EGU, "C")
-  field(ESLO, "0.1")
+  field(ASLO, "0.1")
   info(autosaveFields_pass0, "PREC")
   info(archive, "VAL")
 }
@@ -9789,7 +10434,7 @@ record(ai, "MR2K4:KBO:RTD:BEND:DS:2_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fM2K4DS_RTD_2?")
   field(PREC, "3")
   field(EGU, "C")
-  field(ESLO, "0.1")
+  field(ASLO, "0.1")
   info(autosaveFields_pass0, "PREC")
   info(archive, "VAL")
 }
@@ -9803,7 +10448,7 @@ record(ai, "MR2K4:KBO:RTD:BEND:DS:3_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fM2K4DS_RTD_3?")
   field(PREC, "3")
   field(EGU, "C")
-  field(ESLO, "0.1")
+  field(ASLO, "0.1")
   info(autosaveFields_pass0, "PREC")
   info(archive, "VAL")
 }
@@ -9817,7 +10462,7 @@ record(ai, "MR3K4:KBO:RTD:BEND:US:1_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fM3K4US_RTD_1?")
   field(PREC, "3")
   field(EGU, "C")
-  field(ESLO, "0.1")
+  field(ASLO, "0.1")
   info(autosaveFields_pass0, "PREC")
   info(archive, "VAL")
 }
@@ -9831,7 +10476,7 @@ record(ai, "MR3K4:KBO:RTD:BEND:US:2_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fM3K4US_RTD_2?")
   field(PREC, "3")
   field(EGU, "C")
-  field(ESLO, "0.1")
+  field(ASLO, "0.1")
   info(autosaveFields_pass0, "PREC")
   info(archive, "VAL")
 }
@@ -9845,7 +10490,7 @@ record(ai, "MR3K4:KBO:RTD:BEND:US:3_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fM3K4US_RTD_3?")
   field(PREC, "3")
   field(EGU, "C")
-  field(ESLO, "0.1")
+  field(ASLO, "0.1")
   info(autosaveFields_pass0, "PREC")
   info(archive, "VAL")
 }
@@ -9859,7 +10504,7 @@ record(ai, "MR3K4:KBO:RTD:BEND:DS:1_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fM3K4DS_RTD_1?")
   field(PREC, "3")
   field(EGU, "C")
-  field(ESLO, "0.1")
+  field(ASLO, "0.1")
   info(autosaveFields_pass0, "PREC")
   info(archive, "VAL")
 }
@@ -9873,7 +10518,7 @@ record(ai, "MR3K4:KBO:RTD:BEND:DS:2_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/Main.fM3K4DS_RTD_2?")
   field(PREC, "3")
   field(EGU, "C")
-  field(ESLO, "0.1")
+  field(ASLO, "0.1")
   info(autosaveFields_pass0, "PREC")
   info(archive, "VAL")
 }
@@ -33791,6 +34436,8 @@ record(waveform, "PLC:TMO:OPTICS:Arbiter:01:AP:Entry:001:ST_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_PMPS.g_fbArbiter1.fbBPAssertionPool.epicsDataPool[1].aStoppers?")
   field(FTVL, "CHAR")
   field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
   info(archive, "VAL")
 }
 
@@ -33803,6 +34450,8 @@ record(waveform, "PLC:TMO:OPTICS:Arbiter:01:AP:Entry:002:ST_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_PMPS.g_fbArbiter1.fbBPAssertionPool.epicsDataPool[2].aStoppers?")
   field(FTVL, "CHAR")
   field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
   info(archive, "VAL")
 }
 
@@ -33815,6 +34464,8 @@ record(waveform, "PLC:TMO:OPTICS:Arbiter:01:AP:Entry:003:ST_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_PMPS.g_fbArbiter1.fbBPAssertionPool.epicsDataPool[3].aStoppers?")
   field(FTVL, "CHAR")
   field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
   info(archive, "VAL")
 }
 
@@ -33827,6 +34478,8 @@ record(waveform, "PLC:TMO:OPTICS:Arbiter:01:AP:Entry:004:ST_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_PMPS.g_fbArbiter1.fbBPAssertionPool.epicsDataPool[4].aStoppers?")
   field(FTVL, "CHAR")
   field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
   info(archive, "VAL")
 }
 
@@ -33839,6 +34492,8 @@ record(waveform, "PLC:TMO:OPTICS:Arbiter:01:AP:Entry:005:ST_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_PMPS.g_fbArbiter1.fbBPAssertionPool.epicsDataPool[5].aStoppers?")
   field(FTVL, "CHAR")
   field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
   info(archive, "VAL")
 }
 
@@ -33851,6 +34506,8 @@ record(waveform, "PLC:TMO:OPTICS:Arbiter:01:AP:Entry:006:ST_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_PMPS.g_fbArbiter1.fbBPAssertionPool.epicsDataPool[6].aStoppers?")
   field(FTVL, "CHAR")
   field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
   info(archive, "VAL")
 }
 
@@ -33863,6 +34520,8 @@ record(waveform, "PLC:TMO:OPTICS:Arbiter:01:AP:Entry:007:ST_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_PMPS.g_fbArbiter1.fbBPAssertionPool.epicsDataPool[7].aStoppers?")
   field(FTVL, "CHAR")
   field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
   info(archive, "VAL")
 }
 
@@ -33875,6 +34534,8 @@ record(waveform, "PLC:TMO:OPTICS:Arbiter:01:AP:Entry:008:ST_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_PMPS.g_fbArbiter1.fbBPAssertionPool.epicsDataPool[8].aStoppers?")
   field(FTVL, "CHAR")
   field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
   info(archive, "VAL")
 }
 
@@ -33887,6 +34548,8 @@ record(waveform, "PLC:TMO:OPTICS:Arbiter:01:AP:Entry:009:ST_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_PMPS.g_fbArbiter1.fbBPAssertionPool.epicsDataPool[9].aStoppers?")
   field(FTVL, "CHAR")
   field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
   info(archive, "VAL")
 }
 
@@ -33899,6 +34562,8 @@ record(waveform, "PLC:TMO:OPTICS:Arbiter:01:AP:Entry:010:ST_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_PMPS.g_fbArbiter1.fbBPAssertionPool.epicsDataPool[10].aStoppers?")
   field(FTVL, "CHAR")
   field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
   info(archive, "VAL")
 }
 
@@ -33911,6 +34576,8 @@ record(waveform, "PLC:TMO:OPTICS:Arbiter:01:AP:Entry:011:ST_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_PMPS.g_fbArbiter1.fbBPAssertionPool.epicsDataPool[11].aStoppers?")
   field(FTVL, "CHAR")
   field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
   info(archive, "VAL")
 }
 
@@ -33923,6 +34590,8 @@ record(waveform, "PLC:TMO:OPTICS:Arbiter:01:AP:Entry:012:ST_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_PMPS.g_fbArbiter1.fbBPAssertionPool.epicsDataPool[12].aStoppers?")
   field(FTVL, "CHAR")
   field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
   info(archive, "VAL")
 }
 
@@ -33935,6 +34604,8 @@ record(waveform, "PLC:TMO:OPTICS:Arbiter:01:AP:Entry:013:ST_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_PMPS.g_fbArbiter1.fbBPAssertionPool.epicsDataPool[13].aStoppers?")
   field(FTVL, "CHAR")
   field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
   info(archive, "VAL")
 }
 
@@ -33947,6 +34618,8 @@ record(waveform, "PLC:TMO:OPTICS:Arbiter:01:AP:Entry:014:ST_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_PMPS.g_fbArbiter1.fbBPAssertionPool.epicsDataPool[14].aStoppers?")
   field(FTVL, "CHAR")
   field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
   info(archive, "VAL")
 }
 
@@ -33959,6 +34632,8 @@ record(waveform, "PLC:TMO:OPTICS:Arbiter:01:AP:Entry:015:ST_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_PMPS.g_fbArbiter1.fbBPAssertionPool.epicsDataPool[15].aStoppers?")
   field(FTVL, "CHAR")
   field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
   info(archive, "VAL")
 }
 
@@ -33971,6 +34646,8 @@ record(waveform, "PLC:TMO:OPTICS:Arbiter:01:AP:Entry:016:ST_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_PMPS.g_fbArbiter1.fbBPAssertionPool.epicsDataPool[16].aStoppers?")
   field(FTVL, "CHAR")
   field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
   info(archive, "VAL")
 }
 
@@ -33983,6 +34660,8 @@ record(waveform, "PLC:TMO:OPTICS:Arbiter:01:AP:Entry:017:ST_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_PMPS.g_fbArbiter1.fbBPAssertionPool.epicsDataPool[17].aStoppers?")
   field(FTVL, "CHAR")
   field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
   info(archive, "VAL")
 }
 
@@ -33995,6 +34674,8 @@ record(waveform, "PLC:TMO:OPTICS:Arbiter:01:AP:Entry:018:ST_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_PMPS.g_fbArbiter1.fbBPAssertionPool.epicsDataPool[18].aStoppers?")
   field(FTVL, "CHAR")
   field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
   info(archive, "VAL")
 }
 
@@ -34007,6 +34688,8 @@ record(waveform, "PLC:TMO:OPTICS:Arbiter:01:AP:Entry:019:ST_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_PMPS.g_fbArbiter1.fbBPAssertionPool.epicsDataPool[19].aStoppers?")
   field(FTVL, "CHAR")
   field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
   info(archive, "VAL")
 }
 
@@ -34019,6 +34702,8 @@ record(waveform, "PLC:TMO:OPTICS:Arbiter:01:AP:Entry:020:ST_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_PMPS.g_fbArbiter1.fbBPAssertionPool.epicsDataPool[20].aStoppers?")
   field(FTVL, "CHAR")
   field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
   info(archive, "VAL")
 }
 
@@ -34989,6 +35674,8 @@ record(waveform, "PLC:TMO:OPTICS:Arbiter:01:ArbitratedBP:ST_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_PMPS.g_fbArbiter1.q_stBeamParams.aStoppers?")
   field(FTVL, "CHAR")
   field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
   info(archive, "VAL")
 }
 
@@ -35943,6 +36630,8 @@ record(waveform, "PLC:TMO:OPTICS:Arbiter:02:AP:Entry:001:ST_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_PMPS.g_fbArbiter2.fbBPAssertionPool.epicsDataPool[1].aStoppers?")
   field(FTVL, "CHAR")
   field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
   info(archive, "VAL")
 }
 
@@ -35955,6 +36644,8 @@ record(waveform, "PLC:TMO:OPTICS:Arbiter:02:AP:Entry:002:ST_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_PMPS.g_fbArbiter2.fbBPAssertionPool.epicsDataPool[2].aStoppers?")
   field(FTVL, "CHAR")
   field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
   info(archive, "VAL")
 }
 
@@ -35967,6 +36658,8 @@ record(waveform, "PLC:TMO:OPTICS:Arbiter:02:AP:Entry:003:ST_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_PMPS.g_fbArbiter2.fbBPAssertionPool.epicsDataPool[3].aStoppers?")
   field(FTVL, "CHAR")
   field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
   info(archive, "VAL")
 }
 
@@ -35979,6 +36672,8 @@ record(waveform, "PLC:TMO:OPTICS:Arbiter:02:AP:Entry:004:ST_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_PMPS.g_fbArbiter2.fbBPAssertionPool.epicsDataPool[4].aStoppers?")
   field(FTVL, "CHAR")
   field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
   info(archive, "VAL")
 }
 
@@ -35991,6 +36686,8 @@ record(waveform, "PLC:TMO:OPTICS:Arbiter:02:AP:Entry:005:ST_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_PMPS.g_fbArbiter2.fbBPAssertionPool.epicsDataPool[5].aStoppers?")
   field(FTVL, "CHAR")
   field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
   info(archive, "VAL")
 }
 
@@ -36003,6 +36700,8 @@ record(waveform, "PLC:TMO:OPTICS:Arbiter:02:AP:Entry:006:ST_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_PMPS.g_fbArbiter2.fbBPAssertionPool.epicsDataPool[6].aStoppers?")
   field(FTVL, "CHAR")
   field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
   info(archive, "VAL")
 }
 
@@ -36015,6 +36714,8 @@ record(waveform, "PLC:TMO:OPTICS:Arbiter:02:AP:Entry:007:ST_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_PMPS.g_fbArbiter2.fbBPAssertionPool.epicsDataPool[7].aStoppers?")
   field(FTVL, "CHAR")
   field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
   info(archive, "VAL")
 }
 
@@ -36027,6 +36728,8 @@ record(waveform, "PLC:TMO:OPTICS:Arbiter:02:AP:Entry:008:ST_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_PMPS.g_fbArbiter2.fbBPAssertionPool.epicsDataPool[8].aStoppers?")
   field(FTVL, "CHAR")
   field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
   info(archive, "VAL")
 }
 
@@ -36039,6 +36742,8 @@ record(waveform, "PLC:TMO:OPTICS:Arbiter:02:AP:Entry:009:ST_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_PMPS.g_fbArbiter2.fbBPAssertionPool.epicsDataPool[9].aStoppers?")
   field(FTVL, "CHAR")
   field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
   info(archive, "VAL")
 }
 
@@ -36051,6 +36756,8 @@ record(waveform, "PLC:TMO:OPTICS:Arbiter:02:AP:Entry:010:ST_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_PMPS.g_fbArbiter2.fbBPAssertionPool.epicsDataPool[10].aStoppers?")
   field(FTVL, "CHAR")
   field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
   info(archive, "VAL")
 }
 
@@ -36063,6 +36770,8 @@ record(waveform, "PLC:TMO:OPTICS:Arbiter:02:AP:Entry:011:ST_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_PMPS.g_fbArbiter2.fbBPAssertionPool.epicsDataPool[11].aStoppers?")
   field(FTVL, "CHAR")
   field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
   info(archive, "VAL")
 }
 
@@ -36075,6 +36784,8 @@ record(waveform, "PLC:TMO:OPTICS:Arbiter:02:AP:Entry:012:ST_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_PMPS.g_fbArbiter2.fbBPAssertionPool.epicsDataPool[12].aStoppers?")
   field(FTVL, "CHAR")
   field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
   info(archive, "VAL")
 }
 
@@ -36087,6 +36798,8 @@ record(waveform, "PLC:TMO:OPTICS:Arbiter:02:AP:Entry:013:ST_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_PMPS.g_fbArbiter2.fbBPAssertionPool.epicsDataPool[13].aStoppers?")
   field(FTVL, "CHAR")
   field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
   info(archive, "VAL")
 }
 
@@ -36099,6 +36812,8 @@ record(waveform, "PLC:TMO:OPTICS:Arbiter:02:AP:Entry:014:ST_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_PMPS.g_fbArbiter2.fbBPAssertionPool.epicsDataPool[14].aStoppers?")
   field(FTVL, "CHAR")
   field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
   info(archive, "VAL")
 }
 
@@ -36111,6 +36826,8 @@ record(waveform, "PLC:TMO:OPTICS:Arbiter:02:AP:Entry:015:ST_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_PMPS.g_fbArbiter2.fbBPAssertionPool.epicsDataPool[15].aStoppers?")
   field(FTVL, "CHAR")
   field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
   info(archive, "VAL")
 }
 
@@ -36123,6 +36840,8 @@ record(waveform, "PLC:TMO:OPTICS:Arbiter:02:AP:Entry:016:ST_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_PMPS.g_fbArbiter2.fbBPAssertionPool.epicsDataPool[16].aStoppers?")
   field(FTVL, "CHAR")
   field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
   info(archive, "VAL")
 }
 
@@ -36135,6 +36854,8 @@ record(waveform, "PLC:TMO:OPTICS:Arbiter:02:AP:Entry:017:ST_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_PMPS.g_fbArbiter2.fbBPAssertionPool.epicsDataPool[17].aStoppers?")
   field(FTVL, "CHAR")
   field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
   info(archive, "VAL")
 }
 
@@ -36147,6 +36868,8 @@ record(waveform, "PLC:TMO:OPTICS:Arbiter:02:AP:Entry:018:ST_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_PMPS.g_fbArbiter2.fbBPAssertionPool.epicsDataPool[18].aStoppers?")
   field(FTVL, "CHAR")
   field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
   info(archive, "VAL")
 }
 
@@ -36159,6 +36882,8 @@ record(waveform, "PLC:TMO:OPTICS:Arbiter:02:AP:Entry:019:ST_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_PMPS.g_fbArbiter2.fbBPAssertionPool.epicsDataPool[19].aStoppers?")
   field(FTVL, "CHAR")
   field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
   info(archive, "VAL")
 }
 
@@ -36171,6 +36896,8 @@ record(waveform, "PLC:TMO:OPTICS:Arbiter:02:AP:Entry:020:ST_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_PMPS.g_fbArbiter2.fbBPAssertionPool.epicsDataPool[20].aStoppers?")
   field(FTVL, "CHAR")
   field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
   info(archive, "VAL")
 }
 
@@ -37141,6 +37868,8 @@ record(waveform, "PLC:TMO:OPTICS:Arbiter:02:ArbitratedBP:ST_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_PMPS.g_fbArbiter2.q_stBeamParams.aStoppers?")
   field(FTVL, "CHAR")
   field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
   info(archive, "VAL")
 }
 
