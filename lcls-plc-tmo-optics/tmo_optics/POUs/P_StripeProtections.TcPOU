@@ -27,6 +27,7 @@ MR1K4 (RBV = MR1K4:SOMS:ENC:YUP:CNT_RBV)
 B4C coating: RBV <= 15998960: 1111_1111_1111_1000 (allow everything above 400eV)
 Transition: 15998960 < RBV < 19998960: 0000_0000_0000_0000
 Silicon surface: RBV >= 19998960: 0000_0000_0000_0111 (allow everything below 400 eV)
+From M. Seaberg
 *)		
 	fbStripProtMR1K4 : FB_MirrorTwoCoatingProtection := (
 		sDevName := 'MR1K4',
