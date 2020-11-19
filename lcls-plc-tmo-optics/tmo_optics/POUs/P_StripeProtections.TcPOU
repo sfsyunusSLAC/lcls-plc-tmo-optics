@@ -5,39 +5,39 @@
 VAR
 (*
 MR1K4 (RBV = MR1K4:SOMS:ENC:YUP:CNT_RBV)
-B4C coating: RBV <= 15998960: 1111_1111_1111_1000 (allow everything above 400eV)
+B4C coating: RBV <= 15998960: 1111_1111_1111_1000 (allow everything between 350eV and 2.3keV)
 Transition: 15998960 < RBV < 19998960: 0000_0000_0000_0000
-Silicon surface: RBV >= 19998960: 0000_0000_0000_0111 (allow everything below 400 eV)
+Silicon surface: RBV >= 19998960: 0000_0000_0001_1110 (allow everything between 250eV and 450eV)
 From M. Seaberg
 *)		
 	fbStripProtMR1K4 : FB_MirrorTwoCoatingProtection := (
 		sDevName := 'MR1K4',
 		nUpperCoatingBoundary := 19998960,
-		nUpperCoatingBitmask := 2#0000_0000_0001_1111,
+		nUpperCoatingBitmask := 2#0000_0000_0001_1110,
 		sUpperCoatingType := 'Si',
 		nLowerCoatingBoundary := 15998960,
 		nLowerCoatingBitMask := 2#1111_1111_1111_1000,
 		sLowerCoatingType := 'B4C');
 (*
-MR2K4 (RBV = MR2K4:KBO:MMS:Y.RBV)
-B4C coating: RBV <= 4.7mm: 1111_1111_1111_1000 (allow everything above 400 eV)
-Transition: 4.7mm < RBV < 8.7mm: 0000_0000_0000_0000
-Silicon surface: RBV >= 8.7mm: 0000_0000_0001_1111 (allow everything below 400 eV)		
+MR2K4 (RBV = MR2K4:KBO:ENC:Y:CNT_RBV)
+B4C coating: RBV <= 6976835: 1111_1111_1111_1000 (allow everything between 350eV and 2.3keV)
+Transition: 6976835 < RBV < 7776781: 0000_0000_0000_0000
+Silicon surface: RBV >= 7776781: 0000_0000_0001_1110 (allow everything below 250eV and 450eV)		
 *)
 
 	fbStripProtMR2K4 : FB_MirrorTwoCoatingProtection := (
 		sDevName := 'MR2K4',
 		nUpperCoatingBoundary := 7776781,
-		nUpperCoatingBitmask := 2#0000_0000_0001_1111,
+		nUpperCoatingBitmask := 2#0000_0000_0001_1110,
 		sUpperCoatingType := 'Si',
 		nLowerCoatingBoundary := 6976835,
 		nLowerCoatingBitMask := 2#1111_1111_1111_1000,
 		sLowerCoatingType := 'B4C');
 (*
-MR3K4 (RBV = MR3K4:KBO:MMS:X.RBV)
-B4C coating: RBV >= -3mm: 1111_1111_1111_1000 (allow everything above 400 eV)
-Transition: -7mm < RBV < -3mm: 0000_0000_0000_0000
-Silicon surface: RBV <= -7mm: 0000_0000_0001_1111 (allow everything below 400 eV)
+MR3K4 (RBV = MR3K4:KBO:ENC:X:CNT_RBV)
+B4C coating: RBV >= 5620000: 1111_1111_1111_1000 (allow everything between 350eV and 2.3keV)
+Transition: 4820000 < ENC < 5620000: 0000_0000_0000_0000
+Silicon surface: RBV <= 4820000: 0000_0000_0001_1110 (allow everything between 250eV and 450 eV)
 *)
 	fbStripProtMR3K4 : FB_MirrorTwoCoatingProtection := (
 		sDevName := 'MR3K4',
@@ -45,7 +45,7 @@ Silicon surface: RBV <= -7mm: 0000_0000_0001_1111 (allow everything below 400 eV
 		nUpperCoatingBitmask := 2#1111_1111_1111_1000,
 		sUpperCoatingType := 'B4C',
 		nLowerCoatingBoundary := 4820000,
-		nLowerCoatingBitMask := 2#0000_0000_0001_1111,
+		nLowerCoatingBitMask := 2#0000_0000_0001_1110,
 		sLowerCoatingType := 'Si');		
 		
 END_VAR
