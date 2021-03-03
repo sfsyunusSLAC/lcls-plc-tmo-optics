@@ -23,10 +23,10 @@ VAR_IN_OUT
 END_VAR
 VAR
 	ffUpperCoating: FB_FastFault := (
-		i_xAutoReset := FALSE,
+		i_xAutoReset := TRUE,
 		i_TypeCode := 16#401);
 	ffLowerCoating : FB_FastFault := (
-		i_xAutoReset := FALSE,
+		i_xAutoReset := TRUE,
 		i_TypeCode := 16#401);
 		
 	bInit : BOOL;
