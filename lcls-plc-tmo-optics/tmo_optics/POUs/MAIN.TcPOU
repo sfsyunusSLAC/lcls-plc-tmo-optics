@@ -537,6 +537,13 @@ fbLogHandler : FB_LogHandler;
 
 //PMPS
 fbArbiterIO : FB_SubSysToArbiter_IO;
+
+ffFFO2ToFFO1 : FB_FastFault := (
+    i_xAutoReset := TRUE,
+    i_DevName := 'PMPS FFO2',
+    i_Desc := 'Subordinate fast fault group, will clear on its own otherwise something is misconfigured in the diagnostic',
+    i_TypeCode := 16#D);
+    
 END_VAR]]></Declaration>
     <Implementation>
       <ST><![CDATA[
@@ -764,27 +771,13 @@ END_VAR]]></Declaration>
 fbLogHandler();
 
 // PMPS
-GVL_PMPS.g_FastFaultOutput1.Execute(i_xVeto:=);
-GVL_PMPS.g_FastFaultOutput2.Execute(i_xVeto:=);]]></ST>
+GVL_PMPS.g_FastFaultOutput2.i_xVeto := PMPS.PMPS_GVL.stCurrentBeamParameters.aStoppers[PMPS.K_Stopper.MR1K1_IN] OR
+                                        PMPS.PMPS_GVL.stCurrentBeamParameters.aStoppers[PMPS.K_Stopper.ST3K4];
+GVL_PMPS.g_FastFaultOutput2.Execute();
+
+ffFFO2ToFFO1(i_xOK := GVL_PMPS.g_FastFaultOutput2.q_xFastFaultOut, io_fbFFHWO := GVL_PMPS.g_FastFaultOutput1);
+
+GVL_PMPS.g_FastFaultOutput1.Execute(i_xVeto:=);]]></ST>
     </Implementation>
-    <LineIds Name="Main">
-      <LineId Id="819" Count="0" />
-      <LineId Id="3" Count="83" />
-      <LineId Id="820" Count="0" />
-      <LineId Id="87" Count="81" />
-      <LineId Id="812" Count="6" />
-      <LineId Id="811" Count="0" />
-      <LineId Id="169" Count="36" />
-      <LineId Id="707" Count="0" />
-      <LineId Id="822" Count="0" />
-      <LineId Id="821" Count="0" />
-      <LineId Id="708" Count="0" />
-      <LineId Id="703" Count="0" />
-      <LineId Id="702" Count="0" />
-      <LineId Id="206" Count="0" />
-      <LineId Id="824" Count="0" />
-      <LineId Id="207" Count="4" />
-      <LineId Id="2" Count="0" />
-    </LineIds>
   </POU>
 </TcPlcObject>
