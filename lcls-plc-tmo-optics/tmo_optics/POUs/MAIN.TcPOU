@@ -544,6 +544,7 @@ ffFFO2ToFFO1 : FB_FastFault := (
     i_Desc := 'Subordinate fast fault group, will clear on its own otherwise something is misconfigured in the diagnostic',
     i_TypeCode := 16#D);
     
+bMR1K1Veto : BOOL;
 END_VAR]]></Declaration>
     <Implementation>
       <ST><![CDATA[
@@ -771,13 +772,15 @@ END_VAR]]></Declaration>
 fbLogHandler();
 
 // PMPS
-GVL_PMPS.g_FastFaultOutput2.i_xVeto := PMPS.PMPS_GVL.stCurrentBeamParameters.aStoppers[PMPS.K_Stopper.MR1K1_IN] OR
-                                        PMPS.PMPS_GVL.stCurrentBeamParameters.aStoppers[PMPS.K_Stopper.ST3K4];
+bMR1K1Veto := PMPS.PMPS_GVL.stCurrentBeamParameters.aStoppers[PMPS.K_Stopper.MR1K1_IN] 
+            AND NOT PMPS.PMPS_GVL.stCurrentBeamParameters.aStoppers[PMPS.K_Stopper.MR1K1_OUT];
+GVL_PMPS.g_FastFaultOutput2.i_xVeto := bMR1K1Veto OR
+                                       PMPS.PMPS_GVL.stCurrentBeamParameters.aStoppers[PMPS.K_Stopper.ST3K4];
 GVL_PMPS.g_FastFaultOutput2.Execute();
 
 ffFFO2ToFFO1(i_xOK := GVL_PMPS.g_FastFaultOutput2.q_xFastFaultOut, io_fbFFHWO := GVL_PMPS.g_FastFaultOutput1);
 
-GVL_PMPS.g_FastFaultOutput1.Execute(i_xVeto:=);]]></ST>
+GVL_PMPS.g_FastFaultOutput1.Execute(i_xVeto:= bMR1K1Veto );]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>
