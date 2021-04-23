@@ -55,11 +55,11 @@ END_VAR
 				nCurrentEncoderCount := MAIN.nEncCntYupM1K4, 
 				neVRange:=PMPS_GVL.stCurrentBeamParameters.neVRange);
 				
-fbStripProtMR2K4(FFO:=GVL_PMPS.g_FastFaultOutput1, 
+fbStripProtMR2K4(FFO:=GVL_PMPS.g_FastFaultOutput2, 
 				nCurrentEncoderCount := MAIN.nEncCntYM2K4, 
 				neVRange:=PMPS_GVL.stCurrentBeamParameters.neVRange);
 				
-fbStripProtMR3K4(FFO:=GVL_PMPS.g_FastFaultOutput1, 
+fbStripProtMR3K4(FFO:=GVL_PMPS.g_FastFaultOutput2, 
 				nCurrentEncoderCount := MAIN.nEncCntXM3K4, 
 				neVRange:=PMPS_GVL.stCurrentBeamParameters.neVRange);]]></ST>
     </Implementation>
